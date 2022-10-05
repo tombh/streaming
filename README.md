@@ -3,7 +3,7 @@
 ## What I Want/Did To Get Done
 _Each one of these should be usefully descriptive of what I'm working on during a stream_
 
-📆 **October ??**
+📆 **October 5th**
 Pygls
   * [ ] Handle output format variations, eg when col number is missing
   * [ ] Get default config from YAML file
