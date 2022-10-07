@@ -3,17 +3,17 @@
 ## What I Want/Did To Get Done
 _Each one of these should be usefully descriptive of what I'm working on during a stream_
 
-📆 **October 5th**
+📆 **October 7th**    
 Pygls
-  * [ ] Handle output format variations, eg when col number is missing
+  * [ ] Derive required language IDs from the client LSP config (last thing for MVP! 🚀) 
   * [ ] Get default config from YAML file
-  * [ ] Derive required language IDs from the client LSP config. 
-  * [ ] Refactor, smaller functions etc
   * [ ] Configs for various editors
   * [ ] Docs
-  * [ ] Use public version of Pygls
+  * [ ] Refactor, smaller functions etc
+  * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
   * [ ] Add tests
   * [ ] Soft publish, and use like a normal LSP 😏
+  * [ ] `Poetry could not find a pyproject.toml`, not important when public. Just something to think about
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -25,6 +25,11 @@ Wrach
     * [ ] What's the word on Rust `struct` layouts, is Crevice ok? Or is `#[repr(c)]` is enough?
     * [ ] General quick guide to using rust-gpu
   * [ ] Downgrade wgpu and rust-gpu, separately if you have the patience
+
+
+📆 **October 5th**
+Pygls
+  * [x] Handle output format variations, eg when col number is missing
 
 📆 **October 4th**
 
