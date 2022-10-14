@@ -4,18 +4,15 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
-  * [ ] Reply to Alex about LSP-tools PRs and his big lsprotocol PR
-  * [ ] Publish CLITools module on Pip, lowkey hush hush
+  * [ ] Add a changelog file. Automate?
   * [ ] Docs
     * [ ] Configs for various editors
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
   * [ ] Get default config from YAML file
-  * [ ] Refactor, smaller functions etc
   * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
-  * [ ] Add tests
-  * [ ] Soft publish, and use like a normal LSP 😏
-  * [ ] `Poetry could not find a pyproject.toml`, not important when public. Just something to think about
+  * [ ] Add more tests
+  * [ ] Automatic CI releases to Pypi on version changes. Github releases?
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -36,6 +33,11 @@ Misc
 📆 **October 13th**    
 Basically just wanna make a lowkey publish of the CLI tools LSP module on Pip and start pretending like it's live, in order to find the rough edges of installation, usage, docs, etc.
 
+Got a working MVP released on Pip!
+
+* [x] Reply to Alex about LSP-tools PRs and his big lsprotocol PR
+* [x] Publish CLITools module on Pip, lowkey hush hush
+* [x] Soft publish, and use like a normal LSP 😏
 
 📆 **October 12th**    
 I realised that I can kill 2 birds with one stone, I can make the CLI Tools LSP both a CLI Tools LSP _and_ an easy starting template for Pygls in general. Considering that all the heavy lifting is done by the CLI tools (`jq`, `markdownlint`, etc) the actual LS-specific code should be minimal and, more importantly, easily refactorable such that a bare-bones LS can be created to start your own dedicated LS. As such it would be beneficial to both goals of the LS (CLI tools and Pygls template) to support _all_ the featues of LSP in general.
