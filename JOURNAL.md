@@ -4,6 +4,7 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
+  * [ ] Add another classic LS feature, I think completion list?
   * [ ] Add a changelog file. Automate?
   * [ ] Docs
     * [ ] Configs for various editors
@@ -29,6 +30,9 @@ Misc
   * [ ] Find stick/thing to stop table/webcam wobbling so much
 
 # Journal
+
+📆 **October 14th**    
+Been thinking. What if I called CLI Tools LSP "Super GLS" to contrast with "Pygls". Then would be great to create a pygls-org namespace in Github so we have th 2 projects; `pygls-org/pygls` and `pygls-org/super-gls`. That way we have the low-level Pygls for fine-grained control over custom LS behaviour. And then Super GLS for a quicker, more user-friendly wrapper over Pygls. I think it's important because it really helps place the unique usecase of each language server.
 
 📆 **October 13th**    
 Basically just wanna make a lowkey publish of the CLI tools LSP module on Pip and start pretending like it's live, in order to find the rough edges of installation, usage, docs, etc.
