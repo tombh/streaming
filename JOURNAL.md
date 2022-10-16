@@ -4,16 +4,20 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
-  * [ ] Add another classic LS feature, I think completion list?
+  * [ ] Update to latest lsp-devtools. Test init from test body
   * [ ] Add a changelog file. Automate?
   * [ ] Docs
     * [ ] Configs for various editors
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
   * [ ] Get default config from YAML file
+  * [ ] Hook into LSP progress/status to give feedback about bad config
   * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
   * [ ] Add more tests
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
+  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
+  * [ ] Apoyar language_id wildcard con "\*"
+  * [ ] Rename to "Super GLS"
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -31,8 +35,21 @@ Misc
 
 # Journal
 
+📆 **October 15th**    
+So mainly just want to tidy things up a bit; docs and tests mostly. Maybe start more configs.
+
+📆 **October 15th**    
+Got a minimal working version of completion lists. It's pretty impressive how with such minimal config you can get completion lists popping up in your editor. The possibilities are endless!
+
+  * [x] Reinstaler Mypy! 
+  * [x] Add another classic LS feature, I think completion list?
+
 📆 **October 14th**    
 Been thinking. What if I called CLI Tools LSP "Super GLS" to contrast with "Pygls". Then would be great to create a pygls-org namespace in Github so we have th 2 projects; `pygls-org/pygls` and `pygls-org/super-gls`. That way we have the low-level Pygls for fine-grained control over custom LS behaviour. And then Super GLS for a quicker, more user-friendly wrapper over Pygls. I think it's important because it really helps place the unique usecase of each language server.
+
+Started adding notable/illustrative params fields. Felt good to be helping devs out with these pointers to deeper inside the data types. That data is there but you have drill down through multiple files to find it. So placing some clues up front on the API surface feels nice.
+
+Writing an example completion feature made me learn a fair amount of new things about LSP and Pygls. I realise that the CLITools/Super LSP isn't going to so easily support every minute detail of LSP, but it does fell like it's pretty simple to support the headline features. And for more fine-grained control devs can just drop down into Pygls, which is the whole point anyway.
 
 📆 **October 13th**    
 Basically just wanna make a lowkey publish of the CLI tools LSP module on Pip and start pretending like it's live, in order to find the rough edges of installation, usage, docs, etc.
