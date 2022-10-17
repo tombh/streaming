@@ -4,20 +4,20 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
-  * [ ] Update to latest lsp-devtools. Test init from test body
+  * [ ] Apoyar language_id wildcard con "\*"
+  * [ ] Get default config from YAML file
+  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
   * [ ] Add a changelog file. Automate?
   * [ ] Docs
     * [ ] Configs for various editors
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
-  * [ ] Get default config from YAML file
   * [ ] Hook into LSP progress/status to give feedback about bad config
   * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
   * [ ] Add more tests
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
-  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
-  * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Rename to "Super GLS"
+  * [ ] Support diagnostic severity (info, warning, error, etc)
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -35,8 +35,19 @@ Misc
 
 # Journal
 
-📆 **October 15th**    
+📆 **October 17th**    
+Hopefully get yesterday's commit committed soon. Then something...
+
+* Supporting more editors; Vim, Emacs and VSCode
+* More features; formatting, code actions, hover, workspace symbols, find references ...
+* Fill it up with more default configs
+
+📆 **October 16th**    
 So mainly just want to tidy things up a bit; docs and tests mostly. Maybe start more configs.
+
+Almost got a big commit in that made the user config must nicer. Basically introducing YAML.
+
+* [x] Update to latest lsp-devtools. Test init from test body
 
 📆 **October 15th**    
 Got a minimal working version of completion lists. It's pretty impressive how with such minimal config you can get completion lists popping up in your editor. The possibilities are endless!
