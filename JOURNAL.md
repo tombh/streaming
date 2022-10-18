@@ -6,7 +6,6 @@ _Ordered by most-likely-to-be-working-on-now first_
 CLI Tools LSP
   * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Get default config from YAML file
-  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
   * [ ] Add a changelog file. Automate?
   * [ ] Docs
     * [ ] Configs for various editors
@@ -18,6 +17,8 @@ CLI Tools LSP
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
   * [ ] Rename to "Super GLS"
   * [ ] Support diagnostic severity (info, warning, error, etc)
+  * [ ] Support multiple `language_id` values
+  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -32,8 +33,15 @@ Wrach
 
 Misc
   * [ ] Find stick/thing to stop table/webcam wobbling so much
+  * [ ] Make a noise or notification when I get a new follower
+    * Quick solution: make a noise, or highlight latest follower for 15 mins
+    * Best solution: look into OBS overlay
 
 # Journal
+
+📆 **October 18th**    
+I want to remove the sleeps from the `jq` test. Learn more about LSP diagnostic notifications and maybe even custom notifications/logs. Maybe even look into the LSP spec for status updates.
+
 
 📆 **October 17th**    
 Hopefully get yesterday's commit committed soon. Then something...
