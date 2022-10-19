@@ -4,11 +4,12 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
+  * [ ] Explore wrapping as much of the server as possible int try/except
+  * [ ] Write the tests for the default configs currently supported
+  * [ ] Get formatters working
   * [ ] Apoyar language_id wildcard con "\*"
-  * [ ] Get default config from YAML file
   * [ ] Add a changelog file. Automate?
   * [ ] Docs
-    * [ ] Configs for various editors
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
   * [ ] Hook into LSP progress/status to give feedback about bad config
@@ -39,9 +40,17 @@ Misc
 
 # Journal
 
+📆 **October 19th**    
+Main thing is to get foramtters working, I wonder how long that will take? Could be quick! Really I need to get to all the grunt work of adding loooooooooooooads of defaults.
+
+Damn, ok, actually got to write some tests and check out wrapping server in try/except
+
 📆 **October 18th**    
 I want to remove the sleeps from the `jq` test. Learn more about LSP diagnostic notifications and maybe even custom notifications/logs. Maybe even look into the LSP spec for status updates.
 
+* [x] Configs for various editors
+
+Had a good responding to lots of issues on Pygls around the new breaking change release.
 
 📆 **October 17th**    
 Hopefully get yesterday's commit committed soon. Then something...
@@ -49,6 +58,8 @@ Hopefully get yesterday's commit committed soon. Then something...
 * Supporting more editors; Vim, Emacs and VSCode
 * More features; formatting, code actions, hover, workspace symbols, find references ...
 * Fill it up with more default configs
+
+* [x] Get default config from YAML file
 
 📆 **October 16th**    
 So mainly just want to tidy things up a bit; docs and tests mostly. Maybe start more configs.
