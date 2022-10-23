@@ -4,8 +4,9 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
-  * [ ] Explore wrapping as much of the server as possible int try/except
-  * [ ] Write the tests for the default configs currently supported
+  * [ ] Test for at least one CLI tool error
+  * [ ] Pytest timeouts
+  * [ ] Think about the LSP notification error handling problem
   * [ ] Get formatters working
   * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Add a changelog file. Automate?
@@ -16,6 +17,7 @@ CLI Tools LSP
   * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
   * [ ] Add more tests
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
+  * [ ] Grep for "SKIPPED" in CI and fail
   * [ ] Rename to "Super GLS"
   * [ ] Support diagnostic severity (info, warning, error, etc)
   * [ ] Support multiple `language_id` values
@@ -33,17 +35,24 @@ Wrach
   * [ ] Downgrade wgpu and rust-gpu, separately if you have the patience
 
 Misc
-  * [ ] Find stick/thing to stop table/webcam wobbling so much
   * [ ] Make a noise or notification when I get a new follower
-    * Quick solution: make a noise, or highlight latest follower for 15 mins
     * Best solution: look into OBS overlay
 
 # Journal
 
+📆 **October 23rd**
+First time back from being ill, catching up with everything. Couple of Pygls issues to respond to, and new idea for CLI Tools: self-contained apps, eg; auto `jqi`-like outputing of `jq` queries, could also apply to SQL, etc.
+  * [x] Find stick/thing to stop table/webcam wobbling so much
+  * [x] Write the tests for the default configs currently supported
+
+
 📆 **October 19th**    
+* [x] Quick solution: make a noise, or highlight latest follower for 15 mins
+
 Main thing is to get foramtters working, I wonder how long that will take? Could be quick! Really I need to get to all the grunt work of adding loooooooooooooads of defaults.
 
-Damn, ok, actually got to write some tests and check out wrapping server in try/except
+Damn, ok, actually need to write some tests and check out wrapping server in try/except.
+* [x] Explore wrapping as much of the server as possible in try/except
 
 📆 **October 18th**    
 I want to remove the sleeps from the `jq` test. Learn more about LSP diagnostic notifications and maybe even custom notifications/logs. Maybe even look into the LSP spec for status updates.
