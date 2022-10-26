@@ -5,8 +5,6 @@ _Ordered by most-likely-to-be-working-on-now first_
 
 CLI Tools LSP
   * [ ] Test for at least one CLI tool error
-  * [ ] Pytest timeouts
-  * [ ] Think about the LSP notification error handling problem
   * [ ] Get formatters working
   * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Add a changelog file. Automate?
@@ -40,11 +38,19 @@ Misc
 
 # Journal
 
+📆 **October 25th**
+Had another idea to dogfood Super Glass and use it to display my Mypy diagnostics. 
+  * [x] Think about the LSP notification error handling problem
+
+Got a PR sent for Pygls improved error handling
+
+Had to give up adding Mypy support because I hadn't figured out the whole thing with merging user and default config.
+
 📆 **October 23rd**
 First time back from being ill, catching up with everything. Couple of Pygls issues to respond to, and new idea for CLI Tools: self-contained apps, eg; auto `jqi`-like outputing of `jq` queries, could also apply to SQL, etc.
   * [x] Find stick/thing to stop table/webcam wobbling so much
   * [x] Write the tests for the default configs currently supported
-
+  * [x] Pytest timeouts
 
 📆 **October 19th**    
 * [x] Quick solution: make a noise, or highlight latest follower for 15 mins
