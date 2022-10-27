@@ -38,7 +38,18 @@ Misc
 
 # Journal
 
-📆 **October 25th**
+📆 **October 26th**    
+Made a couple of updates to the Pygls "Improve error handling" PR. Had some nice feedback.
+
+Just want to try to fix the config merging spaghetti. And hopefully get Mypy support done!
+
+Check 1:49 for the choppy audio thing.
+
+Got Mypy test working! And tidy up lots of other stuff that should have been tidied before. Might even have `severity` parsing working. But the Mypy LSP config not actually working in my editor.
+
+Need some sort of config like `stdout: ignore` to fix `jq` test
+
+📆 **October 25th**    
 Had another idea to dogfood Super Glass and use it to display my Mypy diagnostics. 
   * [x] Think about the LSP notification error handling problem
 
