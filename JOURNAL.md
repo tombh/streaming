@@ -20,6 +20,7 @@ CLI Tools LSP
   * [ ] Support diagnostic severity (info, warning, error, etc)
   * [ ] Support multiple `language_id` values
   * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
+  * [ ] Think about how to give feedback in the editor about day-to-day errors (eg unexpected diagnostic line formats)
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -38,6 +39,18 @@ Misc
 
 # Journal
 
+📆 **October 27th**    
+Been thinking about how to make a terminal email client, using `himalaya` and Super Glass, will explain my idea another tim.
+
+So want to figure out a good solution to `jq`, `stdout: ignore` and actually get Mypy working in my editor using Super Glass.
+
+Then maybe look into starting work on formatters.
+
+Published new version with "working", almost, version of Mypy! Relatively easy bugs to fix next time.
+
+Pretty dissapointed that that `single-source` Python package version getter, doesn't get the version when the package is published 🤦
+
+
 📆 **October 26th**    
 Made a couple of updates to the Pygls "Improve error handling" PR. Had some nice feedback.
 
@@ -45,7 +58,7 @@ Just want to try to fix the config merging spaghetti. And hopefully get Mypy sup
 
 Check 1:49 for the choppy audio thing.
 
-Got Mypy test working! And tidy up lots of other stuff that should have been tidied before. Might even have `severity` parsing working. But the Mypy LSP config not actually working in my editor.
+Got Mypy test working! And tidied up lots of other stuff that should have been tidied before. Might even have `severity` parsing working. But the Mypy LSP config not actually working in my editor.
 
 Need some sort of config like `stdout: ignore` to fix `jq` test
 
