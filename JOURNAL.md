@@ -4,20 +4,18 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 CLI Tools LSP
+  * [ ] Support workspaceEdit? Start to prototype in-editor email client
   * [ ] Test for at least one CLI tool error
-  * [ ] Get formatters working
   * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Add a changelog file. Automate?
+  * [ ] Hook into LSP progress/status to give feedback about subshell progress and bad config
   * [ ] Docs
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
-  * [ ] Hook into LSP progress/status to give feedback about bad config
   * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
   * [ ] Add more tests
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
   * [ ] Grep for "SKIPPED" in CI and fail
-  * [ ] Rename to "Super GLS"
-  * [ ] Support diagnostic severity (info, warning, error, etc)
   * [ ] Support multiple `language_id` values
   * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
   * [ ] Think about how to give feedback in the editor about day-to-day errors (eg unexpected diagnostic line formats)
@@ -39,6 +37,18 @@ Misc
 
 # Journal
 
+📆 **October 28th**    
+Early morning stream for a couple of hours. Had more thoughts about how I'd make a email client using Super Glass, basically it depends on the workspaceEdit notification coming from the server: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#workspaceEdit I'd like to take some time soon to experiment with that.
+
+But for now I just want to fix those things from yesterday and I think I'll try to do the whole rename thing to Super Glass.
+
+  * [x] Rename to "Super GLS"
+  * [x] Get formatters working
+
+2 weird things I noticed with Black:
+  1. It can add extra chars when wide (eg; 🏰) chars are in the doc
+  2. It takes a few seconds to warm up?? Until then it errors with exit code 123 🤔
+
 📆 **October 27th**    
 Been thinking about how to make a terminal email client, using `himalaya` and Super Glass, will explain my idea another tim.
 
@@ -49,6 +59,8 @@ Then maybe look into starting work on formatters.
 Published new version with "working", almost, version of Mypy! Relatively easy bugs to fix next time.
 
 Pretty dissapointed that that `single-source` Python package version getter, doesn't get the version when the package is published 🤦
+
+  * [x] Support diagnostic severity (info, warning, error, etc)
 
 
 📆 **October 26th**    
