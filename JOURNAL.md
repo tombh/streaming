@@ -37,6 +37,16 @@ Misc
 
 # Journal
 
+📆 **October 31st**    
+First things is that I want to prototype the pygls-org organisation in Github. I'll make it private for now, but just want to show the other Pygls folks my ideas ✅
+
+* Merge that improved error handling PR ✅
+* Fix the unit test mock issue I was having with the debounce feature ✅
+
+Gym ball popped at 3:45! https://clips.twitch.tv/TriangularAgreeableYogurtSmoocherZ-4Po_zRXgTbfuKF1y
+
+Are diagnostics lines off by 1 again??
+
 📆 **October 29th**    
 Spent a good while this morning trying to figure out some OBS pain points. Turns out I had set a emulated video format for the webcam which was causing lot of CPU usage even when not streaming! Feel like I almost have my perfect streaming set up; OBS on a humble 15% CPU usage, losless encoding, nice travelling mic, "second display" on my little phone 😊 BTW let me know if my audio ever goes out of sync.
 
