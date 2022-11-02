@@ -3,9 +3,13 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 
 _Ordered by most-likely-to-be-working-on-now first_    
 
-CLI Tools LSP
+Super Glass LSP
+  * [ ] Defer debounced diagnostics to ensure final doc change still gets diagnosed
+  * [ ] Fix formatter when buffer's number of lines differs from what's on disk
+  * [ ] I feel like there's a bit too much implementation-specific code in the unit tests. Eg; needing unique config_ids to bust the debounce between async tests
   * [ ] Support workspaceEdit? Start to prototype in-editor email client
-  * [ ] Test for at least one CLI tool error
+  * [ ] Test for at least one CLI tool error (publish new Pygls vesion with improved error handling)
+  * [ ] Test on windows
   * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Add a changelog file. Automate?
   * [ ] Hook into LSP progress/status to give feedback about subshell progress and bad config
@@ -36,6 +40,15 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 1st**    
+Updated the Pygls team with my October news, lots to share!
+
+Just lots of little things to do today I think.
+
+* [x] Make an issue on Pygls exploring whether Pygls itself should have support for debounce and cache
+* [x] I don't think formatters need debounce?
+* [x] Check diagnostic lines off by 1?
+* [x] Async debounce
 
 📆 **October 31st**    
 First things is that I want to prototype the pygls-org organisation in Github. I'll make it private for now, but just want to show the other Pygls folks my ideas ✅
