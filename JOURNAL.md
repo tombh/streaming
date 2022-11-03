@@ -4,7 +4,7 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 Super Glass LSP
-  * [ ] Defer debounced diagnostics to ensure final doc change still gets diagnosed
+  * [ ] Test defered debounced diagnostics
   * [ ] Fix formatter when buffer's number of lines differs from what's on disk
   * [ ] I feel like there's a bit too much implementation-specific code in the unit tests. Eg; needing unique config_ids to bust the debounce between async tests
   * [ ] Support workspaceEdit? Start to prototype in-editor email client
@@ -24,6 +24,9 @@ Super Glass LSP
   * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
   * [ ] Think about how to give feedback in the editor about day-to-day errors (eg unexpected diagnostic line formats)
 
+Pygls
+  * [ ] Refactor LSP test client timeouts
+
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
 
@@ -40,6 +43,19 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 2nd**    
+Need to publish some new versions:
+  * Pygls v1.0.0a2 ✅
+  * Pygls v0.12.5 ✅
+  * Super glass 0.6.0
+
+David G recommended me the new Ink and Switch article about "gradually enriched" text documents. It's almost exactly what I've been thinking about with the use of Super Glass for making applications, like the email client idea. https://www.inkandswitch.com/potluck
+
+* [x] Defer debounced diagnostics to ensure final doc change still gets diagnosed
+* [x] Release 0.13.0 to PyPI!
+* [x] Replace Python 3.11-dev in Pygls CI
+* [x] Namespace diagnostics and merge them, so that empty diagnostics for one tool don't delete the diagnostics for another tool
+
 📆 **November 1st**    
 Updated the Pygls team with my October news, lots to share!
 
