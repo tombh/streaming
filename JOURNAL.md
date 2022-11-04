@@ -43,6 +43,16 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 3rd**    
+Realised how to fix deferred debounce issue. Need to responde to v1 pygls thread.
+
+It would be great that I get Super Glass into a announcable state aroung the same time that pygls v1 is ready. Then annoucing all the things at once. Maybe even have a Twitch stream release party thing.
+
+Gotta go for a videocall. But had important insight about how debounced _do_ need the same key as caches, because individual tools are allowed to set their own debounce periods.
+
+Did a big refactor to only allow Features to have one config during their lifetimes. Simplifies the code a ot and gets rid of a lot of ugly guards. Also refactored Debounce to be an isolated class with all related behviour inside it. Just need to get the tests to pass now. You were here:
+`poetry run python -m pytest -vvv super_glass_lsp/lsp/custom/tests/units/test_formatter.py::test_formatter_debounce --log-cli-level=DEBUG`
+
 📆 **November 2nd**    
 Need to publish some new versions:
   * Pygls v1.0.0a2 ✅
