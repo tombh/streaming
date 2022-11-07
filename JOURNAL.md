@@ -4,11 +4,8 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 Super Glass LSP
-  * [ ] Test defered debounced diagnostics
-  * [ ] Fix formatter when buffer's number of lines differs from what's on disk
-  * [ ] I feel like there's a bit too much implementation-specific code in the unit tests. Eg; needing unique config_ids to bust the debounce between async tests
   * [ ] Support workspaceEdit? Start to prototype in-editor email client
-  * [ ] Test for at least one CLI tool error (publish new Pygls vesion with improved error handling)
+  * [ ] Test for at least one CLI tool error (publish new Pygls version with improved error handling)
   * [ ] Test on windows
   * [ ] Apoyar language_id wildcard con "\*"
   * [ ] Add a changelog file. Automate?
@@ -17,15 +14,14 @@ Super Glass LSP
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
   * [ ] Validate format token strings, eg; have to contain `line`, `col`, `msg`, ordered by priority
-  * [ ] Add more tests
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
   * [ ] Grep for "SKIPPED" in CI and fail
   * [ ] Support multiple `language_id` values
-  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
   * [ ] Think about how to give feedback in the editor about day-to-day errors (eg unexpected diagnostic line formats)
 
 Pygls
   * [ ] Refactor LSP test client timeouts
+  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -39,10 +35,26 @@ Wrach
   * [ ] Downgrade wgpu and rust-gpu, separately if you have the patience
 
 Misc
+  * [ ] Stream: rescale resolution to 1080p
   * [ ] Make a noise or notification when I get a new follower
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 7th**    
+First day back after a few days off, forgot how to do this streaming thing a bit. Gonna catch up on some Pygls messages. Then see what I geel like doing on Super Glass.
+
+* [x] Fix formatter when buffer's number of lines differs from what's on disk
+
+Released v0.5.1 of Super Glass, hopefully that can be dogfooded from now on.
+
+📆 **November 4th**    
+Sent a reply to Alex Carney on the pytest-lsp thread, we're just exploring the lay of the land at the moment. It's really great the scope vision he has for it.
+
+* [x] Test defered debounced diagnostics
+* [x] I feel like there's a bit too much implementation-specific code in the unit tests. Eg; needing unique config_ids to bust the debounce between async tests
+
+Woohoo! Completed the big refactor of `Debounce` and `Feature`, code a lot tidier, readable and intuitive I reckon. But gotta keep an eye on those new flakey e2e tests 🫤
+
 📆 **November 3rd**    
 Realised how to fix deferred debounce issue. Need to responde to v1 pygls thread.
 
