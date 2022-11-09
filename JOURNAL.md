@@ -35,11 +35,17 @@ Wrach
   * [ ] Downgrade wgpu and rust-gpu, separately if you have the patience
 
 Misc
-  * [ ] Stream: rescale resolution to 1080p
   * [ ] Make a noise or notification when I get a new follower
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 9th**    
+Some action in Pygls with fixes coming in, need to review and merge. Then not exactly sure what to do on Super Glass, but that's nice cos it means there's no big stress to get at least a basic state of usability.
+
+* [x] Stream: rescale resolution to 1080p
+
+Made a start on the Himalaya email app. Was really interesting to see how the design started to come into focus as I sketched out the YAML. It really feels like it's doable!
+
 📆 **November 7th**    
 First day back after a few days off, forgot how to do this streaming thing a bit. Gonna catch up on some Pygls messages. Then see what I geel like doing on Super Glass.
 
