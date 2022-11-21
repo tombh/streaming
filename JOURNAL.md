@@ -39,6 +39,14 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 21st**    
+Woah 11 days without a stream. Did have some thoughts about Super Glass over those days, but forgotten them now. Basically: less thoughts more coding!
+
+📆 **November 10th**    
+Surpised how interesting it was to sketch out the email client app. It was good to see how it _could_ work, even if it's not close to the final design. Also good to see how many of the pieces and precedents are already there. Feels like I'm really on to something. So just gonna carry with a bit more relaxed sketching
+
+Fleshed even more of the email client configs. Really, really interesting thinking through it all. Still seems refreshngly simple and doable
+
 📆 **November 9th**    
 Some action in Pygls with fixes coming in, need to review and merge. Then not exactly sure what to do on Super Glass, but that's nice cos it means there's no big stress to get at least a basic state of usability.
 
