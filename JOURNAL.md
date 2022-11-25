@@ -39,8 +39,17 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 24th**
+Umm. Just gonna get on with it...
+
+Commited the email client config draft sketch, with a test for loading app configs.
+
+What's next? I think `workspace_edit` support
+
 📆 **November 21st**    
 Woah 11 days without a stream. Did have some thoughts about Super Glass over those days, but forgotten them now. Basically: less thoughts more coding!
+
+Finished a reasonable design draft for the app config idea. Now starting to implement it. Left off needing to write an e2e test to trigger the server.initialize that in turn triggers the new app config loader.
 
 📆 **November 10th**    
 Surpised how interesting it was to sketch out the email client app. It was good to see how it _could_ work, even if it's not close to the final design. Also good to see how many of the pieces and precedents are already there. Feels like I'm really on to something. So just gonna carry with a bit more relaxed sketching
