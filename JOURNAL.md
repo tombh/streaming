@@ -5,6 +5,7 @@ _Ordered by most-likely-to-be-working-on-now first_
 
 Super Glass LSP
   * [ ] Support workspaceEdit? Start to prototype in-editor email client
+  * [ ] Allow apps to be initiated from LSP `initializationOptions`
   * [ ] Test for at least one CLI tool error (publish new Pygls version with improved error handling)
   * [ ] Test on windows
   * [ ] Apoyar language_id wildcard con "\*"
@@ -22,6 +23,7 @@ Super Glass LSP
 Pygls
   * [ ] Refactor LSP test client timeouts
   * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
+  * [ ] `apply_edit()` doesn't `apply_changes()`
 
 Browsh
   * [ ] Browsh: Merge Vim Keybindings PR
@@ -39,6 +41,28 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **November 29th**
+Made a test email account, so gonna try to get an actual emial inbox working!
+
+📆 **November 28th**
+What about following Potluck's recipe demo idea? So that:
+```
+"Cook for 2 mins" # automatically gets updated to:
+"Cook for __⏰2:00▶️__" # and some LSP code actions let you start, stop, reset that timer
+```
+
+Got things in place ready to actually write the Himalaya BASH script to populate a markdown inbox. Exciting
+
+Spent, what felt like a few hours trying to fix a bug, that turned out to be just an errant slash on a `file:///` 🤦 I don't think that would happen so easily in Rust.
+
+📆 **November 26th**
+Nothing to write 🤔
+
+Fiiiiiiiiinally got the WorkspaceEdit test working. Underlying problem was that Pygls expects to _receive_ workspace edits rather than request them from the client.
+
+📆 **November 25th**
+Wrote the WorkspaceEdit class. Now trying to get the first test passing. Stuck on killing the daemon to get the test to finish
+
 📆 **November 24th**
 Umm. Just gonna get on with it...
 
