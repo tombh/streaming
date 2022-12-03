@@ -41,8 +41,19 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **December 3rd**
+Exciting start: released Pygls v1! @foobully and @alcarney popped on stream ❤️
+
+Then went through all the Pygls issues to see which ones have changed now that v1 is live. Quite a few as it turns out.
+
+Then made some good progress on the Super Glass email client. Left it trying to pipe an email into  `himalaya send`
+
 📆 **November 29th**
 Made a test email account, so gonna try to get an actual emial inbox working!
+
+Inbox working! 🥳
+
+Drafted GotoDefinition feature, but my Neovim jsut won't send textDocument/definition requests in the inbox.md file, and I have no clue why 🤔
 
 📆 **November 28th**
 What about following Potluck's recipe demo idea? So that:
