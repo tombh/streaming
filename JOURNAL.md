@@ -41,6 +41,15 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **December 5th**
+Start:
+  Weren't any major problems since the Pygls v1 release, but lots of comments on the repo to respond to.
+  Then maybe do some tidying up on the Super Glass email app.
+End:
+  Think I'm pretty much there with everything that's needed for the Email app. Only thing is the bug where
+  you can't "click" on the left hand side of the "Archive" emoji button
+
+
 📆 **December 3rd**
 Exciting start: released Pygls v1! @foobully and @alcarney popped on stream ❤️
 
