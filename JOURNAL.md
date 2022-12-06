@@ -41,6 +41,16 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **December 6th**
+Start: Haven't thought much, just want to fix that regex word-finder bug thing...
+
+End:
+  Got first MVP vesion of Email client working! Inbox, viewing, replying, sending, archiving, deleting.
+  Just need to refactor this recent work.
+  Would be really good to do some progresss visualisation and feedback next.
+  Explore abilty to use CodeActions instead of GotoDefinition.
+  Then make one more app, the recipe traceker thing?
+
 📆 **December 5th**
 Start:
   Weren't any major problems since the Pygls v1 release, but lots of comments on the repo to respond to.
