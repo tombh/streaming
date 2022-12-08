@@ -4,13 +4,12 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 Super Glass LSP
-  * [ ] Support workspaceEdit? Start to prototype in-editor email client
-  * [ ] Allow apps to be initiated from LSP `initializationOptions`
-  * [ ] Test for at least one CLI tool error (publish new Pygls version with improved error handling)
-  * [ ] Test on windows
-  * [ ] Apoyar language_id wildcard con "\*"
-  * [ ] Add a changelog file. Automate?
+  * [ ] Think about flakey tests
+  * [ ] Write tests for GotoDefiniton
   * [ ] Hook into LSP progress/status to give feedback about subshell progress and bad config
+  * [ ] Allow apps to be initiated from LSP `initializationOptions`
+  * [ ] Test on windows
+  * [ ] Add a changelog file. Automate?
   * [ ] Docs
     * [ ] Help user discover LSP's `language_id` for any given CLI tool
     * [ ] `language_id`/filetype configuration is unique to every editor
@@ -18,7 +17,6 @@ Super Glass LSP
   * [ ] Automatic CI releases to Pypi on version changes. Github releases?
   * [ ] Grep for "SKIPPED" in CI and fail
   * [ ] Support multiple `language_id` values
-  * [ ] Think about how to give feedback in the editor about day-to-day errors (eg unexpected diagnostic line formats)
 
 Pygls
   * [ ] Refactor LSP test client timeouts
@@ -41,7 +39,12 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
-📆 **December 6th**
+📆 **December 7th**    
+Mostly just worked on getting error feedback working. LSP progress support next time
+* [x] Test for at least one CLI tool error
+* [x] Think about how to give feedback in the editor about day-to-day errors (eg unexpected diagnostic line formats)
+
+📆 **December 6th**    
 Start: Haven't thought much, just want to fix that regex word-finder bug thing...
 
 End:
@@ -51,7 +54,10 @@ End:
   Explore abilty to use CodeActions instead of GotoDefinition.
   Then make one more app, the recipe traceker thing?
 
-📆 **December 5th**
+* [x] Apoyar language_id wildcard con "\*"
+* [x] Support workspaceEdit? Start to prototype in-editor email client
+
+📆 **December 5th**    
 Start:
   Weren't any major problems since the Pygls v1 release, but lots of comments on the repo to respond to.
   Then maybe do some tidying up on the Super Glass email app.
@@ -60,21 +66,21 @@ End:
   you can't "click" on the left hand side of the "Archive" emoji button
 
 
-📆 **December 3rd**
+📆 **December 3rd**    
 Exciting start: released Pygls v1! @foobully and @alcarney popped on stream ❤️
 
 Then went through all the Pygls issues to see which ones have changed now that v1 is live. Quite a few as it turns out.
 
 Then made some good progress on the Super Glass email client. Left it trying to pipe an email into  `himalaya send`
 
-📆 **November 29th**
+📆 **November 29th**    
 Made a test email account, so gonna try to get an actual emial inbox working!
 
 Inbox working! 🥳
 
 Drafted GotoDefinition feature, but my Neovim jsut won't send textDocument/definition requests in the inbox.md file, and I have no clue why 🤔
 
-📆 **November 28th**
+📆 **November 28th**    
 What about following Potluck's recipe demo idea? So that:
 ```
 "Cook for 2 mins" # automatically gets updated to:
@@ -85,7 +91,7 @@ Got things in place ready to actually write the Himalaya BASH script to populate
 
 Spent, what felt like a few hours trying to fix a bug, that turned out to be just an errant slash on a `file:///` 🤦 I don't think that would happen so easily in Rust.
 
-📆 **November 26th**
+📆 **November 26th**    
 Nothing to write 🤔
 
 Fiiiiiiiiinally got the WorkspaceEdit test working. Underlying problem was that Pygls expects to _receive_ workspace edits rather than request them from the client.
@@ -93,7 +99,7 @@ Fiiiiiiiiinally got the WorkspaceEdit test working. Underlying problem was that 
 📆 **November 25th**
 Wrote the WorkspaceEdit class. Now trying to get the first test passing. Stuck on killing the daemon to get the test to finish
 
-📆 **November 24th**
+📆 **November 24th**    
 Umm. Just gonna get on with it...
 
 Commited the email client config draft sketch, with a test for loading app configs.
@@ -105,7 +111,7 @@ Woah 11 days without a stream. Did have some thoughts about Super Glass over tho
 
 Finished a reasonable design draft for the app config idea. Now starting to implement it. Left off needing to write an e2e test to trigger the server.initialize that in turn triggers the new app config loader.
 
-📆 **November 10th**    
+📆 **November 10th**     
 Surpised how interesting it was to sketch out the email client app. It was good to see how it _could_ work, even if it's not close to the final design. Also good to see how many of the pieces and precedents are already there. Feels like I'm really on to something. So just gonna carry with a bit more relaxed sketching
 
 Fleshed even more of the email client configs. Really, really interesting thinking through it all. Still seems refreshngly simple and doable
