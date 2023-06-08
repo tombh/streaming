@@ -39,6 +39,13 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **June 8th**    
+6 months since my last stream 😲 How do I do this again??
+
+* Reviewed Alex Carney's awesome TEXT_DOCUMENT_DID_SAVE PR.
+* Dug even deeper into the whole UTF16 position bug.
+* [X] REMEMBER HOW TO DO STREAMING AGAIN
+
 📆 **December 13th**    
 Had another cool idea for using LSP in the email app. Use diagnostics to show new emails.
 
