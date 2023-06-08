@@ -39,6 +39,13 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📆 **December 13th**    
+Had another cool idea for using LSP in the email app. Use diagnostics to show new emails.
+
+But first wanna see if I can get LSP progress working.
+
+LEFT OFF: `WorkDoneProgress.__init__()`: trying to know if a config has a `progress` field
+
 📆 **December 7th**    
 Mostly just worked on getting error feedback working. LSP progress support next time
 * [x] Test for at least one CLI tool error
