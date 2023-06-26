@@ -39,6 +39,19 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
+📅 **June 25th**    
+TODO:
+* [x] Create new issue(s) regarding support for LSP 3.17
+* [x] Respond to issue about dedicated `pygls-community` Github Org for keeping community servers in
+* [ ] See if I can make a quick PR demoing replacing Tox with Poetry
+* [ ] Quick PR to demo moving Implementations.md file to bottom of README
+
+LEFTOFF: Crazy spewing test output
+
+📅 **June 10th**    
+Gonna do some Pygls and Super Glass hopefully ¿
+LEFT OFF: `if self.text_doc_uri is None` in `shell()` fails ¿
+
 📆 **June 8th**    
 6 months since my last stream 😲 How do I do this again??
 
