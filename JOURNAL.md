@@ -3,7 +3,47 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 
 _Ordered by most-likely-to-be-working-on-now first_    
 
-Am I back? 🥺
+`cargo-gpu`: https://github.com/Rust-GPU/cargo-gpu
+  * [ ] Current PRs:
+    * [ ] https://github.com/Rust-GPU/cargo-gpu/pull/34
+    * [ ] https://github.com/tombh/cargo-gpu/pull/3
+    * [ ] Submit PR for `--watch` flag
+
+`rust-gpu`: https://github.com/rust-gpu/rust-gpu
+  * [ ] Start discussion about updating the docs
+  * [ ] What's the word on Rust `struct` layouts, is Crevice ok? Or is `#[repr(c)]` is enough?
+
+Wrach: https://github.com/tombh/wrach
+  * [ ] Finish Bevy rewrite
+  * [ ] Implement PIC/FLIP using `rust-gpu`
+
+Pygls: https://github.com/openlawlibrary/pygls
+  * [ ] Start adding types.
+  * [ ] Refactor LSP test client timeouts
+  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
+  * [ ] `apply_edit()` doesn't `apply_changes()`
+
+Browsh: https://github.com/browsh-org/browsh
+  * [ ] Browsh: Merge Vim Keybindings PR
+  * [ ] Rewrite everything in Rust 😏
+
+Misc
+  * [ ] Make a noise or notification when I get a new follower
+    * Best solution: look into OBS overlay
+
+# Journal
+2025
+📅 **January 21st**    
+* [x] Just say "hello" and remember how to do this streaming thing. Iruvinza, helping me out ❤️
+* [x] Update my Twitch profile.
+* [x] Make PR for doc update on `twitch-tui` repo: https://github.com/Xithrius/twitch-tui/issues/664
+
+LEFTOFF:
+* [ ] Respond to a PR review on `cargo-gpu` https://github.com/Rust-GPU/cargo-gpu/pull/34#pullrequestreview-2563118166
+
+## 2023
+
+I haven't worked on Super Glass in over 18 months 😞
 
 Super Glass LSP
   * [ ] Think about flakey tests
@@ -20,27 +60,6 @@ Super Glass LSP
   * [ ] Grep for "SKIPPED" in CI and fail
   * [ ] Support multiple `language_id` values
 
-Pygls
-  * [ ] Refactor LSP test client timeouts
-  * [ ] Remove `triggerCharacters` option from JSON example in Pygls README
-  * [ ] `apply_edit()` doesn't `apply_changes()`
-
-Browsh
-  * [ ] Browsh: Merge Vim Keybindings PR
-
-Wrach
-  * [ ] Start thinking about "Rustish-gpu"
-    * [ ] Make the repo
-    * [ ] Github action to compile the compiler
-    * [ ] What's the word on Rust `struct` layouts, is Crevice ok? Or is `#[repr(c)]` is enough?
-    * [ ] General quick guide to using rust-gpu
-  * [ ] Downgrade wgpu and rust-gpu, separately if you have the patience
-
-Misc
-  * [ ] Make a noise or notification when I get a new follower
-    * Best solution: look into OBS overlay
-
-# Journal
 📅 **June 25th**    
 TODO:
 * [x] Create new issue(s) regarding support for LSP 3.17
