@@ -32,18 +32,25 @@ Misc
     * Best solution: look into OBS overlay
 
 # Journal
-2025
+## 2025
+
+📅 **January 23rd**    
+Wrach:
+  * [ ] Migrate Bevy from 0.14 to 0.15 
+
+📅 **January 22nd**    
+* [x] Respond to a PR review on `cargo-gpu` https://github.com/Rust-GPU/cargo-gpu/pull/34#pullrequestreview-2563118166
+
 📅 **January 21st**    
 * [x] Just say "hello" and remember how to do this streaming thing. Iruvinza, helping me out ❤️
 * [x] Update my Twitch profile.
 * [x] Make PR for doc update on `twitch-tui` repo: https://github.com/Xithrius/twitch-tui/issues/664
 
-LEFTOFF:
-* [ ] Respond to a PR review on `cargo-gpu` https://github.com/Rust-GPU/cargo-gpu/pull/34#pullrequestreview-2563118166
+## 2024
+
+Didn't even stream once 😞
 
 ## 2023
-
-I haven't worked on Super Glass in over 18 months 😞
 
 Super Glass LSP
   * [ ] Think about flakey tests
