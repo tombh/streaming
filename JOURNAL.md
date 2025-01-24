@@ -34,9 +34,20 @@ Misc
 # Journal
 ## 2025
 
-📅 **January 23rd**    
+📅 **January 24th**    
+LEFTOFF:
+  * Thinking about using https://github.com/elastio/bon as a way of being strict with `#[non_exhaustive]` 🤔
+
 Wrach:
+  * At 0h18m I increased the bit rate from 2500kbos to 3000. Check what difference it made.
+  * Found https://github.com/nicopap/bevy_mod_sysfail. I think it basically allows using Rust's idiomatic `?` operator in Bevy systems. I'd like to implement this one day.
   * [ ] Migrate Bevy from 0.14 to 0.15 
+  * [ ] Experiment with the `capability = []` config to allow `enum`s in shaders.
+
+📅 **January 23rd**    
+Misc:
+  * Debugged problems with the Wifi, or at least the internet in my current apartment. So ended up just on 4g. Made a new `tbx watch_claro_balance` command by scraping https://simple.claro.com.ar/inicio. Researched data packs, the best pack seems to be the 15Gb for 8000 pesos, so about 530 pesos per Gb. And rough calculations show that just streaming itself uses about 1Gb per hour.
+  * See 2h55m in VoD to check the quality of the particle sim.
 
 📅 **January 22nd**    
 * [x] Respond to a PR review on `cargo-gpu` https://github.com/Rust-GPU/cargo-gpu/pull/34#pullrequestreview-2563118166
