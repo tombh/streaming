@@ -34,14 +34,19 @@ Misc
 # Journal
 ## 2025
 
-📅 **January 24th**    
+📅 **January 26th**    
+  * [x] Migrate Bevy from 0.14 to 0.15 
+
+LEFTOFF:
+  * Found a big bug in my `cargo-gpu` `support-ci-testing-old-rust-gpu-versions` branch, it doesn't support workspaces!
+  
+📅 **January 25th**    
 LEFTOFF:
   * Thinking about using https://github.com/elastio/bon as a way of being strict with `#[non_exhaustive]` 🤔
 
 Wrach:
   * At 0h18m I increased the bit rate from 2500kbos to 3000. Check what difference it made.
   * Found https://github.com/nicopap/bevy_mod_sysfail. I think it basically allows using Rust's idiomatic `?` operator in Bevy systems. I'd like to implement this one day.
-  * [ ] Migrate Bevy from 0.14 to 0.15 
   * [ ] Experiment with the `capability = []` config to allow `enum`s in shaders.
 
 📅 **January 23rd**    
