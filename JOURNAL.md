@@ -4,10 +4,6 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 _Ordered by most-likely-to-be-working-on-now first_    
 
 `cargo-gpu`: https://github.com/Rust-GPU/cargo-gpu
-  * [ ] Current PRs:
-    * [ ] https://github.com/Rust-GPU/cargo-gpu/pull/34
-    * [ ] https://github.com/tombh/cargo-gpu/pull/3
-    * [ ] Submit PR for `--watch` flag
 
 `rust-gpu`: https://github.com/rust-gpu/rust-gpu
   * [ ] Start discussion about updating the docs
@@ -16,6 +12,7 @@ _Ordered by most-likely-to-be-working-on-now first_
 Wrach: https://github.com/tombh/wrach
   * [ ] Finish Bevy rewrite
   * [ ] Implement PIC/FLIP using `rust-gpu`
+  * [ ] Experiment with the `capability = []` config to allow `enum`s in shaders.
 
 Pygls: https://github.com/openlawlibrary/pygls
   * [ ] Start adding types.
@@ -34,6 +31,14 @@ Misc
 # Journal
 ## 2025
 
+📅 **January 28th**    
+Wrach:
+  * [ ] See if workgroup offer any speed improvements
+
+📅 **January 27th**    
+  * [x] Submitted PR: https://github.com/Rust-GPU/cargo-gpu/pull/41
+  * [x] Submitted PR: https://github.com/Rust-GPU/cargo-gpu/pull/42
+
 📅 **January 26th**    
   * [x] Migrate Bevy from 0.14 to 0.15 
 
@@ -47,7 +52,6 @@ LEFTOFF:
 Wrach:
   * At 0h18m I increased the bit rate from 2500kbos to 3000. Check what difference it made.
   * Found https://github.com/nicopap/bevy_mod_sysfail. I think it basically allows using Rust's idiomatic `?` operator in Bevy systems. I'd like to implement this one day.
-  * [ ] Experiment with the `capability = []` config to allow `enum`s in shaders.
 
 📅 **January 23rd**    
 Misc:
