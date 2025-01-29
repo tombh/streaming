@@ -3,6 +3,15 @@ _Each one of these should be usefully descriptive of what I'm working on during 
 
 _Ordered by most-likely-to-be-working-on-now first_    
 
+Tattoy:
+  * [ ] Explore a method to get any terminal's pallette colours in true colours.
+  * [ ] Resizing isn't detected.
+  * [ ] Up and down aren't detected in `less` or `htop`.
+  * [ ] Double width characters aren't passed through, eg "🦀".
+  * [ ] `tmux` mouse events cause runaway behaviour in `htop`.
+  * [ ] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
+  * [ ] Doesn't work on Nushell. Just freezes.
+
 `cargo-gpu`: https://github.com/Rust-GPU/cargo-gpu
 
 `rust-gpu`: https://github.com/rust-gpu/rust-gpu
@@ -31,9 +40,20 @@ Misc
 # Journal
 ## 2025
 
+📅 **January 29th**    
+* Look into using https://github.com/kas-gui/easy-cast instead of `as` conversions. Thanks @JustusFluegel.
+Tattoy:
+  * [x] Background colour of " " (space) isn't passed through.
+  * [x] Bold doesn't get passed through properly, run `htop` to see.
+  * [x] Cursor isn't transparent.
+
+LEFTOFF:
+Trying to get the PTY to recognise resize. Managed to get it resizing sideways but quite up and down.
+
 📅 **January 28th**    
 Wrach:
   * [ ] See if workgroup offer any speed improvements
+  * Hit yet another showstopper 🤦 A `cargo` coredump, made a discussion on the Bevy repo to see if anybody has any ideas: https://github.com/bevyengine/bevy/discussions/17583
 
 📅 **January 27th**    
   * [x] Submitted PR: https://github.com/Rust-GPU/cargo-gpu/pull/41
