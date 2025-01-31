@@ -2,8 +2,17 @@
 ## 2025
 
 📅 **January 30th**    
+Tattoy:
+  * [ ] Look into performance, especially scrolling in nvim.
+  * [ ] Explore a method to get any terminal's pallette colours in true colours.
+  * [ ] Up and down aren't detected in `less` or `htop`.
+  * [ ] Double width characters aren't passed through, eg "🦀".
+
+📅 **January 30th**    
 Morning:
 Just spent nearly 4 hours working on resizing. Very nearly there. Also wrote up some really helpful docs in the README about the 6, yes 6, different terminal-like things in Tattoy.
+
+Evening: Finally got resizing done and started on performance improvements.
 
 📅 **January 29th**    
 * Look into using https://github.com/kas-gui/easy-cast instead of `as` conversions. Thanks @JustusFluegel.
