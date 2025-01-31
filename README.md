@@ -15,9 +15,10 @@ Tattoy:
   * [x] Resizing isn't detected.
   * [ ] Look into performance, especially scrolling in nvim.
   * [ ] Explore a method to get any terminal's pallette colours in true colours.
-  * [ ] Up and down aren't detected in `less` or `htop`.
+  * [ ] Implement scrollback/history.
   * [ ] Double width characters aren't passed through, eg "🦀".
   * [ ] `tmux` mouse events cause runaway behaviour in `htop`.
+  * [ ] Look at projects like Ratatui to see how to do integration tests.
   * [ ] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
   * [ ] Doesn't work on Nushell. Just freezes.
 

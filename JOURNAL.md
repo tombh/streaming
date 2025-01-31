@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **January 31st**    
+  * I tried `tokio-console` but conficted with my existing `tokio-subscriber` ENV filter and file log. Also it made Rust re-compile EVERYTHING on every little code change. But it was interesting because it showed that Tokio creates a whole new blocking task for every single key press 🤔 I feel like figuring that out could lock a big performance boost.
+  * Also want to try: https://github.com/KDAB/hotspot and https://github.com/flamegraph-rs/flamegraph and generally follow the advice from https://nnethercote.github.io/perf-book/profiling.html
+  
 📅 **January 30th**    
 Tattoy:
   * [ ] Look into performance, especially scrolling in nvim.
