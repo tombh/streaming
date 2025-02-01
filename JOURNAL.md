@@ -1,13 +1,16 @@
 # Journal
 ## 2025
 
+📅 **February**    
+  * [x] Look into performance, especially scrolling in nvim.
+  * Started looking into history/scrollback. Made the sobering realisation that we have to intercept STDIN, parse the bytes for known events, and if we consume those bytes then they should also be culled, ie not forwarded. Whilst I think that's possible, I feel like it would be buggy 🤔
+  
 📅 **January 31st**    
   * I tried `tokio-console` but conficted with my existing `tokio-subscriber` ENV filter and file log. Also it made Rust re-compile EVERYTHING on every little code change. But it was interesting because it showed that Tokio creates a whole new blocking task for every single key press 🤔 I feel like figuring that out could lock a big performance boost.
   * Also want to try: https://github.com/KDAB/hotspot and https://github.com/flamegraph-rs/flamegraph and generally follow the advice from https://nnethercote.github.io/perf-book/profiling.html
   
 📅 **January 30th**    
 Tattoy:
-  * [ ] Look into performance, especially scrolling in nvim.
   * [ ] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Up and down aren't detected in `less` or `htop`.
   * [ ] Double width characters aren't passed through, eg "🦀".

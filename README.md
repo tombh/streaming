@@ -13,9 +13,9 @@ _Ordered by most-likely-to-be-working-on-now first_
 
 Tattoy:
   * [x] Resizing isn't detected.
-  * [ ] Look into performance, especially scrolling in nvim.
-  * [ ] Explore a method to get any terminal's pallette colours in true colours.
+  * [x] Look into performance, especially scrolling in nvim.
   * [ ] Implement scrollback/history.
+  * [ ] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Double width characters aren't passed through, eg "🦀".
   * [ ] `tmux` mouse events cause runaway behaviour in `htop`.
   * [ ] Look at projects like Ratatui to see how to do integration tests.
