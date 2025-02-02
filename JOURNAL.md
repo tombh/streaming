@@ -1,7 +1,12 @@
 # Journal
 ## 2025
 
-📅 **February**    
+📅 **February 2nd** 
+  Went down a winding rabbit hole trying to figure out how to gracefully exit in all circumstances, in order that the user's terminal is always returned to "cooked" mode. The big problem is that I don't think there's a way to pass the `impl BufferedTerminal` terminal between tasks/threads 🤔 But I think it might be possible to actually make all exiting happen through the renderer, so that the `BufferedTerminal` doesn't need to be passed around 🤞
+  * [x] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
+  * [ ] Implement scrollback/history.
+
+📅 **February 1st**    
   * [x] Look into performance, especially scrolling in nvim.
   * Started looking into history/scrollback. Made the sobering realisation that we have to intercept STDIN, parse the bytes for known events, and if we consume those bytes then they should also be culled, ie not forwarded. Whilst I think that's possible, I feel like it would be buggy 🤔
   

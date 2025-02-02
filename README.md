@@ -14,12 +14,12 @@ _Ordered by most-likely-to-be-working-on-now first_
 Tattoy:
   * [x] Resizing isn't detected.
   * [x] Look into performance, especially scrolling in nvim.
+  * [x] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
   * [ ] Implement scrollback/history.
   * [ ] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Double width characters aren't passed through, eg "🦀".
   * [ ] `tmux` mouse events cause runaway behaviour in `htop`.
   * [ ] Look at projects like Ratatui to see how to do integration tests.
-  * [ ] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
   * [ ] Doesn't work on Nushell. Just freezes.
 
 `cargo-gpu`: https://github.com/Rust-GPU/cargo-gpu
