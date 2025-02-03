@@ -2,7 +2,10 @@
 ## 2025
 
 📅 **February 3rd**   
-Afternoon: Finally got graceful shutdown working!
+Afternoon:
+* Finally got graceful shutdown working!
+* Had a awesome chat with @new_duck about their Porffor project, their living the dream, making a living writing open source. Want to make sure that keep abreast of all developments https://bsky.app/profile/goose.icu
+
 
 📅 **February 2nd**   
 Went down a winding rabbit hole trying to figure out how to gracefully exit in all circumstances, in order that the user's terminal is always returned to "cooked" mode. The big problem is that I don't think there's a way to pass the `impl BufferedTerminal` terminal between tasks/threads 🤔 But I think it might be possible to actually make all exiting happen through the renderer, so that the `BufferedTerminal` doesn't need to be passed around 🤞
