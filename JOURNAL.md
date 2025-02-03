@@ -1,8 +1,11 @@
 # Journal
 ## 2025
 
-📅 **February 2nd** 
-  Went down a winding rabbit hole trying to figure out how to gracefully exit in all circumstances, in order that the user's terminal is always returned to "cooked" mode. The big problem is that I don't think there's a way to pass the `impl BufferedTerminal` terminal between tasks/threads 🤔 But I think it might be possible to actually make all exiting happen through the renderer, so that the `BufferedTerminal` doesn't need to be passed around 🤞
+📅 **February 3rd**   
+Afternoon: Finally got graceful shutdown working!
+
+📅 **February 2nd**   
+Went down a winding rabbit hole trying to figure out how to gracefully exit in all circumstances, in order that the user's terminal is always returned to "cooked" mode. The big problem is that I don't think there's a way to pass the `impl BufferedTerminal` terminal between tasks/threads 🤔 But I think it might be possible to actually make all exiting happen through the renderer, so that the `BufferedTerminal` doesn't need to be passed around 🤞
   * [x] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
   * [ ] Implement scrollback/history.
 
