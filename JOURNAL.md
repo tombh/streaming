@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **February 4th**   
+Just keep on keeping on with Tattoy
+
+
 📅 **February 3rd**   
 Afternoon:
 * Finally got graceful shutdown working!

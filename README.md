@@ -15,6 +15,8 @@ Tattoy:
   * [x] Resizing isn't detected.
   * [x] Look into performance, especially scrolling in nvim.
   * [x] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
+  * [ ] Look at projects like Ratatui to see how to do integration tests.
+  * [ ] Resizing is broken.
   * [ ] Implement scrollback/history.
   * [ ] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Double width characters aren't passed through, eg "🦀".
