@@ -2,7 +2,8 @@
 ## 2025
 
 📅 **February 4th**   
-Just keep on keeping on with Tattoy
+Tattoy:
+Got a nice little refactor done of the tasks/threads, now everything is passed throguh `Err` and `?`, rather than using shared global state to keep the error.
 
 
 📅 **February 3rd**   
