@@ -2,9 +2,12 @@
 ## 2025
 
 📅 **February 4th**   
-Tattoy:
-Got a nice little refactor done of the tasks/threads, now everything is passed throguh `Err` and `?`, rather than using shared global state to keep the error.
+Afternoon:
+Got a nice little refactor done of the tasks/threads, now everything is passed throguh `Err` and `?`, 
+rather than using shared global state to keep the error.
 
+Evening:
+Decided to refactor out PTY and shadow_tty into ShadowTerminal. This will allow me to dogfood significant parts of Tatty for integration testing.
 
 📅 **February 3rd**   
 Afternoon:
