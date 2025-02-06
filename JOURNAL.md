@@ -2,13 +2,16 @@
 ## 2025
 
 📅 **February 6th**    
-Morning: carrying on with the shadoow terminal refactor
+Morning: Carrying on with the shadoow terminal refactor
+Afternoon:
+Finally got the ShadowTerminal refactor working! 🥳 Still some minor bugs around complete shutdown. And need satisfy all the Clippy lints. But great progress, feeling good 😊.
 
 📅 **February 5th**    
 Morning:
 Continue with the refactor of the shadow terminal...
 Evening:
 Over 8 hours streaming! Just continued with the refactor of the shadow terminal. Feel like a good sketch of the design is in place, just pair programming with Clippy now.
+Had great chat with tarb, he linked a paper from his team about CD at scale: https://www.usenix.org/conference/osdi23/presentation/grubic
 
 📅 **February 4th**   
 Afternoon:
