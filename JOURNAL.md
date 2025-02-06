@@ -1,6 +1,15 @@
 # Journal
 ## 2025
 
+📅 **February 6th**    
+Morning: carrying on with the shadoow terminal refactor
+
+📅 **February 5th**    
+Morning:
+Continue with the refactor of the shadow terminal...
+Evening:
+Over 8 hours streaming! Just continued with the refactor of the shadow terminal. Feel like a good sketch of the design is in place, just pair programming with Clippy now.
+
 📅 **February 4th**   
 Afternoon:
 Got a nice little refactor done of the tasks/threads, now everything is passed throguh `Err` and `?`, 

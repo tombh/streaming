@@ -45,6 +45,10 @@ Browsh: https://github.com/browsh-org/browsh
   * [ ] Browsh: Merge Vim Keybindings PR
   * [ ] Rewrite everything in Rust 😏
 
+
+Total Viewsheds: https://github.com/tombh/total-viewsheds
+  * [ ] Rewrite in Rust! 🚀🦀
+
 Misc
   * [ ] Make a noise or notification when I get a new follower
     * Best solution: look into OBS overlay
