@@ -3,6 +3,7 @@
 
 📅 **February 7th**    
 Morning: hoping to wrap up the shadow terminal, with both tests for the shadow terminal crate itself, and to use that new crate to test Tattoy.
+Afternoon: got really stuck in the Tokio runtime not spawning tasks in tests. I've spent hours on it now and not figuired it out. I have a hunch that it's to do with opening a PTY, that it somehow interferes with the Tokio runtime. Feeling pretty demoralised 😞
 
 📅 **February 6th**    
 Morning: Carrying on with the shadoow terminal refactor
