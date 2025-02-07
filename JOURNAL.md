@@ -1,6 +1,9 @@
 # Journal
 ## 2025
 
+📅 **February 7th**    
+Morning: hoping to wrap up the shadow terminal, with both tests for the shadow terminal crate itself, and to use that new crate to test Tattoy.
+
 📅 **February 6th**    
 Morning: Carrying on with the shadoow terminal refactor
 Afternoon:

@@ -16,7 +16,7 @@ Tattoy:
   * [x] Look into performance, especially scrolling in nvim.
   * [x] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
   * [x] Resizing is broken.
-  * [ ] Look at projects like Ratatui to see how to do integration tests.
+  * [ ] Refactor "shadow terminal" into its own crate and use it for dogfoodable testing.
   * [ ] Implement scrollback/history.
   * [ ] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Double width characters aren't passed through, eg "🦀".
