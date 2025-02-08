@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **February 8th**    
+Morning: feeling ready for the day, but worried that I'm not going to figure out this Tokio tests issue. Basically the best thing would be to come up with a minimal reproduction and show that to some people with more experience.
+Afternoon: finally finished the shadow terminal refactor! 🥳 It's such a relief. Everything's working well, the tests, they're soooo fast, like unit tests even. And the original application itself still works of course haha, maybe even a bit faster too.
+* [x] Refactor "shadow terminal" into its own crate and use it for dogfoodable testing.
 
 📅 **February 7th**    
 Morning: hoping to wrap up the shadow terminal, with both tests for the shadow terminal crate itself, and to use that new crate to test Tattoy.
