@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **February 9th**    
+* Dom Rocks recommended Rob Scallon learning Kora: https://www.youtube.com/watch?v=PTWpoZITraE
+* Made good progress on writing actual e2e tests for Tattoy. Got quite stuck in the resize tests, but it's good because it's surfacing lots kinks in the Shadow Terminal code.
+
 📅 **February 8th**    
 Morning: feeling ready for the day, but worried that I'm not going to figure out this Tokio tests issue. Basically the best thing would be to come up with a minimal reproduction and show that to some people with more experience.
 Afternoon: finally finished the shadow terminal refactor! 🥳 It's such a relief. Everything's working well, the tests, they're soooo fast, like unit tests even. And the original application itself still works of course haha, maybe even a bit faster too.
