@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **February 11th**    
+Morning: Didn't stream yesterday, weird. So just want to continue with the e2e tests today. Maybe get on to supporting scrollback?
+Evening: Got all the e2e tests working locally with a `--retry 1` to get a couple of the flakey tests passing. But tattoy::e2e::resizing fails consistently on CI 😞
+* YourInty shared the talk on the cool Amiga demo: https://www.youtube.com/watch?v=WDfrA7PE-G0
+
 📅 **February 9th**    
 * Dom Rocks recommended Rob Scallon learning Kora: https://www.youtube.com/watch?v=PTWpoZITraE
 * Made good progress on writing actual e2e tests for Tattoy. Got quite stuck in the resize tests, but it's good because it's surfacing lots kinks in the Shadow Terminal code.
