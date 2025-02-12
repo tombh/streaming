@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **February 12th**    
+Morning: Made some comments on `cargo-gpu`, felt a bit awkward 🙈 Gotta start now with the e2e test fail on CI, it is very weird, hopefully it takes me less than a week to fix 🤞
+Afternoon: Yay \o/ I did 🥳 e2e tests passing on CI. And improved a few other little things whilst I was at it. Now onto scrollback.
+Evcening: Beginning to implement alternate scree behaviour. A bit uncomfortable about basically just sending `IsAlternateScreen` messages everywhere. It works, but is there not another way?
+
 📅 **February 11th**    
 Morning: Didn't stream yesterday, weird. So just want to continue with the e2e tests today. Maybe get on to supporting scrollback?
 Evening: Got all the e2e tests working locally with a `--retry 1` to get a couple of the flakey tests passing. But tattoy::e2e::resizing fails consistently on CI 😞
