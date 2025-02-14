@@ -1,7 +1,9 @@
 # Journal
 ## 2025
 📅 **February 14th**    
-Made some off-stream progress yesterday, have the basics of scolling working 🎉 So main thing is to tidy that up and work on a default Tattoy that shows a scrollbar. Then maybe work on a minimap Tattoy??
+* Made some off-stream progress yesterday, have the basics of scolling working 🎉 So main thing is to tidy that up and work on a default Tattoy that shows a scrollbar. Then maybe work on a minimap Tattoy??
+* Dom Rocks youtube: https://www.youtube.com/channel/UCLSPUhzFZWnS741w7iJ9x-A
+* Great progress on scrollback, some refactoring has simplified things. I'm leaving things a bit in limbo, need to decide wether the `Screen` surface update is just for the alternate screen, or is also for the view when scrolling? I feel the latter, but I'm bit nervous about keeping the scrollback in sync. Like, how does a tattoy that works on the scrollback get itself rendered. Consider a tattoy that "rots" old text in the scrollback 🤔
 
 📅 **February 12th**    
 Morning: Made some comments on `cargo-gpu`, felt a bit awkward 🙈 Gotta start now with the e2e test fail on CI, it is very weird, hopefully it takes me less than a week to fix 🤞
