@@ -17,11 +17,11 @@ Tattoy:
   * [x] `CTRL-D` doesn't fully return to terminal, needs extra `CTRL-C`.
   * [x] Resizing is broken.
   * [x] Refactor "shadow terminal" into its own crate and use it for dogfoodable testing.
-  * [ ] Write some e2e tests with the new `SteppableTerminal` module.
+  * [x] Write some e2e tests with the new `SteppableTerminal` module.
+  * [x] `tmux` mouse events cause runaway behaviour in `htop`.
   * [ ] Implement scrollback/history.
   * [ ] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Double width characters aren't passed through, eg "🦀".
-  * [ ] `tmux` mouse events cause runaway behaviour in `htop`.
   * [ ] Look at projects like Ratatui to see how to do integration tests.
   * [ ] Doesn't work on Nushell. Just freezes.
 

@@ -1,5 +1,8 @@
 # Journal
 ## 2025
+📅 **February 14th**    
+Made some off-stream progress yesterday, have the basics of scolling working 🎉 So main thing is to tidy that up and work on a default Tattoy that shows a scrollbar. Then maybe work on a minimap Tattoy??
+
 📅 **February 12th**    
 Morning: Made some comments on `cargo-gpu`, felt a bit awkward 🙈 Gotta start now with the e2e test fail on CI, it is very weird, hopefully it takes me less than a week to fix 🤞
 Afternoon: Yay \o/ I did 🥳 e2e tests passing on CI. And improved a few other little things whilst I was at it. Now onto scrollback.
