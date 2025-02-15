@@ -1,5 +1,8 @@
 # Journal
 ## 2025
+📅 **February 15th**    
+Morning: Responded to some Github comments on `cargo-gpu` and `stc`. Going to get on with scrollback support in Tattoy.
+
 📅 **February 14th**    
 * Made some off-stream progress yesterday, have the basics of scolling working 🎉 So main thing is to tidy that up and work on a default Tattoy that shows a scrollbar. Then maybe work on a minimap Tattoy??
 * Dom Rocks youtube: https://www.youtube.com/channel/UCLSPUhzFZWnS741w7iJ9x-A
