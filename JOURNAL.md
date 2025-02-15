@@ -2,6 +2,9 @@
 ## 2025
 📅 **February 15th**    
 Morning: Responded to some Github comments on `cargo-gpu` and `stc`. Going to get on with scrollback support in Tattoy.
+Evening:
+  * Finally finished basic scrollback! Just need to write some tests before commmiting. Then make a new Tattoy that shows a nice little scrollbar on the right.
+  * Vacillated a bit on how to support shared state in the Tattoys loader thread. Eventually just bit the bullet and added the async-traits crate, and it just worked 💪 Which meant that I could change all the read/write locks in the shared state to async. Also I discovered `tokio::sync::watch` which could well be better than the current `Arc<SharedState<...tokio::sync::RwLock>>`, but let's optimise prematurely.
 
 📅 **February 14th**    
 * Made some off-stream progress yesterday, have the basics of scolling working 🎉 So main thing is to tidy that up and work on a default Tattoy that shows a scrollbar. Then maybe work on a minimap Tattoy??
