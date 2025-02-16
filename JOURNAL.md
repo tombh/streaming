@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **February 16th**
+Morning: Just gotta get some test for scrolling done, then I can start on a Tattoy scrollbar!
+Afternoon: Had some poor internet, interruptions started around 1pm and some big drops at 3.30pm 😞
+Evening: Got the scrolling test working! Were some quite hairy moments with all of the things to consider around input. Ended up having to make the Steppable Terminal use OSC Paste to send more than one character to the Tattoy instance. But couldn't tests to pass on CI 😭 I _think_ it's because Github's `sh` gets confused about OSC codes, so tomorrow I'll see if I can get BASH working instead 🤞.
+
 📅 **February 15th**    
 Morning: Responded to some Github comments on `cargo-gpu` and `stc`. Going to get on with scrollback support in Tattoy.
 Evening:
