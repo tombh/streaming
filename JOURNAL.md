@@ -1,6 +1,11 @@
 # Journal
 ## 2025
-📅 **February 17th**
+📅 **February 18th**
+Morning: Actually got transparent scrollbar working last night, after stream. So just want to do some tidying up of the code, then can commit. Then might have a look at using a screen capture to get the terminal palette's true colours.
+Afternoon: Basically did everything I said I would from this morning. Stopped at an interesting place, where I'm bucketing all the colours in the screenshot that have continuous runs. I can see that the most common run length is 7, and I'm assuming that they represent all the colour squares printed out by the terminal. Feeling hopeful 🤞
+
+
+📅 **February 17th**    
 Afternoon: late start today. Got e2e scrolling test working on Github, turned out to be just `sh` weirdness, so using BASH everywhere now. So going to try to make a scrollbar at last 🎉
 Evening: Got the scrollbar working 😏 Now in the middle of implementing opacity, getting bogged down in the performance of querying the character for the layer below.
 
