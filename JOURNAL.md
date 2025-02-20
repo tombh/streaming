@@ -2,6 +2,7 @@
 ## 2025
 📅 **February 20th**    
 Morning: Started straight into some buffer bloat on the wifi, so switched to 4g 🫤 So just gonna crack on with the palette parsing stuff. Wondering about whether the first thing I do with true colour is make the minimap, it'd be so cool to see it live updating as you type, scroll and open nvim.
+Afternoon: Pushed the palette parser commit! Was some trouble with lib*-dev packages on CI. But now trying to actually use the palette in the compositor.
 
 📅 **February 19th**     
 Morning: Using hotspot to proxy the apartment's 2.4Ghz wifi to 5Ghz, so hopefully then if I need to switch between wifi and 4g it'll be easier, like I won't have to close and reopen OBS. But basically hoping to get palette parsing done today. Will also require setting up config directories, because I'll need to save the palette colours somewhere. But would be really cool if I can do something with the true colours today, like a raindrop effect?

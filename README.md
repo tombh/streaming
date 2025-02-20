@@ -19,8 +19,8 @@ Tattoy:
   * [x] Refactor "shadow terminal" into its own crate and use it for dogfoodable testing.
   * [x] Write some e2e tests with the new `SteppableTerminal` module.
   * [x] `tmux` mouse events cause runaway behaviour in `htop`.
-  * [ ] Implement scrollback/history.
-  * [ ] Explore a method to get any terminal's pallette colours in true colours.
+  * [x] Implement scrollback/history.
+  * [x] Explore a method to get any terminal's pallette colours in true colours.
   * [ ] Double width characters aren't passed through, eg "🦀".
   * [ ] Look at projects like Ratatui to see how to do integration tests.
   * [ ] Doesn't work on Nushell. Just freezes.
