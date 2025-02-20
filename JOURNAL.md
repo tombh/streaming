@@ -1,9 +1,15 @@
 # Journal
 ## 2025
-📅 **February 18th**
+📅 **February 20th**    
+Morning: Started straight into some buffer bloat on the wifi, so switched to 4g 🫤 So just gonna crack on with the palette parsing stuff. Wondering about whether the first thing I do with true colour is make the minimap, it'd be so cool to see it live updating as you type, scroll and open nvim.
+
+📅 **February 19th**     
+Morning: Using hotspot to proxy the apartment's 2.4Ghz wifi to 5Ghz, so hopefully then if I need to switch between wifi and 4g it'll be easier, like I won't have to close and reopen OBS. But basically hoping to get palette parsing done today. Will also require setting up config directories, because I'll need to save the palette colours somewhere. But would be really cool if I can do something with the true colours today, like a raindrop effect?
+Evening: Got palette parsing done!! I am sooooo happy about this. It remains to be seen how it works in real world conditions, but it works damn well right now. Want to write a test for detecting false positive row starts. Then can get on with adding the found true colours to config. Also, should really ask for consent before taking a screenshot.
+
+📅 **February 18th**    
 Morning: Actually got transparent scrollbar working last night, after stream. So just want to do some tidying up of the code, then can commit. Then might have a look at using a screen capture to get the terminal palette's true colours.
 Afternoon: Basically did everything I said I would from this morning. Stopped at an interesting place, where I'm bucketing all the colours in the screenshot that have continuous runs. I can see that the most common run length is 7, and I'm assuming that they represent all the colour squares printed out by the terminal. Feeling hopeful 🤞
-
 
 📅 **February 17th**    
 Afternoon: late start today. Got e2e scrolling test working on Github, turned out to be just `sh` weirdness, so using BASH everywhere now. So going to try to make a scrollbar at last 🎉
