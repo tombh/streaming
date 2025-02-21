@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **February 21st**    
+Morning: Last night I managed to get programtic colour manipulation working, like saturation, lightening etc. So I was thinking that a nice thing to do today, would be to support changing those colour values dynamically in config.
+Evening: Commited colour grading! Sooooooooooo cool, got config hot reloading changing the saturation, brightness etc of the final Tattoy render 🤯
+
 📅 **February 20th**    
 Morning: Started straight into some buffer bloat on the wifi, so switched to 4g 🫤 So just gonna crack on with the palette parsing stuff. Wondering about whether the first thing I do with true colour is make the minimap, it'd be so cool to see it live updating as you type, scroll and open nvim.
 Afternoon: Pushed the palette parser commit! Was some trouble with lib*-dev packages on CI. But now trying to actually use the palette in the compositor.
