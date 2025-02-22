@@ -1,5 +1,8 @@
 # Journal
 ## 2025
+📅 **February 22nd**
+Had some really great chats today ❤️ I think because of the weekend, had a view more visitors than usual. So not so much coding, but was fun anyway. Replace `clipman` with `cliphist`, hopefully that solves my long-standing clipboard annoyance where copying would fail like 10 times per day 🥺 Also, got a MVP versio of a terminal minimap working 💪 Crude and slow, but wow, am I the first person to ever make a terminal minimap??
+
 📅 **February 21st**    
 Morning: Last night I managed to get programtic colour manipulation working, like saturation, lightening etc. So I was thinking that a nice thing to do today, would be to support changing those colour values dynamically in config.
 Evening: Commited colour grading! Sooooooooooo cool, got config hot reloading changing the saturation, brightness etc of the final Tattoy render 🤯
