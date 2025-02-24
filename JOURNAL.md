@@ -2,6 +2,7 @@
 ## 2025
 📅 **February 24th**     
 Morning: I was thinking it'd be good to just carry on with the minimap, want to make it behave exactly like the VSCode one. And also think I can improve performance.
+Evening: Did the big diff-support refactor, but didn't quite make it. Realised that I can actuall pass Termwiz changeset over the protocol channels, should be exactly what we need.
 
 📅 **February 23rd**     
 Morning: Had a nice idea this morning, all pixel surfaces should actually be constructed using an `image` of pixels whose resolution is significantly bigger than the TTY screen, then we can use `image`'s resize functionality to allow placing pixels at something more like floating point resolution. For example, when a pixel is close to the borders of multiple TTY cells, its colour can bleed between the cells, giving the illusion that its moving a units of the TTY, but the higher units of the imatge. Aaaaanyway, still need to tidy up the minimap. I think there's even a pretty significant bug in the existing pixel placement code.
