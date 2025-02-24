@@ -1,6 +1,16 @@
 # Journal
 ## 2025
-📅 **February 22nd**
+📅 **February 24th**     
+Morning: I was thinking it'd be good to just carry on with the minimap, want to make it behave exactly like the VSCode one. And also think I can improve performance.
+
+📅 **February 23rd**     
+Morning: Had a nice idea this morning, all pixel surfaces should actually be constructed using an `image` of pixels whose resolution is significantly bigger than the TTY screen, then we can use `image`'s resize functionality to allow placing pixels at something more like floating point resolution. For example, when a pixel is close to the borders of multiple TTY cells, its colour can bleed between the cells, giving the illusion that its moving a units of the TTY, but the higher units of the imatge. Aaaaanyway, still need to tidy up the minimap. I think there's even a pretty significant bug in the existing pixel placement code.
+* @YourInty's blog:
+  * https://www.jlatza.de/posts/index.xml
+  * https://www.jlatza.de/en/posts/index.xml
+* Let it be known, that on this date, Febraraury 23rd 2025, @zebcode came up with "Hackalong". From hence forth I shall be describing my streams using the aforementioned noun.
+
+📅 **February 22nd**   
 Had some really great chats today ❤️ I think because of the weekend, had a view more visitors than usual. So not so much coding, but was fun anyway. Replace `clipman` with `cliphist`, hopefully that solves my long-standing clipboard annoyance where copying would fail like 10 times per day 🥺 Also, got a MVP versio of a terminal minimap working 💪 Crude and slow, but wow, am I the first person to ever make a terminal minimap??
 
 📅 **February 21st**    
