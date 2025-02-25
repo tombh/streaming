@@ -1,6 +1,11 @@
 # Journal
 ## 2025
-📅 **February 24th**     
+📅 **February 25th**    
+Morning: Just want to get this whole diffing performance improvement stuff done. Although I was thinking last night, and I realised that iterating over tattoy tick calls, and waiting for each one to return before calling the next, must surely have an impact on perceived rendering. Also, perhaps more importantly, that design doesn't mirror how plugins are going to work.
+* Fern suggested visiting Santiniketan, the home of Tagore.
+Evening: Diffing refactor is going pretty, got scrolling working again (although with new lagging regression??). Spent a lot of time trying understand why diff approach completely breaks down after a resize. Never got to the bottom of it, still curious, but I think it's best just to push and send entire surfaces on resize, we'll need that functionality anyway, for certain recovery situations.
+
+📅 **February 24th**    
 Morning: I was thinking it'd be good to just carry on with the minimap, want to make it behave exactly like the VSCode one. And also think I can improve performance.
 Evening: Did the big diff-support refactor, but didn't quite make it. Realised that I can actuall pass Termwiz changeset over the protocol channels, should be exactly what we need.
 
