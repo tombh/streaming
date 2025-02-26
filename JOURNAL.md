@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **February 26th**
+Morning: I had a thought last night, that the diffing approach is probably actually slower in a lot more cases than you'd imagine. Like certainly for say scrolling in Neovim, that dirties every line, so may as well just send a copy of the whole screen, than can just replace any existing copies in the various tasks, without having to iterate over diffs.
+Afternoon: @chanddu16 said he started journalling everyday too! And @zebcode woke up anxious Buddhism Without Beliefs audiobook helped him relax.
+Evening: Got the shadow terminal outputting both diffs and full screens, and fixed up scrolling. Left off with the true colour conversion, need to support both converting diffs and surfaces. Then need to get resizing fixed. Then I should be done with this commit. I think the next step will be looking into performance. Would be great to make a debug overlay of all all the timings and FPSs of the various parts.
+
 📅 **February 25th**    
 Morning: Just want to get this whole diffing performance improvement stuff done. Although I was thinking last night, and I realised that iterating over tattoy tick calls, and waiting for each one to return before calling the next, must surely have an impact on perceived rendering. Also, perhaps more importantly, that design doesn't mirror how plugins are going to work.
 * Fern suggested visiting Santiniketan, the home of Tagore.
