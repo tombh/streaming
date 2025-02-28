@@ -2,6 +2,8 @@
 ## 2025
 📅 **February 28th**
 Morning: Last night off stream I got the palette true colour converter refactor done. So there's only one bug left, before I could commit, and that's resizing vertically. Then I'd like to look into some weird latency issues.
+Evening: Finally got the diffing refactor done, committed and green on CI 🥳
+* Scott B watched Red Dwarf.
 
 📅 **February 27th**  
 Morning: Submitted 2 PRs to `wezterm`, one to add the really useful `Clone` to `termwiz::surface::Surface`, there's looooooads of open PRs, so it may take a while. But I can always use my fork until then. Only have a couple of hours to stream today.
