@@ -1,6 +1,12 @@
 # Journal
 ## 2025
-📅 **February 26th**
+📅 **February 28th**
+Morning: Last night off stream I got the palette true colour converter refactor done. So there's only one bug left, before I could commit, and that's resizing vertically. Then I'd like to look into some weird latency issues.
+
+📅 **February 27th**  
+Morning: Submitted 2 PRs to `wezterm`, one to add the really useful `Clone` to `termwiz::surface::Surface`, there's looooooads of open PRs, so it may take a while. But I can always use my fork until then. Only have a couple of hours to stream today.
+
+📅 **February 26th**  
 Morning: I had a thought last night, that the diffing approach is probably actually slower in a lot more cases than you'd imagine. Like certainly for say scrolling in Neovim, that dirties every line, so may as well just send a copy of the whole screen, than can just replace any existing copies in the various tasks, without having to iterate over diffs.
 Afternoon: @chanddu16 said he started journalling everyday too! And @zebcode woke up anxious Buddhism Without Beliefs audiobook helped him relax.
 Evening: Got the shadow terminal outputting both diffs and full screens, and fixed up scrolling. Left off with the true colour conversion, need to support both converting diffs and surfaces. Then need to get resizing fixed. Then I should be done with this commit. I think the next step will be looking into performance. Would be great to make a debug overlay of all all the timings and FPSs of the various parts.
