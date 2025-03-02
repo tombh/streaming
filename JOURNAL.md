@@ -1,11 +1,18 @@
 # Journal
 ## 2025
-📅 **February 28th**
+📅 **March 2nd**
+Morning: My goal for today is to try to get the minimap live-updating an alternate screen app like Neovim.
+
+📅 **March 1st**  
+Morning: Going to see if I can get that `cargo-gpu` PR finished, fix conflicts and review notes.
+Afternoon: Yay got all my `cargo-gpu` things done.
+
+📅 **February 28th**  
 Morning: Last night off stream I got the palette true colour converter refactor done. So there's only one bug left, before I could commit, and that's resizing vertically. Then I'd like to look into some weird latency issues.
 Evening: Finally got the diffing refactor done, committed and green on CI 🥳
 * Scott B watched Red Dwarf.
 
-📅 **February 27th**  
+📅 **February 27th**    
 Morning: Submitted 2 PRs to `wezterm`, one to add the really useful `Clone` to `termwiz::surface::Surface`, there's looooooads of open PRs, so it may take a while. But I can always use my fork until then. Only have a couple of hours to stream today.
 
 📅 **February 26th**  
