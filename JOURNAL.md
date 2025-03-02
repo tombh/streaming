@@ -1,9 +1,10 @@
 # Journal
 ## 2025
-📅 **March 2nd**
+📅 **March 2nd**  
 Morning: My goal for today is to try to get the minimap live-updating an alternate screen app like Neovim.
+Evening: @nayrberger and I (mostly nayr), looked into using an async fn pointer in a vec to avoid a minor amount of boilerplate, much was learned about futures, trait objects and lifetimes changing types. Conclusion is that a macro would probably be best to avoid the tattoy loading boilerplate. Nevertheless, managed to convert the scrollbar tattoy to the new design that more closely mirrors the plans I have for plugins.
 
-📅 **March 1st**  
+📅 **March 1st**    
 Morning: Going to see if I can get that `cargo-gpu` PR finished, fix conflicts and review notes.
 Afternoon: Yay got all my `cargo-gpu` things done.
 
