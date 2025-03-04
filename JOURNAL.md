@@ -2,6 +2,8 @@
 ## 2025
 📅 **March 4th**  
 Morning: Still the same goal as yesterday, make the minimap show live updates of the alternate screen, but also do the fancy slide in/out animation when the mouse hovers over the right-mouse column.
+* ONLY EVER USE ALPHA ON TEXT CELLS NOT PIXELS! It doesn't work, you get weird staggered line.
+Evening: Got minimap working reeeeeeeal nice 😏. Slide animation using a state machine, hot-reloading config and transparent background for empty minimap area. Some lag issues, which can wait for another time, so just want to add the scollback behind the alternate view and add a little test.
 
 📅 **March 3rd**  
 Morning: Monday morning, start of the week. Still main aim is to get the minimap showing live updates of the alternate screen. But probably a winding road before I get to that.
