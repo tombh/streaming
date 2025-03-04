@@ -1,6 +1,13 @@
 # Journal
 ## 2025
-📅 **March 2nd**  
+📅 **March 4th**  
+Morning: Still the same goal as yesterday, make the minimap show live updates of the alternate screen, but also do the fancy slide in/out animation when the mouse hovers over the right-mouse column.
+
+📅 **March 3rd**  
+Morning: Monday morning, start of the week. Still main aim is to get the minimap showing live updates of the alternate screen. But probably a winding road before I get to that.
+Evening: Completed the refactor to make the existing core tattoys use an architecture more like how the plugins will be. A couple of performance issues though.
+
+📅 **March 2nd**    
 Morning: My goal for today is to try to get the minimap live-updating an alternate screen app like Neovim.
 Evening: @nayrberger and I (mostly nayr), looked into using an async fn pointer in a vec to avoid a minor amount of boilerplate, much was learned about futures, trait objects and lifetimes changing types. Conclusion is that a macro would probably be best to avoid the tattoy loading boilerplate. Nevertheless, managed to convert the scrollbar tattoy to the new design that more closely mirrors the plans I have for plugins.
 
