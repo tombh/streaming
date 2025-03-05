@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **March 5th**
+* It's weird that the Shadow Terminal is strict about only sending primary screen updates on the Scrollback output type and alternate screen updates on the Screen output type, whilst Tattoy forwards all screen updates on the Screen output type. I think this is because I don't want the Shadow Terminal crate to be too prescriptive about how it sends output. Whilst with tattoy plugins I know what the domain is, and now that it's actually useful to overload the Screen output type with all possible output.
+* Evening: Almost got the minimap animation commit ready. Still want to write a test. But there's a bug where the screen doesn't automatically "scroll down" when old content goes off the top of the screen. Also some lag issues in the minimap updating, eg when scrolling in Neovim.
+
 📅 **March 4th**  
 Morning: Still the same goal as yesterday, make the minimap show live updates of the alternate screen, but also do the fancy slide in/out animation when the mouse hovers over the right-mouse column.
 * ONLY EVER USE ALPHA ON TEXT CELLS NOT PIXELS! It doesn't work, you get weird staggered line.
