@@ -1,6 +1,10 @@
 # Journal
 ## 2025
-📅 **March 5th**
+📅 **March 6th**   
+Morning: After thinking about it yesterday, I still think it'd be good to aim to make a beta release once I've made a basic version with shader support. Which I think I can even make a start on today. First I just want to write a little test for the minimap.
+Afternoon: Spent 4 hours trying to find a bug that the minimap test surfaced. Turned out to be a very important bug to do with caching the size of the TTY in the base Tattoyer code. So in the end was really glad I found it, even though it got quite dark at times 🥺. Basic test is working now, just want to have check the minimap colours too. Then that's a wrap on this particular version of the minimap, I'll work on it again after the beta release.
+
+📅 **March 5th**   
 * It's weird that the Shadow Terminal is strict about only sending primary screen updates on the Scrollback output type and alternate screen updates on the Screen output type, whilst Tattoy forwards all screen updates on the Screen output type. I think this is because I don't want the Shadow Terminal crate to be too prescriptive about how it sends output. Whilst with tattoy plugins I know what the domain is, and now that it's actually useful to overload the Screen output type with all possible output.
 * Evening: Almost got the minimap animation commit ready. Still want to write a test. But there's a bug where the screen doesn't automatically "scroll down" when old content goes off the top of the screen. Also some lag issues in the minimap updating, eg when scrolling in Neovim.
 
