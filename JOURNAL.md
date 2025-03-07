@@ -1,5 +1,13 @@
 # Journal
 ## 2025
+📅 **March 7th**  
+Afternoon: It's time to play with getting Shadertoy running in Tattoy!
+* Shaders that I want to get working:
+  * Raindrops: https://www.shadertoy.com/view/DdKyR1
+  * Interactive fish: https://www.shadertoy.com/view/DdKyR1
+  * Some sort of fluid, but internet is playing up right now 🫤
+Evening: OMG I got basic shader toys rendering in the tattoy 😲 Still sooooo much to do, but it's an excellent proof of concept 💪
+
 📅 **March 6th**   
 Morning: After thinking about it yesterday, I still think it'd be good to aim to make a beta release once I've made a basic version with shader support. Which I think I can even make a start on today. First I just want to write a little test for the minimap.
 Afternoon: Spent 4 hours trying to find a bug that the minimap test surfaced. Turned out to be a very important bug to do with caching the size of the TTY in the base Tattoyer code. So in the end was really glad I found it, even though it got quite dark at times 🥺. Basic test is working now, just want to have check the minimap colours too. Then that's a wrap on this particular version of the minimap, I'll work on it again after the beta release.
