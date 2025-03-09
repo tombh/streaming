@@ -1,5 +1,14 @@
 # Journal
 ## 2025
+📅 **March 8th**
+Morning: Really excited about the shaders working, wanna make lots of progress on that today.
+* rbergler:matrix.org
+Evening:
+ * [x] Got blending tests done, and made some more improvements to the blending code.
+ * [x] Got opacity easily working for the shader layer.
+ * [x] Started and nearly finished a refactor to isolate the GPU code.
+ * [x] Live-reloading config for shader path. Added the point lights shader to the binary for a default shader.
+
 📅 **March 7th**  
 Afternoon: It's time to play with getting Shadertoy running in Tattoy!
 * Shaders that I want to get working:
