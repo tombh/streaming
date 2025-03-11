@@ -1,6 +1,12 @@
 # Journal
 ## 2025
-📅 **March 8th**
+📅 **March 10th**  
+Afternoon: Late start, wanna get the GPU code nice and tidy. Maybe make a beta release today??
+* oklab colour space for human perception
+* @inmate302 came up with: "Cross-platform Terminal Compositor". But they don't want the credit.
+Evening: Got raided by Teej, over 1000 raiders, very exciting. Got the shader work committed.
+
+📅 **March 9th**  
 Morning: Really excited about the shaders working, wanna make lots of progress on that today.
 * rbergler:matrix.org
 Evening:
@@ -8,6 +14,9 @@ Evening:
  * [x] Got opacity easily working for the shader layer.
  * [x] Started and nearly finished a refactor to isolate the GPU code.
  * [x] Live-reloading config for shader path. Added the point lights shader to the binary for a default shader.
+
+📅 **March 8th**  
+I think I fogot to write my journal this day?
 
 📅 **March 7th**  
 Afternoon: It's time to play with getting Shadertoy running in Tattoy!
