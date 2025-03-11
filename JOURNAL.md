@@ -1,5 +1,11 @@
 # Journal
 ## 2025
+📅 **March 11th**  
+Morning: Main goal to make a beta release of Tattoy 😀
+* Make a Matrix room for the Twitch channel!!!
+* https://www.sesame.com/research/crossing_the_uncanny_valley_of_voice#demo
+Evening: Got a beta release of Tattoy out! And had 2 reports of it successfully working! (and a couple of bug reports).
+
 📅 **March 10th**  
 Afternoon: Late start, wanna get the GPU code nice and tidy. Maybe make a beta release today??
 * oklab colour space for human perception
