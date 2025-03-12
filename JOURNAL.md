@@ -1,5 +1,22 @@
 # Journal
 ## 2025
+📅 **March 12th**
+Morning: What do I want to do today?
+* Look at the windows bug
+* Look at the input splurge bug
+* Run cross-platform tests for Tattoy on Github Actions
+* Dogfooding Tattoy:
+  * Adding a nice little shader effect to my terminal popups https://github.com/tombh/tattoy/discussions/27
+  * Fixing the atuin bug will help me use Tattoy more in daily life
+* Start on `tbhbot`: https://dev.twitch.tv/docs/chat/irc-migration/
+  * Handy CLI arg to quickly override config file settings.
+  * Just reacting to individual chat messages would be a good start
+  * Start on the daily sound, something like `!arrived`
+* Convert my Twitch BASH scripts to print out any channel's logo nice and big in the terminal.
+* Use my Gym Ball Bursting clip as a raid animation: https://clips.twitch.tv/TriangularAgreeableYogurtSmoocherZ-4Po_zRXgTbfuKF1y
+* YourInty recommended this YT vid https://www.youtube.com/watch?v=3e-nauaCkgo
+Evening: Realised that the short term goal is to dogfood Tattoy. But feeling like after I've fixed the main bugs for the beta release, I'll do a bit of tbhbot stuff for a break.
+
 📅 **March 11th**  
 Morning: Main goal to make a beta release of Tattoy 😀
 * Make a Matrix room for the Twitch channel!!!
