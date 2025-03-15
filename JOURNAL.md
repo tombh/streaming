@@ -1,7 +1,10 @@
 # Journal
 ## 2025
-📅 **March 14th**
-Morning: I want to finish the Windows bug, and see if I can Windows and OSX tests running on CI. Then I want to start on `tbhbot`!
+📅 **March 15th**  
+Morning: Want to have a little look at yesterday's bug. And write to both the Zellij and Wezterm repos asking for advice about my use of termiz input parsing. Really I want to make a good start on the bot.
+
+📅 **March 14th**  
+Morning: I want to finish the Windows bug, and see if I can get Windows and OSX tests running on CI. Then I want to start on `tbhbot`!
 * Play Geoguesser on stream some time!
 * I have a welcome in Krusevac, Serbia
 * Lofi generator https://lofigenerator.com/
@@ -9,7 +12,7 @@ Morning: I want to finish the Windows bug, and see if I can Windows and OSX test
 * Had a idea about the palette parsing prompt: print out some true colour sample and say, "if you don't see this pretty rainbow then you don't have true color enabled, goto this link that explains how to enable trye colour".
 Evening: Tough day, fixing input bugs. At first I thought that the input parser had broken because the new `pty.master.take_writer` was handling bytes differently, spent a few hours on that. But of course I'd actually forgotten how my app works 🤦 Bytes are actually only sent to the PTY if they _don't_ match a user's configured keybinding. Once I'd actually started focussing in the relevant area of the code I slowly began to realise that everything was really pretty solid in the live app, the issue was simply that the e2e tests really struggle in sending realistic input. Looks I have keyboard input sorted, with a little sleep, but mouse input seems to be corrupted at the first byte 🥺. Having to leave it ther for now. Hopefully I think of the solution in my sleep 🤞.
 
-📅 **March 13th**  
+📅 **March 13th**    
 No stream. Still did a bit of work on the Windows compatibility bug.   
 
 📅 **March 12th**  
