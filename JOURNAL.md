@@ -1,9 +1,15 @@
 # Journal
 ## 2025
+📅 **March 16th**  
+* https://github.com/ErikMcClure/bad-licenses/blob/master/dbad-license.md
+Evening: Got MacOS CI green! And, most importantly, made a start on the tbhbot 🥳 Just got a bit stuck on the end of stream saving the access token and reading it back.
+
 📅 **March 15th**  
 Morning: Want to have a little look at yesterday's bug. And write to both the Zellij and Wezterm repos asking for advice about my use of termiz input parsing. Really I want to make a good start on the bot.
 * New goal for default shader! https://www.shadertoy.com/view/cdlyWr
 Evening: Fixed the bug from yesterday! Turned out to be how I was filling a fixed-size buffer from a buffer slice. Just need to detect the first zero of the fixed-size buffer and pass that on as a whole thing, rather than sending each byte piecemeal until the first zero. But now CI is failing for Windows and OSX for unknown reasons 😞.
+* QEMU for Windows
+* OCI for OSX: https://christitus.com/docker-macos/
 
 📅 **March 14th**  
 Morning: I want to finish the Windows bug, and see if I can get Windows and OSX tests running on CI. Then I want to start on `tbhbot`!
