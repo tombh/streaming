@@ -1,7 +1,11 @@
 # Journal
 ## 2025
+📅 **March 18th**  
+Morning: Want to continue a bit more with the bot, like adding some spammable sounds. Also want to add Tattoy to my emoji and application picker terminal popups, got start dogfooding.
+
 📅 **March 17th**  
 Afternoon: Late start, was online but not streaming trying to fix the Twitch bot auth, turned out to just be a whitespace issue 🤦 So plan is to just carry on with the bot today and maybe do a bit of Windows CI debugging in parallel.
+Evening: Managed to get the `!arrived` command working so users can choose they're on arrival sound that they can play just once a day. Using good ol' sqlite and sqlx to persist state.
 
 📅 **March 16th**  
 * https://github.com/ErikMcClure/bad-licenses/blob/master/dbad-license.md
