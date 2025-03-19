@@ -1,7 +1,13 @@
 # Journal
 ## 2025
+📅 **March 19th**  
+Morning: Don't process `!arrived` commands for people that don't have a sound yet. Record all messages in the channel in the bot. Then work on the Windows CI failing issue. Then dogfooding Tattoy.
+
 📅 **March 18th**  
 Morning: Want to continue a bit more with the bot, like adding some spammable sounds. Also want to add Tattoy to my emoji and application picker terminal popups, got start dogfooding.
+* "Tom" in Thai! ""ทอม"
+* szaroo's arrival translation: "oh fuck, a beaver! what a monster!"
+Evening: Got the `!chirp` command working with a random chance of RUBBER CHICKEN SCREAMING ahha. And recording when anybody gets more than one RUBBER CHICKEN SCREAM in a row (because when you get a scream you also get put back in the random pool to proc another scream immediately after). Nice.
 
 📅 **March 17th**  
 Afternoon: Late start, was online but not streaming trying to fix the Twitch bot auth, turned out to just be a whitespace issue 🤦 So plan is to just carry on with the bot today and maybe do a bit of Windows CI debugging in parallel.
