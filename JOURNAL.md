@@ -1,5 +1,18 @@
 # Journal
 ## 2025
+📅 **March 22nd**  
+Morning: Thinking about the Powershell stuff from yesterday, I think basically we have to disable all the e2e tests on windows. I do think it'll be possible to get them working, I will at least try again after getting cursor position responses working.
+
+📅 **March 21st**  
+Didn't stream yesterday, but did boot up a windows VM on Vultr to play with Windows support for Tattoy and realised a few things. Some basic things like on Windows you have to check for `\r\n` when parsing user responses (relevant for the palette consent prompt). `bash` isn't considered a normal program in Windows, because it depends on such a large amount of Linux. So I started investigating Powershell (which, BTW, has some notable similarites to Nushell). Turns out that Tattoy already works well in the default Windows Terminal and Powershell, it's CI that I need to consider. And the big blocker there is simply that my method of simulating ANSI input doesn't work, neither on the Windows VM nor on CI, what happens is that the ANSI codes just get written to output without being parsed, I'm not sure who's responsible? 
+
+So main plan for today is just get the Windows CI build working, just disabling any of the tests that send ANSI input.
+
+Evening: Discovered something very interesting about Powershell, on starting up it sends a request to get the cursor position, the ANSO code `^[6n`, and hangs until it gets a response. This was a interesting thing to discover, because one of the reasons that I'm not dogfooding Tattoy yet is that Atuin won't start because... it can't find the cursor! So this is definitely something that I need to fix.
+
+📅 **March 20th**  
+No stream.
+
 📅 **March 19th**  
 Morning: Don't process `!arrived` commands for people that don't have a sound yet. Record all messages in the channel in the bot. Then work on the Windows CI failing issue. Then dogfooding Tattoy.
 
