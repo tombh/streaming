@@ -1,5 +1,13 @@
 # Journal
 ## 2025
+📅 **March 23rd**
+Morning: Really glad to have gotten the Windows PR in yesterday. So maybe relax a bit today. Would like to make a start on the ANSI `^[6n` cursor position response. Also:
+  * Have a look at the `cargo-gpu` issue where a shader has to have ALLL the settings in its `Cargo.toml`
+  * Update my bot to use the client secret to auto update from a refresh token.
+  * Update my Neovim plugins and push my latest dotfiles
+Useful:
+  * Installing Windows on Asahi: https://pastebin.com/73bTFdfR
+
 📅 **March 22nd**  
 Morning: Thinking about the Powershell stuff from yesterday, I think basically we have to disable all the e2e tests on windows. I do think it'll be possible to get them working, I will at least try again after getting cursor position responses working.
 Evening: Finally got a basic e2e-ish test running on CI, it get's us 70% of what's relevant to Windows testsing, so pretty happy about that. Also did some more testing in the remote Windows VPS (slow and painful), and with the help of Umpriel we figured out what's working and what isn't. It's at least compiling, and even renders the minimap and responds to the mouse hover in the VSCode terminal. So I feel confident that Tattoy doesn't have any fundamental issues with running on Windows, it's probably just a matter of settings, conditional code, etc. The main painpoint is that I don't have a local Windows environment with GPU access to test modern terminals.
