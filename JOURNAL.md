@@ -1,12 +1,20 @@
 # Journal
 ## 2025
-📅 **March 23rd**
+📅 **March 24th**
+Morning: I don't know what I'm going to do today. I think the main thing I want to guide me is dogfooding Tattoy:
+  * CLI config overrides
+Evening: Easy day, got some nice improvements to the config and logging. I can easily launch dedicated Tattoys, so fewer excuses for not dogfooding. Although, now I see that there's pretty serious performance issues on larger terminals. At least reducing the frame rate should help, but would be good to have a bit more of an indepth look. Also RAM usage is very high, like 20% of my machine's RAM high 😬
+
+📅 **March 23rd**  
 Morning: Really glad to have gotten the Windows PR in yesterday. So maybe relax a bit today. Would like to make a start on the ANSI `^[6n` cursor position response. Also:
   * Have a look at the `cargo-gpu` issue where a shader has to have ALLL the settings in its `Cargo.toml`
   * Update my bot to use the client secret to auto update from a refresh token.
   * Update my Neovim plugins and push my latest dotfiles
+  * Add more bird chirps
 Useful:
-  * Installing Windows on Asahi: https://pastebin.com/73bTFdfR
+  * Installing Windows o[n Asahi: https://pastebin.com/73bTFdfR
+* Special Purpose Arabic: https://www.eimj.org/uplode/images/photo/%D8%A7%D9%84%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%84%D8%A3%D8%BA%D8%B1%D8%A7%D8%B6_%D8%AE%D8%A7%D8%B5%D8%A9-_%D8%A7%D9%84%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%84%D9%84%D8%B9%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D9%88%D8%A7%D9%81%D8%AF%D9%8A%D9%86..pdf
+Evening: Got `^[6n` merged! No excuses for dogfooding now.
 
 📅 **March 22nd**  
 Morning: Thinking about the Powershell stuff from yesterday, I think basically we have to disable all the e2e tests on windows. I do think it'll be possible to get them working, I will at least try again after getting cursor position responses working.
