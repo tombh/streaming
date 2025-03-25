@@ -1,6 +1,21 @@
 # Journal
 ## 2025
-📅 **March 24th**
+📅 **March 25th**  
+Morning: Last night I played with performance a bit. One thing I noticed is that the `FrameUpdate` channel can get backlogged with say shader updates, and so a PTY update might not get rendered immeditely if the channel is full of shader frames, so I'm experimenting with dropping shader frames if they get backlogged. But I'm wondering if I could split the channel into 2, one for tattoys (lower priority) and one for PTY updates (higher priority). Also want to see if I can disable some unnescary screen/scrollback update handling in the shader tattoy code, shaders currently only need the cursor position, not actual cell information, well at least soon, I will want to send the screen contents to the GPU, not the scrollback.
+
+Also, on the dogfooding theme, I want to get all my keybindings working I need for working in Neovim.
+
+* Crab shader! https://www.shadertoy.com/view/MdBGDy
+
+Evening: Got some really nice performance improvements done! Drop tattoy frames instead of backlog them. And aggregate PTY outputs within a tiny time window (0.1ms).
+Next things I want for dogffoding:
+* Keybindings for working in Neovim: SHIFT+L/R-ARROWS for selecting, PAGE-UP, ALT+D
+* Flickering cursor.
+* Don't just dump dropped frames, try to gracefully reduce the frame rate.
+
+Bot broke again 😭 Websocket disconnected, so need autoreconnect.
+
+📅 **March 24th**  
 Morning: I don't know what I'm going to do today. I think the main thing I want to guide me is dogfooding Tattoy:
   * CLI config overrides
 Evening: Easy day, got some nice improvements to the config and logging. I can easily launch dedicated Tattoys, so fewer excuses for not dogfooding. Although, now I see that there's pretty serious performance issues on larger terminals. At least reducing the frame rate should help, but would be good to have a bit more of an indepth look. Also RAM usage is very high, like 20% of my machine's RAM high 😬
