@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **March 26th**  
+Morning: Did a little maintenance on the bot, hopefully it can self-restart now 🤞 Last night I realised that the problem with my keybindings in Tattoy is todo with `tmux` not being able to know when it's in Neovim, there should a way for the `is_vim` command to recursively look into child processes for the Neovim process. Also want to do one more little tweak to the render prioritiser, I want it to drain the entire frame queue, both PTY frames and Tattoy frames, for each render. This may result in some PTY frame drops, but will prevent Tattoy frame stuttering. Let's try. Then ... I don't know! Look at the list of issues and continue the slow march to the first public releaseeeeee.
+* Jonas4236 Youtube: https://youtu.be/h8T0DD2XnQQ?si=76DLEDZ9YUCkNOsU
+Evening: More dogfooding today, went okay. But not quite happy with using Tattoy fulltime, it is definitely usable, which is crazy, but things like cursor flicker, frame stuttering, pasting of large text blocks not working, all makes it feel a bit subpar. Spent a fair bit of time making a easing function to smoothly reduce the frame rate to ease channel backpressure. Without much success, but just at the end of stream, Nyxisprime (No 1 in bot DB), got me to think through the renderer and I realised that it is the _renderer_ itself that needs to dictate the frame rate. Because when the renderer sees a backlog of frames it will just render them all as quickly as it can 🤦.
+
 📅 **March 25th**  
 Morning: Last night I played with performance a bit. One thing I noticed is that the `FrameUpdate` channel can get backlogged with say shader updates, and so a PTY update might not get rendered immeditely if the channel is full of shader frames, so I'm experimenting with dropping shader frames if they get backlogged. But I'm wondering if I could split the channel into 2, one for tattoys (lower priority) and one for PTY updates (higher priority). Also want to see if I can disable some unnescary screen/scrollback update handling in the shader tattoy code, shaders currently only need the cursor position, not actual cell information, well at least soon, I will want to send the screen contents to the GPU, not the scrollback.
 
@@ -27,7 +32,7 @@ Morning: Really glad to have gotten the Windows PR in yesterday. So maybe relax 
   * Update my Neovim plugins and push my latest dotfiles
   * Add more bird chirps
 Useful:
-  * Installing Windows o[n Asahi: https://pastebin.com/73bTFdfR
+  * Installing Windows on Asahi: https://pastebin.com/73bTFdfR
 * Special Purpose Arabic: https://www.eimj.org/uplode/images/photo/%D8%A7%D9%84%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%84%D8%A3%D8%BA%D8%B1%D8%A7%D8%B6_%D8%AE%D8%A7%D8%B5%D8%A9-_%D8%A7%D9%84%D9%84%D8%BA%D8%A9_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9_%D9%84%D9%84%D8%B9%D9%85%D8%A7%D9%84_%D8%A7%D9%84%D9%88%D8%A7%D9%81%D8%AF%D9%8A%D9%86..pdf
 Evening: Got `^[6n` merged! No excuses for dogfooding now.
 
