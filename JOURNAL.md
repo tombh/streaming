@@ -1,5 +1,14 @@
 # Journal
 ## 2025
+📅 **March 28th**  
+Afternoon: Not totally sure what I'm going to do, tidy up the frame stuttering code I've been playing with the last few days. And then look into getting bracketed paste working for large pastes?
+* [ ] Fix for bot when wifi disconnects: start a Tokio task that pings in a continuous loop and restarts the entire bot when the pings stop.
+* Checkout 3:29 in the stream for audio choppiness
+Evening: Nice being back after a bit of a break. Got the FPS stuttering commit nice and tidy and merged into main 💪 Aaaaan I fixed the large pasting bug! 🎉 Feeling good about dogfooding now. So going to move on to some other issues, thinking: the palette parsing bug, then the UP/DOWN keys bug then starting on the keybinding feature.
+
+📅 **March 27th**  
+No stream
+
 📅 **March 26th**  
 Morning: Did a little maintenance on the bot, hopefully it can self-restart now 🤞 Last night I realised that the problem with my keybindings in Tattoy is todo with `tmux` not being able to know when it's in Neovim, there should a way for the `is_vim` command to recursively look into child processes for the Neovim process. Also want to do one more little tweak to the render prioritiser, I want it to drain the entire frame queue, both PTY frames and Tattoy frames, for each render. This may result in some PTY frame drops, but will prevent Tattoy frame stuttering. Let's try. Then ... I don't know! Look at the list of issues and continue the slow march to the first public releaseeeeee.
 * Jonas4236 Youtube: https://youtu.be/h8T0DD2XnQQ?si=76DLEDZ9YUCkNOsU
