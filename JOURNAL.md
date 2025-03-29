@@ -1,10 +1,26 @@
 # Journal
 ## 2025
+📅 **March 29th**
+Morning: Was just looking at the Wayfire repo before stream and saw that, via wlroots, Wayfire has support for virtual monitors! So this evening after stream, I'll try to set up my phone as a second monitor. Things I wanna do today:
+  * [ ] Look stelea's gist and icon things in the weather app
+  * [ ] Reply to the latest issues and PRs on `cargo-gpu`
+  * [ ] Tattoy issues, palette parser bug etc.
+
+```rust
+// From @FernOfSigma. Learn proper Rust Errors!
+#[macro_export]
+macro_rules! oops {
+    ($kind:ident, $message:expr $(,)?) => {
+        Err(std::io::Error::new(std::io::ErrorKind::$kind, $message))
+    };
+}
+```
+
 📅 **March 28th**  
 Afternoon: Not totally sure what I'm going to do, tidy up the frame stuttering code I've been playing with the last few days. And then look into getting bracketed paste working for large pastes?
 * [ ] Fix for bot when wifi disconnects: start a Tokio task that pings in a continuous loop and restarts the entire bot when the pings stop.
 * Checkout 3:29 in the stream for audio choppiness
-Evening: Nice being back after a bit of a break. Got the FPS stuttering commit nice and tidy and merged into main 💪 Aaaaan I fixed the large pasting bug! 🎉 Feeling good about dogfooding now. So going to move on to some other issues, thinking: the palette parsing bug, then the UP/DOWN keys bug then starting on the keybinding feature.
+Evening: Nice being back after a bit of a break. Got the FPS stuttering commit nice and tidy and merged into main 💪 Aaaaand I fixed the large pasting bug! 🎉 Feeling good about dogfooding now. So going to move on to some other issues, thinking: the palette parsing bug, then the UP/DOWN keys bug then starting on the keybinding feature.
 
 📅 **March 27th**  
 No stream
