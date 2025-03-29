@@ -6,6 +6,11 @@ Morning: Was just looking at the Wayfire repo before stream and saw that, via wl
   * [ ] Reply to the latest issues and PRs on `cargo-gpu`
   * [ ] Tattoy issues, palette parser bug etc.
 
+* Stelea's Emoji Picker updates: https://gist.github.com/ste1ee-dot/94b483dff30f7074f60656947529e51d
+* Nyxisprime found this doc for letting the bot automate getting its own access tokens using the CLIENT_ID and CLIENT_SECRET:https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#client-credentials-grant-flow
+* Bot randomness improvement: `let daily_user_rng_seed = format!("{}{}{}{}", ENV["SECRET], user_id, date, reset_counter)`. Then have a new command, `!mydailyrng`, which responds in chat with your daily RNG probablility, but _also_ resets to a new seed without revealing that new one. With 1 hour cooldown on the reset.
+Evening: Refactored the state machine, it's definitely reading better now, but there's one `if` condition that doesn't read very well and feel like I spenmt at least 30mins trying figure out. Anywayyy made a start on the IndieJonez palette parsing bug and all ready I'm seeing better parsing, but not quite. Next step is to use the new `self.pixel_certainty` accumulator along with the exact type of palette being parsed.
+
 ```rust
 // From @FernOfSigma. Learn proper Rust Errors!
 #[macro_export]
