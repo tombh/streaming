@@ -5,6 +5,7 @@ Morning:
 * Dear Journal, got a second "monitor" setup, it's my phone VNC'd to a local virtual desktop. So streaming is a bit unfamiliar, but I'm sure I'll get used to it in no time. It'd be nice to see my emails and who else is streaming etc, but not important right now. And it'd be nice to have a keybinding to change focus from the live desktop to the second desktop, cos moving the mouse into a desktop doesn't actually automatically change the focus, you have to click something, which often confusing.
 * So I think the main thing for today is just try to do some of the Tattoy issues.
 * Maybe play some Geoguessr later?
+Evening: Got the lossy palette parsing bug in!! Really felt like it was going to be a marathon this morning, but turned out to be fairly straight forward and I'm happy with the code.
 
 📅 **March 29th**  
 Morning: Was just looking at the Wayfire repo before stream and saw that, via wlroots, Wayfire has support for virtual monitors! So this evening after stream, I'll try to set up my phone as a second monitor. Things I wanna do today:
