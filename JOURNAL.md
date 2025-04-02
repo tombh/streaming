@@ -1,14 +1,18 @@
 # Journal
 ## 2025
-📅 **April 1st**
+📅 **April 2nd**  
+Morning: Had a bit of a bad night's sleep, funny tummy, so might be bit slow today. Plan for today is to basically have a look at adding Tattoy keybindings.
+
+📅 **April 1st**  
 Morning: No April Fools yet... (woaah Fern sent me the daily bandle that had a Rickroll 😏)
   * Wondering about the `!osd` command, basically want a way to prevent newcomers from spamming it. Thinking about stuff like only allowing it once a user has been here for a week, or something liket that?
   * Just get on with some Tattoy stuff, like the UP/DOWN arrow keys bug...
 * ScottB recommends: https://www.youtube.com/shawnp0wers
 Evening:
   * Got the `htop`/`less` UP/DOWN arrow keys bug fixed 🥳 Thougth it was going to take longer, but no. So another productive day.
+Evening: Got the basics of keybindings working, left it all in a mess, but should be easy to pick up tomorrow, well Friday, seeing as tomorrow is my day off.
 
-📅 **March 31st**  
+📅 **March 31st**   
 Morning: Changed my layout again, using Twitch's own Stream Manager in my second "monitor", and shifted my workspaces around, so will take a bit of getting used to again. I good streamrrr. What's the plan today?
   * Well 5 hours in and I've already got nicely distracted. Tried adding a OBS browser source, don't think it even works on Fedora, let alone Asahi, but would love to know either way. Tried Flatpak but couldn't add the OBS repo even. Also looked at OBS-CEF as a Chromium based solution but no packages for that either.
   * So finally just wrote OSD functionality for the bot! So chat can now do `!osd sdfsdf` commands and we should also see a OSD popup for new followerws 🤞
