@@ -1,5 +1,16 @@
 # Journal
 ## 2025
+📅 **April 4th**  
+Morning: Back to the streaming life. Main plan is to try to get keybindings done today. Maybe setup raid alerts?
+* [ ] Add logging the config file at the trace level
+* [ ] Suggest GPU log filters in README
+* Checkout Gary Clark Jr
+* https://ntfy.sh and setup an alert to it from my bot when stream starts
+Evening: Thanks to help from chat, LordMZTE in particular, I finally got type-safe keybindings setup. Just a tiny bit of tidying before I commit. Then I can go and add all the basic user-configurable events in another commit.
+
+📅 **April 3rd**
+No stream.
+
 📅 **April 2nd**  
 Morning: Had a bit of a bad night's sleep, funny tummy, so might be bit slow today. Plan for today is to basically have a look at adding Tattoy keybindings.
 
