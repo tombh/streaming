@@ -1,5 +1,12 @@
 # Journal
 ## 2025
+📅 **April 5th**  
+Morning: Had a little look at ntfy.sh, I don't even need to sign up to send a notification to a topic?? That's easy then, but I don't see an easy Twitch endpoint to get immediate channel-gone-live.
+* [ ] Send a blank surface when toggling Tattoy renderer off.
+* [ ] E2e test running Tattoy with an empty config file.
+* LordMZTE's RSS: https://mzte.de/feed.rss
+Evening: Feeling a bit under the weather but got the first green keybindings PR in, niiice. Gonna rest.
+
 📅 **April 4th**  
 Morning: Back to the streaming life. Main plan is to try to get keybindings done today. Maybe setup raid alerts?
 * [ ] Add logging the config file at the trace level
