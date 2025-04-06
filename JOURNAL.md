@@ -1,5 +1,11 @@
 # Journal
 ## 2025
+📅 **April 6th**  
+Morning: Feeling okay today, thought I might be ill, but seems I just need rest. So just get on with a few more keybindings today I reckon.
+Evening:
+  * Got all the basic keybindings working! And learnt something important abot `.collect()`, it can wrap the whole collection in a `Result`, was tough learning, but got there.
+  * 20% progress to public release.
+
 📅 **April 5th**  
 Morning: Had a little look at ntfy.sh, I don't even need to sign up to send a notification to a topic?? That's easy then, but I don't see an easy Twitch endpoint to get immediate channel-gone-live.
 * [ ] Send a blank surface when toggling Tattoy renderer off.
