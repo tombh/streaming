@@ -1,5 +1,13 @@
 # Journal
 ## 2025
+📅 **April 7th**
+Morning: Just in the grind, just gotta keep going with Tattoy issues, I think I'll adding plugin support today...
+* One should only be able to `!unlurk` after `!lurk`ing.
+* Think about how to communicate config file changes 🤔
+* Put all default keybindings in README/docs.
+* My name in hebrew! טומס
+Evening: Mostly chatting today. But did get a verrrrry basic plugin setup, just rendering the output of `ls`. Need to know think about the protocol a bit more, mainly what do I use as a delimeter for JSON messages? Newline? Or prefixing the length of the message??
+
 📅 **April 6th**  
 Morning: Feeling okay today, thought I might be ill, but seems I just need rest. So just get on with a few more keybindings today I reckon.
 Evening:
