@@ -1,6 +1,11 @@
 # Journal
 ## 2025
-📅 **April 7th**
+📅 **April 8th**  
+Afternoon: late start, had an idea last night, use serde_json'd streaming thing to automatically parse messages from plugins, that way I think it might be possible to avoid any kind of delimeter.
+* Stefan recommends this series about Serbian politics: "Muzika iz serije bela ladja"
+Evening: Great collab with Lord getting the plugin protocol working. Really happy to have gotten serde stream deserialization working, no need for delimeteres. Got a basic "plugin" working, that `tail`s a file of JSON messages, verrrry happy with it. So next step will be to send messages to the plugin over STDIN.
+
+📅 **April 7th**  
 Morning: Just in the grind, just gotta keep going with Tattoy issues, I think I'll adding plugin support today...
 * One should only be able to `!unlurk` after `!lurk`ing.
 * Think about how to communicate config file changes 🤔
@@ -8,7 +13,7 @@ Morning: Just in the grind, just gotta keep going with Tattoy issues, I think I'
 * My name in hebrew! טומס
 Evening: Mostly chatting today. But did get a verrrrry basic plugin setup, just rendering the output of `ls`. Need to know think about the protocol a bit more, mainly what do I use as a delimeter for JSON messages? Newline? Or prefixing the length of the message??
 
-📅 **April 6th**  
+📅 **April 6th**    
 Morning: Feeling okay today, thought I might be ill, but seems I just need rest. So just get on with a few more keybindings today I reckon.
 Evening:
   * Got all the basic keybindings working! And learnt something important abot `.collect()`, it can wrap the whole collection in a `Result`, was tough learning, but got there.
