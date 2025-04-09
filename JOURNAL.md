@@ -1,5 +1,14 @@
 # Journal
 ## 2025
+📅 **April 9th**  
+Morning: Just keep on keeping on, want to get the pluging stufff working. Actually, I was thinking it'd be pretty easy to make Tattoy plugin for Twitch, so we could have a set of commands following the convential log levels, `!tt-error $arg`, `!tt-warn $arg`, `!tt-info $arg`, `!tt-debug $arg`, `!tt-trace $arg`, each command would take a string of text as an argument, that string of text would then be used to match text in my terminal, and depending on the "level" of the command would play a short but fun animation anchored to the first occurence of that text in my terminal. So for example chatters could say that `!tt-error fn foo()` and that function in my editor would flash red or something.
+* Hyperland also has a good plugin architecture, says Fern.
+* "Yo": https://translate.google.com/?sl=auto&tl=en&text=%D8%B9%D8%A7%D9%84%D8%B9%D8%A7%D9%81%D9%8A%D9%87&op=translate
+* "What's up?": https://translate.google.com/?sl=auto&tl=en&text=%D8%B4%D9%88%20%D8%A7%D9%84%D9%88%D8%B6%D8%B9&op=translate
+* Umpriel's Twitch Contrib bot: https://github.com/Umpriel/twitchContrib
+Evening: got stuck in trying to support automatic restart of the stream deserializer when malformed JSON is encountered, didn't get very far, but still have hope.
+
+
 📅 **April 8th**  
 Afternoon: late start, had an idea last night, use serde_json'd streaming thing to automatically parse messages from plugins, that way I think it might be possible to avoid any kind of delimeter.
 * Stefan recommends this series about Serbian politics: "Muzika iz serije bela ladja"
