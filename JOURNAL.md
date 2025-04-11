@@ -1,5 +1,14 @@
 # Journal
 ## 2025
+📅 **April 11th**  
+Morning: Wanna have a look at a `cargo-gpu` PR. Then find a solid reason for not being able to use the serde stream reader with malformed JSON.
+Evening: Realised, with the help of Lord again, that I had misinterpreted the error logs of the stream parser. The repeated errors weren't from the parser restarting from the beginning, they were from the parser failing at each bad character in the stream, so basically restarting the parser was always working. But now there's a problem where the child process won't exit because the child's STDOUT is still being read, leading to deadlock.
+
+* Informal "how are you?" in Bengali: কেমন আছেন?
+
+📅 **April 10th**  
+No stream.
+
 📅 **April 9th**  
 Morning: Just keep on keeping on, want to get the pluging stufff working. Actually, I was thinking it'd be pretty easy to make Tattoy plugin for Twitch, so we could have a set of commands following the convential log levels, `!tt-error $arg`, `!tt-warn $arg`, `!tt-info $arg`, `!tt-debug $arg`, `!tt-trace $arg`, each command would take a string of text as an argument, that string of text would then be used to match text in my terminal, and depending on the "level" of the command would play a short but fun animation anchored to the first occurence of that text in my terminal. So for example chatters could say that `!tt-error fn foo()` and that function in my editor would flash red or something.
 * Hyperland also has a good plugin architecture, says Fern.
@@ -7,7 +16,6 @@ Morning: Just keep on keeping on, want to get the pluging stufff working. Actual
 * "What's up?": https://translate.google.com/?sl=auto&tl=en&text=%D8%B4%D9%88%20%D8%A7%D9%84%D9%88%D8%B6%D8%B9&op=translate
 * Umpriel's Twitch Contrib bot: https://github.com/Umpriel/twitchContrib
 Evening: got stuck in trying to support automatic restart of the stream deserializer when malformed JSON is encountered, didn't get very far, but still have hope.
-
 
 📅 **April 8th**  
 Afternoon: late start, had an idea last night, use serde_json'd streaming thing to automatically parse messages from plugins, that way I think it might be possible to avoid any kind of delimeter.
