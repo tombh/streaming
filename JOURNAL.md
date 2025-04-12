@@ -1,5 +1,13 @@
 # Journal
 ## 2025
+📅 **April 12th**
+Morning: Whilst playing with the plugin/STDOUT stuff last night, I found that using a `std::thread` solved the application close deadlock issue 🤔 Good but I don't quite understand how, might write it up on a Rust forum somewhere. So let's see if I can get the STDIN protocol working for the plugins today...  
+* Notes installing Umpriel's Bot:
+  * The default `.env.local.example` doesn't contain all the required ENV vars
+  * It's not clear what the Twitch Bot's redirect URL should be
+  * https://twitchapps.com/tmi/ is deprecated and the new site that it links to has a lot of options and isn't clear how to use.
+Evening: Spent waaaay too much time fixing rocks.nvim, only to copy everything from my personal account and have it work straight away. But anyway, good day, got Telescope showing syntax colours again. Made a good start on setting up config for the Tattoy plugins and am half way through writing the first e2e test for the plugins.
+
 📅 **April 11th**  
 Morning: Wanna have a look at a `cargo-gpu` PR. Then find a solid reason for not being able to use the serde stream reader with malformed JSON.
 Evening: Realised, with the help of Lord again, that I had misinterpreted the error logs of the stream parser. The repeated errors weren't from the parser restarting from the beginning, they were from the parser failing at each bad character in the stream, so basically restarting the parser was always working. But now there's a problem where the child process won't exit because the child's STDOUT is still being read, leading to deadlock.
