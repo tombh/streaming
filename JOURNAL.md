@@ -1,6 +1,11 @@
 # Journal
 ## 2025
-📅 **April 12th**
+📅 **April 13th**  
+Morning: Experimenting with a modal keyboard layout to help keep my fingers on the home row and prepare me for a nice little travelling split keyboard. So can a get I commit for the plugins in today?
+Evening: Yaaay got an actual commit of the basic plugin code into a PR and made some good progress on the plugin input side of things.
+* Everyday for the last 3 days, at around 17:37, the stream struggles???
+
+📅 **April 12th**  
 Morning: Whilst playing with the plugin/STDOUT stuff last night, I found that using a `std::thread` solved the application close deadlock issue 🤔 Good but I don't quite understand how, might write it up on a Rust forum somewhere. So let's see if I can get the STDIN protocol working for the plugins today...  
 * Notes installing Umpriel's Bot:
   * The default `.env.local.example` doesn't contain all the required ENV vars
@@ -8,7 +13,7 @@ Morning: Whilst playing with the plugin/STDOUT stuff last night, I found that us
   * https://twitchapps.com/tmi/ is deprecated and the new site that it links to has a lot of options and isn't clear how to use.
 Evening: Spent waaaay too much time fixing rocks.nvim, only to copy everything from my personal account and have it work straight away. But anyway, good day, got Telescope showing syntax colours again. Made a good start on setting up config for the Tattoy plugins and am half way through writing the first e2e test for the plugins.
 
-📅 **April 11th**  
+📅 **April 11th**    
 Morning: Wanna have a look at a `cargo-gpu` PR. Then find a solid reason for not being able to use the serde stream reader with malformed JSON.
 Evening: Realised, with the help of Lord again, that I had misinterpreted the error logs of the stream parser. The repeated errors weren't from the parser restarting from the beginning, they were from the parser failing at each bad character in the stream, so basically restarting the parser was always working. But now there's a problem where the child process won't exit because the child's STDOUT is still being read, leading to deadlock.
 
