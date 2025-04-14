@@ -1,9 +1,20 @@
 # Journal
 ## 2025
+📅 **April 14th**
+Morning: Even more modal keys configured today, let's see if I can keep my fingers on the home row! Already found missing keys like ESC for example. And so for the main coding of the day just carry on with the plugin stuff, think I'll actually write the e2e test for the input plugin in Rust.
+* YourInty came up with the idea of an anonymous pool of arrival sounds for people that don't have arrival sounds yet.
+* Scott recomends the Ferris Sweep split keyboard.
+* Wifi went bad at exactly 13:27
+* inmate302 recommends the band Opeth:
+  * To bid you farewell and Will o' the wisp and burden are notable tracks
+* Wifi went bad at exactly 17:27!!!
+* Set alarm tomorrow for 13:26 and 17:26. Also setup `mtr`.
+Evening: Got a nice working Rust plugin that flips the terminal contents, it's nice and succinct, and can be easily used for e2e testing. Just need to tidy up all the code, write the test and port the smokey cursor plugin, then the plugins are done for now.
+
 📅 **April 13th**  
 Morning: Experimenting with a modal keyboard layout to help keep my fingers on the home row and prepare me for a nice little travelling split keyboard. So can a get I commit for the plugins in today?
 Evening: Yaaay got an actual commit of the basic plugin code into a PR and made some good progress on the plugin input side of things.
-* Everyday for the last 3 days, at around 17:37, the stream struggles???
+* Everyday for the last 3 days, at around 17:37 (or was it 17:27!!!!!!!!), the stream struggles???
 
 📅 **April 12th**  
 Morning: Whilst playing with the plugin/STDOUT stuff last night, I found that using a `std::thread` solved the application close deadlock issue 🤔 Good but I don't quite understand how, might write it up on a Rust forum somewhere. So let's see if I can get the STDIN protocol working for the plugins today...  
