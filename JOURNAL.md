@@ -1,6 +1,14 @@
 # Journal
 ## 2025
-📅 **April 14th**
+📅 **April 15th**  
+Morning: So write a test for the new plugin, tidy up the code and port the smokey cursor. Then maybe think about a quick Twitch bot integration??
+* There was just a short moment of buffering at 13:27
+* Dropped frames at 13:45
+* IP at 13:57: 	181.117.11.23
+* Nothing happened at 17:27 😞 But the stream DID go down at 17:30!!!!!!
+Evening: Got the plugin input messages done and pushed and green 🎉 Started working on the port of smokey cursor to the new plugin architecture, but proving a bit more involved than I thought. But good productive day.
+
+📅 **April 14th**  
 Morning: Even more modal keys configured today, let's see if I can keep my fingers on the home row! Already found missing keys like ESC for example. And so for the main coding of the day just carry on with the plugin stuff, think I'll actually write the e2e test for the input plugin in Rust.
 * YourInty came up with the idea of an anonymous pool of arrival sounds for people that don't have arrival sounds yet.
 * Scott recomends the Ferris Sweep split keyboard.
