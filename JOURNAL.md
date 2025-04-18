@@ -1,5 +1,18 @@
 # Journal
 ## 2025
+📅 **April 18th**  
+Morning: Some great feedback from Fern and Zebcode about Tattoy installation:
+  * Zeb tried in WSL, it was a bit tricky getting Rust going, and even then once it was working it just filled the screen with ANSI codes. Was the same in Windows Terminal and VSCode.
+  * Fern's screenshotter seems to use another form of compression that causes the palette parsing to fail. I think the takeaway from that is that we just need to better communicate to the user about how to verify that their terminal is true colour and that their manual screenshot isn't using compression. In theory it should actually be possible to handle PNG's reduced palette compression, but that will get complicated because will need some kind of fancy code to calculate the size of palatte squares.
+  * Still don't have a reliable way of indicating to the user that their terminal is not true colour.
+* Wifi went bad at exactly 13:26 and 17:30.
+Evening: Got cursor shape working and fixed a bug, the one where the cursor isn't hidden in alternate screen. But got stuck trying to figure out why underline curlies aren't working. I think it's something to do with how Wezterm probes the user's terminal's capabilities and for some reason thinks that my terminal doesn't support undercurls. I think a good next step could be to use my local Wezterm repo and force its detection of capabilities. Been really hard with the new keyboard layout but I persevere.
+
+📅 **April 16th**  
+Morning: Just want to get the smokey cursor port done. Then maybe do a plugin for Twitch??
+* Wifi went bad at exactly 13:26
+Evening: Merged the plugin code 🥳
+
 📅 **April 15th**  
 Morning: So write a test for the new plugin, tidy up the code and port the smokey cursor. Then maybe think about a quick Twitch bot integration??
 * There was just a short moment of buffering at 13:27
