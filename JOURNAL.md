@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **April 20th**
+Morning: Added a few more tweaks to my keyboard layout, and got treesitter incremental selection working, let's see how it goes... But main plan today is to add the little indicator pixel and then start on the Twitch plugin.
+* Stream went down at 13:25
+Evening: Got the little blue indicator merged. Feeling a bit better with the keyboard but there's a bug where the treesitter incremental select sometimes crashes 😭. Started working on the Twitch Tattoy plugin, but nothing of note yet. Did find out that Twitch has an API endpoint for emotes, must check it out.
+
 📅 **April 19th**
 Morning: First thing is see if I can get undercurls working. Also want to make sure that Tattoy is handling all key combos, like CTRL-SPACE for example. Then maybe make a start on the Twitch plugin, I was wondering if there's a convenient way to get the image data for all known Twitch emotes?
 Evening: Finally got undercurls working, but it involved adding code to wezterm. I'm quite surprised that termwiz doesn't already support undercurls, so maybe I've added code for no reason, just because I couldn't find the right code? There is also some strangeness with the $TERM variable, or at least how neovim determines the capabilities of the user's terminal. So I have to set TERM=tmux-256color to get undercurls working in neovim - they work fine in tattoy just on the CLI. Finished off the day nearly completing the indicator for the top right, because now that I have cursor shape and undercurls there's no excuse for me not to dogfood tattoy! But I do it without any shaders so I don't even know if tattoy is running, hence the need for a little indicator. keyboard layout is still kicking my arse.
