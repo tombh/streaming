@@ -1,9 +1,16 @@
 # Journal
 ## 2025
+📅 **April 21st**
+Morning: Just gotta carry on with the Twitch plugin.
+* Make a note of the Wifi's make and model.
+* Check phone's tethering settings in case it has some auto-reconnect setting.
+* Also internet went down outside of a 4 hour window at about 17:50.
+Evening: Got global Twitch emotes showing up in Tattoy. I think the biggest task left for that is to match the regexish with coordinates in the PTY. Also will be interesting setting up the IPC. Also reaaaaally must change the position of the Backspace key!!!!!!!!
+
 📅 **April 20th**
 Morning: Added a few more tweaks to my keyboard layout, and got treesitter incremental selection working, let's see how it goes... But main plan today is to add the little indicator pixel and then start on the Twitch plugin.
 * Stream went down at 13:25
-Evening: Got the little blue indicator merged. Feeling a bit better with the keyboard but there's a bug where the treesitter incremental select sometimes crashes 😭. Started working on the Twitch Tattoy plugin, but nothing of note yet. Did find out that Twitch has an API endpoint for emotes, must check it out. Noticed some bugs in Tattoy from the dogfooding, it needs a PTY output change after a resize in order to actually render the resize. Also doesn't seem to parse a CTRL-SPACE.
+Evening: Got the little blue indicator merged. Feeling a bit better with the keyboard but there's a bug where the treesitter incremental select sometimes crashes 😭. Started working on the Twitch Tattoy plugin, but nothing of note yet. Did find out that Twitch has an API endpoint for emotes, must check it out. Noticed some bugs in Tattoy from the dogfooding, it needs a PTY output change after a resize in order to actually render the resize. Also doesn't seem to parse a CTRL-SPACE. And also Neovim doesn't seem to be able to detect the `VimEnter` event.
 
 📅 **April 19th**
 Morning: First thing is see if I can get undercurls working. Also want to make sure that Tattoy is handling all key combos, like CTRL-SPACE for example. Then maybe make a start on the Twitch plugin, I was wondering if there's a convenient way to get the image data for all known Twitch emotes?
