@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **April 22nd**
+Morning: Made a few more changes to my keyboard layout, everyday I'm refining, using the day's coding as feedback and bit by bit getting to my perfect layout. Let's see if we can get the Twitch plugin fully working today...
+Evening: Realised that I had to composite the emotes in the output that gets sent to Tattoy so made a little change that caches the downloaded emote imaged data so that emotes can be composited and removed independently. Then installed the `interprocess` crate but am currently quite confused by the documentation, do I really need to create the socket myself?? Also the socket that I do create immediately gets destroyed or closed or something on first use by the rust code?? Quite lost on it all. Look for actual real world projects using the `interprocess` crate... 
+
 📅 **April 21st**
 Morning: Just gotta carry on with the Twitch plugin.
 * Make a note of the Wifi's make and model.
