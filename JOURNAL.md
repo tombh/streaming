@@ -1,28 +1,38 @@
 # Journal
 ## 2025
-📅 **April 23rd**
+📅 **April 25th**
+Morning: Even after one day off I still feel like I have to remember how to stream and program again. So main thing is to get the Twitch plugin working, which should't take long™. Then I'm feeling like the next thing will the background terminal idea.
+Missing keybindings in new layout:
+* System clipboard history
+* Neither the 13:30 nor 17:30 wifi downtimes occured today!??
+Evening: Got the Tattoy-Twitch plugin working 🥳 But the emotes are underwhelmingly small, I was thinking of making them bigger and then using some other graphics device to clearly hightlight the text that the emote targets. Also think it'd just be good to have personalised images displayed. Think it's to take some brainstorming to make the most of this new command. But for now I want to get on with the Tattoy issue backlog, let's get this app out there!1!
+
+📅 **April 25th**  
+No stream
+
+📅 **April 23rd**   
 Morning: Thinking last night I think I can just try to set up local sockets just using normal rust. Also might be worth putting the Tattoy Twitch plugin in the bot repo.
 * S. Clebsch - Fully concurrent garbage collection of actors on many-core machines: https://www.ponylang.io/media/papers/opsla237-clebsch.pdf
 * Wifi did not go down at 17:30
 Evening: Got actua `!tty sdfs LUL` commands working 🥳 Really happy about that. Still need to get the emote positioning working but that shouldn't hard. There's one little issue, the logs in Tattoy itself are saying that a lot of Twitch frames are hitting the backlog.
 
-📅 **April 22nd**
+📅 **April 22nd**  
 Morning: Made a few more changes to my keyboard layout, everyday I'm refining, using the day's coding as feedback and bit by bit getting to my perfect layout. Let's see if we can get the Twitch plugin fully working today...
 Evening: Realised that I had to composite the emotes in the output that gets sent to Tattoy so made a little change that caches the downloaded emote imaged data so that emotes can be composited and removed independently. Then installed the `interprocess` crate but am currently quite confused by the documentation, do I really need to create the socket myself?? Also the socket that I do create immediately gets destroyed or closed or something on first use by the rust code?? Quite lost on it all. Look for actual real world projects using the `interprocess` crate... 
 
-📅 **April 21st**
+📅 **April 21st**  
 Morning: Just gotta carry on with the Twitch plugin.
 * Make a note of the Wifi's make and model.
 * Check phone's tethering settings in case it has some auto-reconnect setting.
 * Also internet went down outside of a 4 hour window at about 17:50.
 Evening: Got global Twitch emotes showing up in Tattoy. I think the biggest task left for that is to match the regexish with coordinates in the PTY. Also will be interesting setting up the IPC. Also reaaaaally must change the position of the Backspace key!!!!!!!!
 
-📅 **April 20th**
+📅 **April 20th**  
 Morning: Added a few more tweaks to my keyboard layout, and got treesitter incremental selection working, let's see how it goes... But main plan today is to add the little indicator pixel and then start on the Twitch plugin.
 * Stream went down at 13:25
 Evening: Got the little blue indicator merged. Feeling a bit better with the keyboard but there's a bug where the treesitter incremental select sometimes crashes 😭. Started working on the Twitch Tattoy plugin, but nothing of note yet. Did find out that Twitch has an API endpoint for emotes, must check it out. Noticed some bugs in Tattoy from the dogfooding, it needs a PTY output change after a resize in order to actually render the resize. Also doesn't seem to parse a CTRL-SPACE. And also Neovim doesn't seem to be able to detect the `VimEnter` event.
 
-📅 **April 19th**
+📅 **April 19th**  
 Morning: First thing is see if I can get undercurls working. Also want to make sure that Tattoy is handling all key combos, like CTRL-SPACE for example. Then maybe make a start on the Twitch plugin, I was wondering if there's a convenient way to get the image data for all known Twitch emotes?
 Evening: Finally got undercurls working, but it involved adding code to wezterm. I'm quite surprised that termwiz doesn't already support undercurls, so maybe I've added code for no reason, just because I couldn't find the right code? There is also some strangeness with the $TERM variable, or at least how neovim determines the capabilities of the user's terminal. So I have to set TERM=tmux-256color to get undercurls working in neovim - they work fine in tattoy just on the CLI. Finished off the day nearly completing the indicator for the top right, because now that I have cursor shape and undercurls there's no excuse for me not to dogfood tattoy! But I do it without any shaders so I don't even know if tattoy is running, hence the need for a little indicator. keyboard layout is still kicking my arse.
 * The colour chosen by YourInty for the indicator is: #0035a1
