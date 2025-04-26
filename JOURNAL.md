@@ -1,5 +1,17 @@
 # Journal
 ## 2025
+📅 **April 26th**
+Morning: Look into these first this morning:
+  * The Tattoy logs overfilling when a plugin unexpectedly exits.
+  * Plugin frames causing a render backlog.
+  Then wanna see if I can get this background TTY thing working.
+* @cptchika_ suggested a `!linus` command that plays a random Linus Torvalds quote.
+* Wifi went down at 13:45.
+* Fixed those little Tattoy-Twitch issues from the list above but there's still one little wrinkle that I don't understand: even when setting the Tattoy-Twitch plugin to send just 2 frames per second I could still see it hitting Tattoy's backlog protection ... the only thing I can think of is that the Tattoy-side plugin code is hitting some async contention, there's no actual evidence of that it's just the only theory that I can think of that matches the symptoms.
+Evening: Got basic second terminal working! Some resize issues, or rather some initialisation issue where the second terminal doesn't the size of the user's terminal (this is a common problem in Tattoy right??). Also colour isn't being passed from the second terminal.
+
+In general I've been dogfooding Tattoy a lot which is quite sobering. Noticed a new bug where raw ansi input can be spewed during resizing.
+
 📅 **April 25th**
 Morning: Even after one day off I still feel like I have to remember how to stream and program again. So main thing is to get the Twitch plugin working, which should't take long™. Then I'm feeling like the next thing will the background terminal idea.
 Missing keybindings in new layout:
