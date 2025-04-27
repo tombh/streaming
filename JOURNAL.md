@@ -1,6 +1,12 @@
 # Journal
 ## 2025
-📅 **April 26th**
+📅 **April 27th**  
+Morning: Main thing I'd want to get done today is hopefully finish off the Background Command tattoy. But I'm also conscious of the various issues building up from dogfooding.
+* https://togglebit.io/posts/debugging-rust-in-vim/
+* https://www.amazon.com/Asynchronous-Programming-Rust-asynchronous-programming/dp/1805128132
+Evening: Got the Background Command working 💪 Bad Apple works 😏 Just need to add opacity, but I think it'd also be worth at least looking into centralising opacity in the compositor.
+
+📅 **April 26th**  
 Morning: Look into these first this morning:
   * The Tattoy logs overfilling when a plugin unexpectedly exits.
   * Plugin frames causing a render backlog.
@@ -12,7 +18,7 @@ Evening: Got basic second terminal working! Some resize issues, or rather some i
 
 In general I've been dogfooding Tattoy a lot which is quite sobering. Noticed a new bug where raw ansi input can be spewed during resizing.
 
-📅 **April 25th**
+📅 **April 25th**  
 Morning: Even after one day off I still feel like I have to remember how to stream and program again. So main thing is to get the Twitch plugin working, which should't take long™. Then I'm feeling like the next thing will the background terminal idea.
 Missing keybindings in new layout:
 * System clipboard history
