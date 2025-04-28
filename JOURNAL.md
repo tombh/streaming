@@ -1,5 +1,11 @@
 # Journal
 ## 2025
+📅 **April 28th**  
+Morning: Do a little bot work first, then finish off the Background Command then I don't know, maybe the auto contrast correcting feature?
+* Buffered at 13:31 but no actual dropped frames. But then did actually drop frames at 13:33.
+* Notable buffering at 17:43.
+Evening: Got big emotes displaying from the Tattoy-Twitch plugin! They take up the whole pane. And got the Background Command done but not committed, just want to write a test for it. Also got the beginnings of requiring that all tattoys start knowing the size of the user's terminal, only the Background Command tattoy uses it at the moment. Also refactored opacity so that it's centralised, again only the Background Command uses it currently.
+
 📅 **April 27th**  
 Morning: Main thing I'd want to get done today is hopefully finish off the Background Command tattoy. But I'm also conscious of the various issues building up from dogfooding.
 * https://togglebit.io/posts/debugging-rust-in-vim/
