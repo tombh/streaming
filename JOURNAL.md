@@ -1,5 +1,15 @@
 # Journal
 ## 2025
+📅 **April 29th**  
+Morning: Want to write a test for the Background Command and then see if I can get the other tattoys using the new TTY size and config opacity code.
+Evening: I got a working prototype of auto contrast text!!!!!!!! I was quite surprised how this made me feel because this is the first actual real-world useful feature that solves a long standing problem in terminals aaaaaand it uses the full stack of Tattoy tricks, from the shadow terminal to the palette parser and the true colour compositor. Still need to:
+  * detect the background luminescence in order to decide which direction to adjust the foreground luminescence.
+  * step through the luminescence to find the lowest contrast that satisfies WCAG 2.1
+  * better heuristic for deciding if a cell needs this
+  * refactor code
+* APCA will be the new standard for accessible text contrast: https://ruitina.com/apca-accessible-colour-contrast/ Thanks to @wilderhives for that reference
+* Thanks to @cobalt_ethon for the idea to use the HSL colourspace to increase the luminescence.
+
 📅 **April 28th**  
 Morning: Do a little bot work first, then finish off the Background Command then I don't know, maybe the auto contrast correcting feature?
 * Buffered at 13:31 but no actual dropped frames. But then did actually drop frames at 13:33.
