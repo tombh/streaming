@@ -1,5 +1,11 @@
 # Journal
 ## 2025
+📅 **April 30th**  
+Morning: Bit of a late start so maybe, have had a bit of a headache this last 24 hours, so maybe take it a bit easier today. Would be awesome to get the auto contrast feature done today. But I realised that there is actually one more feature I want to get done after this: supporting GhosTTY shaders https://github.com/hackr-sh/ghostty-shaders
+* Wifi went down at 13:21
+* Realised a useful feature could be to repaint when the config changes.
+Evening: Got auto contrast done. Just want to see if I can write a test then I'll commit. It's already working wonders in my Neovim, showed me Rust Analyzer and `git blame` stuff I'd never seen before because it was so low contrast! Still thinking it'd good to at least have an option to only apply it to the terminal palette colours. I wonder about renaming `OpaqueCell` to maybe something like `Blender`?
+
 📅 **April 29th**  
 Morning: Want to write a test for the Background Command and then see if I can get the other tattoys using the new TTY size and config opacity code.
 Evening: I got a working prototype of auto contrast text!!!!!!!! I was quite surprised how this made me feel because this is the first actual real-world useful feature that solves a long standing problem in terminals aaaaaand it uses the full stack of Tattoy tricks, from the shadow terminal to the palette parser and the true colour compositor. Still need to:
