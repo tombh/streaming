@@ -1,6 +1,11 @@
 # Journal
 ## 2025
-📅 **April 30th**  
+📅 **May 2nd**  
+Morning: Gotta do a review of a `cargo-gpu` PR first today, then get on with the Tattoy things. But hoping to at least start on supporting GhosTTY shaders today.
+* Wifi at 13:21, 17:21
+Evening: Got PR review done. Seems like I got most of the code don for the iChanne shader stuff, but stuck on getting the GLSL header to recognise the texture so that we can call `textureSample(iChanel, u, v)`. Hopefully get that working tomorrow, cos there's lots of new and exciting shaders that'll come from it.
+
+📅 **April 30th**    
 Morning: Bit of a late start so maybe, have had a bit of a headache this last 24 hours, so maybe take it a bit easier today. Would be awesome to get the auto contrast feature done today. But I realised that there is actually one more feature I want to get done after this: supporting GhosTTY shaders https://github.com/hackr-sh/ghostty-shaders
 * Wifi went down at 13:21
 * Realised a useful feature could be to repaint when the config changes.
