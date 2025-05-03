@@ -1,5 +1,18 @@
 # Journal
 ## 2025
+📅 **May 3rd**  
+Morning: Just wanna get iChannel support working. Looking forward to seeing the rain effect shader and the GhosTTY shaders. Then bugs bugs bugs!
+Got GhosTTY shaders working, things left to do:
+  * resizing
+  * an option to use the shader to change the foreground colour
+  * an option to disable the background rendering
+  * note about how changing both the foreground and background colour should be used with auto contrast
+  * an option to not send the TTY contents to the shader
+  * is there an off by one for the TTY contents image, it's apparent in certain shaders at fullscreen
+  * use `#define texture myTexture` and then rewrite `texture()` to support the Vulkan GLSL signature.
+* https://en.wikipedia.org/wiki/Loop_nest_optimization
+Evening: Happy with today's achievements, the bloom filters look especially good and it's great that we can now say that we support Ghostty shaders. Just a few tweaks to get them looking as good as possible.
+
 📅 **May 2nd**  
 Morning: Gotta do a review of a `cargo-gpu` PR first today, then get on with the Tattoy things. But hoping to at least start on supporting GhosTTY shaders today.
 * Wifi at 13:21, 17:21
