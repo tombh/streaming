@@ -1,15 +1,19 @@
 # Journal
 ## 2025
+📅 **May 4th**   
+Morning: Managed to find the resizing bug last night after dinner, I was resizing the texture for every single frame render. So just need to add those tweaksin the list from yesterday then we're done. Onto bug fixes and the release then. Maybe I should get the domain soon?
+Evening: Got almost alll the shader stuff I wanted to get done today. Just want to think a little more about the config options I offer work. Also considering a new config option: to enable auto contrast for all chars or all non-whitespace?
+
 📅 **May 3rd**  
 Morning: Just wanna get iChannel support working. Looking forward to seeing the rain effect shader and the GhosTTY shaders. Then bugs bugs bugs!
 Got GhosTTY shaders working, things left to do:
-  * resizing
+  * resizing ✅
   * an option to use the shader to change the foreground colour
   * an option to disable the background rendering
   * note about how changing both the foreground and background colour should be used with auto contrast
-  * an option to not send the TTY contents to the shader
-  * is there an off by one for the TTY contents image, it's apparent in certain shaders at fullscreen
-  * use `#define texture myTexture` and then rewrite `texture()` to support the Vulkan GLSL signature.
+  * an option to not send the TTY contents to the shader ✅
+  * is there an off by one for the TTY contents image, it's apparent in certain shaders at fullscreen ✅
+  * use `#define texture myTexture` and then rewrite `texture()` to support the Vulkan GLSL signature ✅
 * https://en.wikipedia.org/wiki/Loop_nest_optimization
 Evening: Happy with today's achievements, the bloom filters look especially good and it's great that we can now say that we support Ghostty shaders. Just a few tweaks to get them looking as good as possible.
 
