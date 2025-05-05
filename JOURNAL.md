@@ -1,5 +1,12 @@
 # Journal
 ## 2025
+📅 **May 4th**     
+Morning: So just need to wrap up the new shader stuff. I did think of yet another new feature: custom config for focus events, so for examle fading and desaturating unfocussed terminals. But hopefully today we can get on with either bugfixing or website/docs/logo stuff, maybe the latter would be good for a change of scene?
+* Install NTFY Android app and subscribe to Lord's ntfybridge thing
+* Natnael Wubet (ናትናእል ዉበት) likes to do terminal graphics
+* Douglas Murray https://www.youtube.com/shorts/26h9IFgk8ok
+Evening: Lots good chatting today. I fixed the incremental selection crashing bug but then couldn't the initial selection to work, feels like I spent a couple of hours on it. Then broke lots of stuff in the renderer trying to refactor the cell compositor to take `&mut self`, right now I'm not sure if it's possible without some esoteric Rust knowledge that I don't currently have.
+
 📅 **May 4th**   
 Morning: Managed to find the resizing bug last night after dinner, I was resizing the texture for every single frame render. So just need to add those tweaksin the list from yesterday then we're done. Onto bug fixes and the release then. Maybe I should get the domain soon?
 Evening: Got almost alll the shader stuff I wanted to get done today. Just want to think a little more about the config options I offer work. Also considering a new config option: to enable auto contrast for all chars or all non-whitespace?
