@@ -1,6 +1,10 @@
 # Journal
 ## 2025
-📅 **May 4th**     
+📅 **May 6th**  
+Morning: Finish off that refactor from yesterday. Then maybe do some docs or logo stuff.
+Evening: Refactoring went really well, feels much cleaner now, but didn't quite finish it off again! I really think it'll just be an hour or so more, but gotta go and see the river now ✨
+
+📅 **May 5th**  
 Morning: So just need to wrap up the new shader stuff. I did think of yet another new feature: custom config for focus events, so for examle fading and desaturating unfocussed terminals. But hopefully today we can get on with either bugfixing or website/docs/logo stuff, maybe the latter would be good for a change of scene?
 * Install NTFY Android app and subscribe to Lord's ntfybridge thing
 * Natnael Wubet (ናትናእል ዉበት) likes to do terminal graphics
