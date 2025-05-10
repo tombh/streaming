@@ -1,5 +1,12 @@
 # Journal
 ## 2025
+📅 **May 7th**  
+Morning: Got everything working in the renderer and compositor but not quite happy with the design yet. Mainly I'm worried about extracting the base cells for every composited cell, it surely can't be performant. Also would be nice to write a few tests for the new config settings.
+* https://www.youtube.com/c/janlunge
+* Mauricio Palma
+* "love is many things, but it is not alphabetic": https://github.com/rust-lang/rust/blob/3ef8e64ce9f72ee8d600d55bc43b36eed069b252/library/core/src/char/methods.rs#L770
+Evening: Got all the refactoring done, there was just one niggle, I could't find a way to include the conditional shader cells in the iterator of PTY compositing step, I just resorted to getting references to cells by x/y coordinates, not bad at all, just sad that it didn't follow the same method as the other cells. Anyway PR pushed and merged. I'd just like to write some tests for the new config options but we don't have a software GPU renderer yet so such tests wouldn't run on CI. I think it still could be good to explore writing more unit-like tests for the renderer and compositor as such a framework would be useful for other tests. Also I got on my high horse and felt overly strongly about the suitability of the word "alphanumeric", streaming is interesting.
+
 📅 **May 6th**  
 Morning: Finish off that refactor from yesterday. Then maybe do some docs or logo stuff.
 Evening: Refactoring went really well, feels much cleaner now, but didn't quite finish it off again! I really think it'll just be an hour or so more, but gotta go and see the river now ✨
