@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **May 8th**
+Afternoon: Had 2 days off in a row, unheard of! I did buy the tattoy.sh domain, so ready to go making a website. How do you make a website in 2025??
+Evening: Tried the static site generator Zola (a Rust verion of Hugo), couldn't quite find a ready-made theme. It makes me realise that making a website is just going to be a lot of work. I want to write content in markdown and use a templating language that is well supported by linters, which it doesn't seem Zola is?
+
 📅 **May 7th**  
 Morning: Got everything working in the renderer and compositor but not quite happy with the design yet. Mainly I'm worried about extracting the base cells for every composited cell, it surely can't be performant. Also would be nice to write a few tests for the new config settings.
 * https://www.youtube.com/c/janlunge
