@@ -1,6 +1,10 @@
 # Journal
 ## 2025
-📅 **May 8th**
+📅 **May 11th**  
+Morning: I found the `tera` treesitter that syntax highlights `zola` HTML and I found the `superhtml` LSP that formats `zola` HTML but struggling to get them to work together. With regards to what template I use I think I'm going to try using the Bevy docs and rip everything out! Main goal is that I'd really like to start writing an inaugral blog post about the project goal of supporting a new protocol/paradigm for terminals, a title something like: "An End To Terminal ANSI Codes".
+Evening: Successful day. `superhtml` is working really well, just couldn't get the `tera` treesitter working at the same time as HTML, though there is some chatter on the `tera` treesitter repo that I started. Really happy with progress repurposing the Bevy website, that to Lord we got the actual faded ANSI text logo working, looks soooo good. So just gotta keep doing aaaaaall those tiny CSS things to get it looking good, but I don't foresee any more big obstacles.
+
+📅 **May 10th**  
 Afternoon: Had 2 days off in a row, unheard of! I did buy the tattoy.sh domain, so ready to go making a website. How do you make a website in 2025??
 Evening: Tried the static site generator Zola (a Rust verion of Hugo), couldn't quite find a ready-made theme. It makes me realise that making a website is just going to be a lot of work. I want to write content in markdown and use a templating language that is well supported by linters, which it doesn't seem Zola is?
 
