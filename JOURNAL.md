@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **May 12th**
+Afternoon: Late start, just gotta carry on with the website. Not totally happy with the little white T logo, but I think it's okay for now?
+Evening: Short stream but great progress on the website, homepage lookin really nice, got a nice screenshot.The site code is basically working now, just need to fill everything in. How far should I build things up before getting back to Tattoy itself?
+
 📅 **May 11th**  
 Morning: I found the `tera` treesitter that syntax highlights `zola` HTML and I found the `superhtml` LSP that formats `zola` HTML but struggling to get them to work together. With regards to what template I use I think I'm going to try using the Bevy docs and rip everything out! Main goal is that I'd really like to start writing an inaugral blog post about the project goal of supporting a new protocol/paradigm for terminals, a title something like: "An End To Terminal ANSI Codes".
 Evening: Successful day. `superhtml` is working really well, just couldn't get the `tera` treesitter working at the same time as HTML, though there is some chatter on the `tera` treesitter repo that I started. Really happy with progress repurposing the Bevy website, that to Lord we got the actual faded ANSI text logo working, looks soooo good. So just gotta keep doing aaaaaall those tiny CSS things to get it looking good, but I don't foresee any more big obstacles.
