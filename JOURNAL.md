@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+📅 **May 13th**
+Morning: Been thinking more about the idea of how we evolve terminals past ANSI codes. I'm almost tempted to write one more feature which would be to provide a socket like Wayland or X11 does so that any application could render to the containing Tattoy compositor. It would even work over SSH (with the `-R` option), the only thing I'm not clear on yet is how an application can output plain, parsable text on STDOUT and fancy coloured text via the Tattoy socket? TBC... 
+But anyway, just want to get on with the website today, can I get it as ready as it can be before updating it for the first release? Wayland can't record single windows so how do we make little GIFs of the various features for the website?
+Evening: Really great progress on the website again. I finally feel like all the code and structure is there, so it's all just content now. Started writing my big picture blog post: An End To ANSI Codes. Feels really good to be doing this none code side of things. I'm starting to get excited for the release!
+
 📅 **May 12th**
 Afternoon: Late start, just gotta carry on with the website. Not totally happy with the little white T logo, but I think it's okay for now?
 Evening: Short stream but great progress on the website, homepage lookin really nice, got a nice screenshot.The site code is basically working now, just need to fill everything in. How far should I build things up before getting back to Tattoy itself?
