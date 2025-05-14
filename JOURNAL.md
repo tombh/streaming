@@ -1,5 +1,11 @@
 # Journal
 ## 2025
+📅 **May 14th**
+Morning: Finish off the blog post I was writing yesterday. Then I realised it'd be good to have a "How Tattoy Works" section, in the docs I think. Also want to think a bit more about a Donate call to action, there could be a lot of people open to donatin at launch so would be good to have something in place for then. Maybe add all the pre-launch tasks as issues in the website repo. Also do we want to put everything in a tattoy-org namespace? Then if there's time, onto Tattoy bug fixing...
+Evening: The website is "done"! The only thing left is to update the content when Tattoy is ready to 
+launch. Also got some good bug feedback from Inmate ❤️
+
+
 📅 **May 13th**
 Morning: Been thinking more about the idea of how we evolve terminals past ANSI codes. I'm almost tempted to write one more feature which would be to provide a socket like Wayland or X11 does so that any application could render to the containing Tattoy compositor. It would even work over SSH (with the `-R` option), the only thing I'm not clear on yet is how an application can output plain, parsable text on STDOUT and fancy coloured text via the Tattoy socket? TBC... 
 But anyway, just want to get on with the website today, can I get it as ready as it can be before updating it for the first release? Wayland can't record single windows so how do we make little GIFs of the various features for the website?
