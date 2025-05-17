@@ -1,17 +1,26 @@
 # Journal
 ## 2025
-📅 **May 14th**
+
+📅 **May 17th**
+Morning: Back from my "weekend", found these relevant articles, I want to add them to my "End Of ANSI Codes" article:
+https://news.ycombinator.com/item?id=43294471
+https://gist.github.com/christianparpart/d8a62cc1ab659194337d73e399004036
+https://gpanders.com/blog/state-of-the-terminal/#fn:1
+https://arcan-fe.com/
+So just gotta get on with bugfixing.
+Evening: Got all the issues I want to do for release into a Github project, and ordered them into terms of importance. So now I don't have to think, I just have to slowly make my way down the list one by one. Got 2 bugs fixed, the resizing one and somewhat by chance the large chafa image corruption one which also makes Bad Apple in the background look better.
+
+📅 **May 14th**  
 Morning: Finish off the blog post I was writing yesterday. Then I realised it'd be good to have a "How Tattoy Works" section, in the docs I think. Also want to think a bit more about a Donate call to action, there could be a lot of people open to donatin at launch so would be good to have something in place for then. Maybe add all the pre-launch tasks as issues in the website repo. Also do we want to put everything in a tattoy-org namespace? Then if there's time, onto Tattoy bug fixing...
 Evening: The website is "done"! The only thing left is to update the content when Tattoy is ready to 
 launch. Also got some good bug feedback from Inmate ❤️
 
-
-📅 **May 13th**
+📅 **May 13th**  
 Morning: Been thinking more about the idea of how we evolve terminals past ANSI codes. I'm almost tempted to write one more feature which would be to provide a socket like Wayland or X11 does so that any application could render to the containing Tattoy compositor. It would even work over SSH (with the `-R` option), the only thing I'm not clear on yet is how an application can output plain, parsable text on STDOUT and fancy coloured text via the Tattoy socket? TBC... 
 But anyway, just want to get on with the website today, can I get it as ready as it can be before updating it for the first release? Wayland can't record single windows so how do we make little GIFs of the various features for the website?
 Evening: Really great progress on the website again. I finally feel like all the code and structure is there, so it's all just content now. Started writing my big picture blog post: An End To ANSI Codes. Feels really good to be doing this none code side of things. I'm starting to get excited for the release!
 
-📅 **May 12th**
+📅 **May 12th**  
 Afternoon: Late start, just gotta carry on with the website. Not totally happy with the little white T logo, but I think it's okay for now?
 Evening: Short stream but great progress on the website, homepage lookin really nice, got a nice screenshot.The site code is basically working now, just need to fill everything in. How far should I build things up before getting back to Tattoy itself?
 
