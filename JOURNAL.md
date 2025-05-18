@@ -1,7 +1,10 @@
 # Journal
 ## 2025
+📅 **May 18th**  
+Afternoon: Verryyy late start, might just be a short stream today. Just gonna try and push on with some bugfixes.
+Evening: Got 2 nice bugs fixed 💪 The `render_shader_colours_to_text` one, so inmate302 will be happy. And unexpectedly got the white pixel bug fixed too, I thought that was going to require a huge refactor, not 100% convinced it was that easy, still need to tidy up the affected function cos there's just too much branching going on. And make sure all the tests are working. Oh don't forget to test the other case where you add a upper pixel to a cell with an existing lower pixel.
 
-📅 **May 17th**
+📅 **May 17th**  
 Morning: Back from my "weekend", found these relevant articles, I want to add them to my "End Of ANSI Codes" article:
 https://news.ycombinator.com/item?id=43294471
 https://gist.github.com/christianparpart/d8a62cc1ab659194337d73e399004036
