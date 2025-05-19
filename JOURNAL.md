@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **May 19th**  
+Afternoon: Another bit of a late start, just life stuff. Just get on with the bugfixing.
+Evening: Still working on getting the tests passing for the pixel compositing/blending. Realised that there are 2 places to make all this work right: adding pixels to a surface cell and merging 2 surfaces that have pixels in the same cell. So only just towards the end of stream did I start working on the compositing part.
+
 📅 **May 18th**  
 Afternoon: Verryyy late start, might just be a short stream today. Just gonna try and push on with some bugfixes.
 Evening: Got 2 nice bugs fixed 💪 The `render_shader_colours_to_text` one, so inmate302 will be happy. And unexpectedly got the white pixel bug fixed too, I thought that was going to require a huge refactor, not 100% convinced it was that easy, still need to tidy up the affected function cos there's just too much branching going on. And make sure all the tests are working. Oh don't forget to test the other case where you add a upper pixel to a cell with an existing lower pixel.
