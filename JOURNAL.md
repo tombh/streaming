@@ -1,5 +1,8 @@
 # Journal
 ## 2025
+📅 **May 20th**  
+Evening: Crazy life day, suddenly moveing house without warning. Remember to charge keyboard overnight. So just a little stream, going to carry on with the pixels issue tests stuff. Got the pixel bug fixed and tested and clean and commented code. Feeling good looking at the remaining issues, the end is in sight!
+
 📅 **May 19th**  
 Afternoon: Another bit of a late start, just life stuff. Just get on with the bugfixing.
 Evening: Still working on getting the tests passing for the pixel compositing/blending. Realised that there are 2 places to make all this work right: adding pixels to a surface cell and merging 2 surfaces that have pixels in the same cell. So only just towards the end of stream did I start working on the compositing part.
