@@ -1,5 +1,9 @@
 # Journal
 ## 2025
+📅 **May 21st**  
+Afternoon: Getting a bit more rest and settling into the new place so feeling a bit more on it today. Just keeping up the pace with the final issues, should be able to get the palette UX issue done today.
+Evening: Finished all the improvements to the palette parsing UX I wanted 💪
+
 📅 **May 20th**  
 Evening: Crazy life day, suddenly moveing house without warning. Remember to charge keyboard overnight. So just a little stream, going to carry on with the pixels issue tests stuff. Got the pixel bug fixed and tested and clean and commented code. Feeling good looking at the remaining issues, the end is in sight!
 
