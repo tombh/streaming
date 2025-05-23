@@ -1,5 +1,10 @@
 # Journal
 ## 2025
+
+📅 **May 23rd**  
+Morning: Did some work on the notifications yesterday, off stream! Tattoy's just on my mind, really, really excited about getting it finished and public. So let's see if I can get notifications done today. First thing is to support notification bodies.
+Evening: Lots of great progress on notifications, like adding body support, clamping widths, etc. Got the Background Command tattoy send good error notifications. So still need to do the same for shaders and plugins.
+
 📅 **May 21st**  
 Afternoon: Getting a bit more rest and settling into the new place so feeling a bit more on it today. Just keeping up the pace with the final issues, should be able to get the palette UX issue done today.
 Evening: Finished all the improvements to the palette parsing UX I wanted 💪
