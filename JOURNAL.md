@@ -1,6 +1,18 @@
 # Journal
 ## 2025
 
+📅 **May 24th**  
+Morning: Carry on with the notifications. Thought about how it'd be nice to add a bunch of debugging and trace ones, like "so and so tattoy has started", "resize event", etc.
+Ryan wrote a blog post about his Queens SAT solver! Hasn't published it yet, wants me to have a look https://ryanberger.me/posts/queens/
+  * Caption image, "Solved Queens board"
+  * Link first "N-Queens" mention to Wiki article? https://en.wikipedia.org/wiki/Eight_queens_puzzle
+  * "It is just an or of all the cells", change the "or" to indicate its booleanness.
+  * The "..Q."-style grids could use 2 characters per cell (just add a space?), to make seeing diagnols more natural.
+  * "the only adjacency we’d be worried with colors X and Y" add "about" after "worried"
+  * "manually inputting queens games", capitalise "queens"
+  * "(wish I could say it in Z3-js)", as in, you couldn't get it working in https://github.com/mjyc/z3js? I just wasn't exactly sure what you meant.
+Evening: Played some great Geoguessr! Still just plugging away at the notifications, it's more involved than I thought. Ended up actually putting the `send_notification()` method on the shared state! That means the main Tattoy protocol is also now available everywhere that the state is, so that'll need to be taken advantage of elsewhere in the code, probably in another commit.
+
 📅 **May 23rd**  
 Morning: Did some work on the notifications yesterday, off stream! Tattoy's just on my mind, really, really excited about getting it finished and public. So let's see if I can get notifications done today. First thing is to support notification bodies.
 Evening: Lots of great progress on notifications, like adding body support, clamping widths, etc. Got the Background Command tattoy send good error notifications. So still need to do the same for shaders and plugins.
