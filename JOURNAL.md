@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **May 26th**
+Afternoon: Let's see if we can do lots of little fixes today.
+Evening: Got loooooads done today. Even fixed the weird double width cursor issue. But there's still the issue of Nerd Fonts being clipped. I think that's because Termwiz isn't detecting the double width of them. Maybe it's okay to just make an issue and release like that?
+
 📅 **May 25th**
 Morning: Left things broken last night, hopefully I can get back into it okay. Everyday I think it's the day I'll finish the notifications, but no, so probably best just to go with it and do a good job. Still haven't even looked into wrapping the end-user error messages that get output to the CLI, can Rust wrap error messages?
 Evening: I think I've finished the notifications. Just got stuck on writing a e2e test, for some reason the notification displays in the test if the path to a plugin is wrong, but it doesn't display if the special `bad_plugin.sh` script is run. The only thing I can think of is that there is some kind of contention when the plugin output parser spins on bad output 🤔
