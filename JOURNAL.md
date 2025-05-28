@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **May 28th**
+Afternoon: Slow day, getting settled into the new city etc. Still playing with the UTF8 bug, I think it's actually happening in the Shadow Terminal when we add all the Wezterm changes to the Termwiz surface. Still haven't found clinching proof, may need to write a isolated reproducer to really see what's going on. It may even be a bug in Termwiz itself.
+Evening: Got it fixed! It was that both Wezterm and Termwiz were adding the blank cell after the wide character, so just had to ignore Wezterms' and it worked! We're on 72% progress now! So close to a realse, like it could be days now, this weekend??
+
+📅 **May 27th**
+No stream. Moved to Mendoza.
+
 📅 **May 26th**
 Afternoon: Let's see if we can do lots of little fixes today.
 Evening: Got loooooads done today. Even fixed the weird double width cursor issue. But there's still the issue of Nerd Fonts being clipped. I think that's because Termwiz isn't detecting the double width of them. Maybe it's okay to just make an issue and release like that?
