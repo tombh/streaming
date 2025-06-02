@@ -3,6 +3,11 @@
 
 📅 **June 2nd**
 Afternoon: Played with the shader after stream last night, I'm thinking now that the better idea is to make all 9 cells surrounding the cursor emit light, it might even be a better effect, and there's also more scope for reducing computation.
+  * Mike's Youtube https://www.youtube.com/@mikevdev
+Evening: I think I'm going to give up on raytracing/marching, I just couldn't get the performance or low enough visual noise. Looking at other Shader Toys I think I should focus on simple mathematical light, I found these that I like:
+  * https://www.shadertoy.com/view/MsScRc
+  * https://www.shadertoy.com/view/3s3cD2
+  * https://www.shadertoy.com/view/3tX3zn  
 
 📅 **June 1st**
 Afternoon: Couple of little code things, but main thing I want to focus on today is improving the default shader, I want to explore making every cell a potential light blocker, I think it might be too much though. Found these 2D light Shader Toys that could be good for inspiration:
