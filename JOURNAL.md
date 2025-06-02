@@ -1,6 +1,20 @@
 # Journal
 ## 2025
 
+📅 **June 2nd**
+Afternoon: Played with the shader after stream last night, I'm thinking now that the better idea is to make all 9 cells surrounding the cursor emit light, it might even be a better effect, and there's also more scope for reducing computation.
+
+📅 **June 1st**
+Afternoon: Couple of little code things, but main thing I want to focus on today is improving the default shader, I want to explore making every cell a potential light blocker, I think it might be too much though. Found these 2D light Shader Toys that could be good for inspiration:
+  https://www.shadertoy.com/view/3tsXzB
+  https://www.shadertoy.com/view/4dfXWX
+
+📅 **May 31st**
+Afternoon: Got some good progress with the startup logo but still not quite sure how I want it to look exactly. I'm thinking I definitely want to use the user's terminal palette, maybe one colour per line? With a little bit of randomness and a fade out?
+
+📅 **May 30th**
+Afternoon: Another laaate start. Time to add the logo! I was actually thinking it'd be nice to use the colors from the user's palette?
+
 📅 **May 28th**
 Afternoon: Slow day, getting settled into the new city etc. Still playing with the UTF8 bug, I think it's actually happening in the Shadow Terminal when we add all the Wezterm changes to the Termwiz surface. Still haven't found clinching proof, may need to write a isolated reproducer to really see what's going on. It may even be a bug in Termwiz itself.
 Evening: Got it fixed! It was that both Wezterm and Termwiz were adding the blank cell after the wide character, so just had to ignore Wezterms' and it worked! We're on 72% progress now! So close to a realse, like it could be days now, this weekend??
