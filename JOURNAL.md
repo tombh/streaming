@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **June 4th**
+Morning: Actually got a morning start at last. Got the shader to where I wanted to yesterday so just need to tidy that up and commit. Then I think I'll try to get Windows working, not looking forward to that though, so could also just get starte on the whole CI/release workflow stuff.
+Evening: Got the nice soft shadow penumbra-style shader working for the default shader, maaaaany thanks to Slammy_13. Then started installing Windows 11 in QEMU, which was not too bad in the end, I actually got to the point of `cargo run` but ran out of diskspace, so need to add a new disk to get Tattoy actually installing. Also added `release-plz` to the Tattoy repo, was really, really impressed with it, it automates everything, even automatically makes a release PR whenever it detects semantic versionable changes in `main`. Still need to setup a build job though that adds the compiled binaries to the Github release. OMG we're nearly there, nervous and excited.
+
+📅 **June 3rd**
+Afternoon: Late start, moved house again, let's see what the internet is like here. Only got a couple of hours so let's see if I can get the default shader working nice.
+
 📅 **June 2nd**
 Afternoon: Played with the shader after stream last night, I'm thinking now that the better idea is to make all 9 cells surrounding the cursor emit light, it might even be a better effect, and there's also more scope for reducing computation.
   * Mike's Youtube https://www.youtube.com/@mikevdev
@@ -32,7 +39,7 @@ Afternoon: Let's see if we can do lots of little fixes today.
 Evening: Got loooooads done today. Even fixed the weird double width cursor issue. But there's still the issue of Nerd Fonts being clipped. I think that's because Termwiz isn't detecting the double width of them. Maybe it's okay to just make an issue and release like that?
 
 📅 **May 25th**
-Morning: Left things broken last night, hopefully I can get back into it okay. Everyday I think it's the day I'll finish the notifications, but no, so probably best just to go with it and do a good job. Still haven't even looked into wrapping the end-user error messages that get output to the CLI, can Rust wrap error messages?
+Morning: Left things broken last night, hopefully I can get back into it okay. Everyday I think it's the day I'll finish the notifications, but no, so probably best just to go with it and do a good job. Still haven't even looked into wrapping the end-user error messages that get output to the CLI, can Rust wrap error messages? 
 Evening: I think I've finished the notifications. Just got stuck on writing a e2e test, for some reason the notification displays in the test if the path to a plugin is wrong, but it doesn't display if the special `bad_plugin.sh` script is run. The only thing I can think of is that there is some kind of contention when the plugin output parser spins on bad output 🤔
 
 📅 **May 24th**  
