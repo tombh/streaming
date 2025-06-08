@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **June 8th**
+Morning: Woah 3 days without streaming, moving, life stuff etc, but also maybe taking advantage of the fact that most of the hard work is done in Tattoy. So last thing I remeber is that I was getting Windows working and need also working on getting cross compiles done.
+* @alpoxo on Twitch tested Tattoy on MacOS with Ghostty and it works perfectly!!
+Evening: Got cross-compiled binaries working for Linux, Mac and Windows, all compiling to x86 and ARM. And managed to get my Windows VM setup well enough to see Tattoy working in Windows Terminal with Powershell. Inmate is still testing on Alacritty etc, but looking like they don't work at the moment.
+
+📅📅📅 No streams
+
 📅 **June 4th**
 Morning: Actually got a morning start at last. Got the shader to where I wanted to yesterday so just need to tidy that up and commit. Then I think I'll try to get Windows working, not looking forward to that though, so could also just get starte on the whole CI/release workflow stuff.
 Evening: Got the nice soft shadow penumbra-style shader working for the default shader, maaaaany thanks to Slammy_13. Then started installing Windows 11 in QEMU, which was not too bad in the end, I actually got to the point of `cargo run` but ran out of diskspace, so need to add a new disk to get Tattoy actually installing. Also added `release-plz` to the Tattoy repo, was really, really impressed with it, it automates everything, even automatically makes a release PR whenever it detects semantic versionable changes in `main`. Still need to setup a build job though that adds the compiled binaries to the Github release. OMG we're nearly there, nervous and excited.
