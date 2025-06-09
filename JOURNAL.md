@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **June 9th**
+Afternoon: What's the plan? Tidy up that little system initialiser fix commit. Then I'm happy to say that we have Windows support. Then it's just a bunch of web stuff.
+Evening: Tidied up that commit and pushed. Tidied up the ANSI blog post. And started on the automation for the website post releases.
+
 📅 **June 8th**
 Morning: Woah 3 days without streaming, moving, life stuff etc, but also maybe taking advantage of the fact that most of the hard work is done in Tattoy. So last thing I remeber is that I was getting Windows working and need also working on getting cross compiles done.
 * @alpoxo on Twitch tested Tattoy on MacOS with Ghostty and it works perfectly!!
