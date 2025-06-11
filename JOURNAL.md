@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **June 11th**
+Evening: Got all the homepage gifs working! It looks soooooo good 🥹 I'm so proud of everything I've done. Also was working on some bugs, got the block cursor displaying right when it's over a pixel and think I hace a fix for Ghostty shaders refusing to render anything when `iChannel0` is empty. We're so close to a release!!!!!!!!!
+
+📅 **June 10th**
+Morning: Went looking around other Rust projects to get inspiration for how to do automated deploy processes and saw that I really like how `git-cliff` does it (of course I'd be inspired yet again by Orhun). So based on that (and many others), I think one of the first things to do today is move the website into a folder on the Tattoy repo itself.
+* Scott had a good idea to have a popup of whuch bird it is that is chirping.
+
 📅 **June 9th**
 Afternoon: What's the plan? Tidy up that little system initialiser fix commit. Then I'm happy to say that we have Windows support. Then it's just a bunch of web stuff.
 Evening: Tidied up that commit and pushed. Tidied up the ANSI blog post. And started on the automation for the website post releases.
