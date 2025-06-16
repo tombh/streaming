@@ -1,6 +1,15 @@
 # Journal
 ## 2025
 
+📅 **June 16th**
+Afternoon: Got a couple of Pygls things to do first. Then have a look at the default shader going black after you hit return a few times on a shell prompt. Then what? Maybe start on the OSC 4 stuff?
+Evening: Got the Pygls stuff done, then fixed the blank shaders issue, released v0.1.2, then started on the OSC 4 stuff, but just couldn't capture the reponse. I feel like it's because the response is somehow sent before we start listening on STDIN...
+
+📅 **June 15th**
+Afternoon: Had day off yesterday, it's weird not being completely focussed, maybe obsessed with launching Tattoy. Not sure what I'm going to do next, but definitely want to reply to issues and implement OSC 4 alongside screenshot palette parsing. Sill thinking about a multiplexer and the whole `xwayland` for terminals idea.
+
+📅 **June 14th** No stream
+
 📅 **June 13th**
 Morning: We're launching Tattoy today! Even though it was my day off yesterday I spent most of it getting Tattoy ready for release. The only gotcha I came across is that Tattoy can't be published to crates.io. And Release-plz can't not publish to crates.io. So whilst I can still manually trigger a Github Release I'm going to have to remove Release-plz for now. I released to Hacker News, Reddit and Lobsters at 11am! Nervous and excited.
 Evening: The day went well, a few issues, but most of them quickly got sorted. The only niggle was the screenshot parser again, would love to find a more consistent way to handle that. But frontpage of HN, r/Linux and Lobster, what a day! 
