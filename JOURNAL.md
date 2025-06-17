@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **June 17th**
+Afternoon: Played a bit more with the OSC 4 thing last night, it seems that you can't send and receive these particular commands over STDIN/OUT, but rather they should be sent and read from `/dev/ttty`, which I fins a bit confusing because how does `/dev/tty` know which terminal is being talked to? Like I mean shouldn't you first figure out that say the terminal is on `/dev/tty42`, then send the OSC codes to that. Anyway I'll crack and see how it goes. Also someone tried running Wrach! But they don't know that the latest branch is not main.
+* mikevdev's bluesky: https://bsky.app/profile/mikevdv.dev
+Evening: Did some refactoring and got a basic working version of OSC 4 queries and response 💪 Just need to parse the RGB values and construct the palette.
+
 📅 **June 16th**
 Afternoon: Got a couple of Pygls things to do first. Then have a look at the default shader going black after you hit return a few times on a shell prompt. Then what? Maybe start on the OSC 4 stuff?
 Evening: Got the Pygls stuff done, then fixed the blank shaders issue, released v0.1.2, then started on the OSC 4 stuff, but just couldn't capture the reponse. I feel like it's because the response is somehow sent before we start listening on STDIN...
