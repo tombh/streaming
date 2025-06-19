@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **June 18th**
+Afternoon: Let's see if I can finish off the OSC 4 stuff today. Remember that there'll be a fair amount of changes to the documentation.
+Evening: Got OSC parsing done. I think what's left is mainly just updating the documentation, website etc. Would be good to test it in a few terminals too.
+
 📅 **June 17th**
 Afternoon: Played a bit more with the OSC 4 thing last night, it seems that you can't send and receive these particular commands over STDIN/OUT, but rather they should be sent and read from `/dev/ttty`, which I fins a bit confusing because how does `/dev/tty` know which terminal is being talked to? Like I mean shouldn't you first figure out that say the terminal is on `/dev/tty42`, then send the OSC codes to that. Anyway I'll crack and see how it goes. Also someone tried running Wrach! But they don't know that the latest branch is not main.
 * mikevdev's bluesky: https://bsky.app/profile/mikevdv.dev
