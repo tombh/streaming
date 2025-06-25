@@ -1,54 +1,60 @@
 # Journal
 ## 2025
 
-📅 **June 18th**
+📅 **June 25th**  
+Afternoon: Didn't stream for a whole week so gotta remember how to do it. Let's see if I can get that OSC 4 stuff merged and released.
+Evening: Great catching up with the gang again ❤️Got a new release out with the OSC 4 palette parser and Umpriel confirmed that it works 🎉 Then started working on getting the Wezterm crate dependencies up on crates.io. Some non-ideal tweaks needed, but they're both published now. I should tidy them up and mention it on the Wezterm repo just to be polite. Then I can look at getting `shadow-terminal` published. Then of course I'll be able to play with `release-plz` again. And then I can try adding `shadow-terminal` tests to Browsh!
+
+📅 **June 19th to 24th** No stream  
+
+📅 **June 18th**  
 Afternoon: Let's see if I can finish off the OSC 4 stuff today. Remember that there'll be a fair amount of changes to the documentation.
 Evening: Got OSC parsing done. I think what's left is mainly just updating the documentation, website etc. Would be good to test it in a few terminals too.
 
-📅 **June 17th**
+📅 **June 17th**  
 Afternoon: Played a bit more with the OSC 4 thing last night, it seems that you can't send and receive these particular commands over STDIN/OUT, but rather they should be sent and read from `/dev/ttty`, which I fins a bit confusing because how does `/dev/tty` know which terminal is being talked to? Like I mean shouldn't you first figure out that say the terminal is on `/dev/tty42`, then send the OSC codes to that. Anyway I'll crack and see how it goes. Also someone tried running Wrach! But they don't know that the latest branch is not main.
 * mikevdev's bluesky: https://bsky.app/profile/mikevdv.dev
 Evening: Did some refactoring and got a basic working version of OSC 4 queries and response 💪 Just need to parse the RGB values and construct the palette.
 
-📅 **June 16th**
+📅 **June 16th**  
 Afternoon: Got a couple of Pygls things to do first. Then have a look at the default shader going black after you hit return a few times on a shell prompt. Then what? Maybe start on the OSC 4 stuff?
 Evening: Got the Pygls stuff done, then fixed the blank shaders issue, released v0.1.2, then started on the OSC 4 stuff, but just couldn't capture the reponse. I feel like it's because the response is somehow sent before we start listening on STDIN...
 
-📅 **June 15th**
+📅 **June 15th**  
 Afternoon: Had day off yesterday, it's weird not being completely focussed, maybe obsessed with launching Tattoy. Not sure what I'm going to do next, but definitely want to reply to issues and implement OSC 4 alongside screenshot palette parsing. Sill thinking about a multiplexer and the whole `xwayland` for terminals idea.
 
 📅 **June 14th** No stream
 
-📅 **June 13th**
+📅 **June 13th**  
 Morning: We're launching Tattoy today! Even though it was my day off yesterday I spent most of it getting Tattoy ready for release. The only gotcha I came across is that Tattoy can't be published to crates.io. And Release-plz can't not publish to crates.io. So whilst I can still manually trigger a Github Release I'm going to have to remove Release-plz for now. I released to Hacker News, Reddit and Lobsters at 11am! Nervous and excited.
 Evening: The day went well, a few issues, but most of them quickly got sorted. The only niggle was the screenshot parser again, would love to find a more consistent way to handle that. But frontpage of HN, r/Linux and Lobster, what a day! 
 
-📅 **June 11th**
+📅 **June 11th**  
 Evening: Got all the homepage gifs working! It looks soooooo good 🥹 I'm so proud of everything I've done. Also was working on some bugs, got the block cursor displaying right when it's over a pixel and think I hace a fix for Ghostty shaders refusing to render anything when `iChannel0` is empty. We're so close to a release!!!!!!!!!
 
-📅 **June 10th**
+📅 **June 10th**  
 Morning: Went looking around other Rust projects to get inspiration for how to do automated deploy processes and saw that I really like how `git-cliff` does it (of course I'd be inspired yet again by Orhun). So based on that (and many others), I think one of the first things to do today is move the website into a folder on the Tattoy repo itself.
 * Scott had a good idea to have a popup of whuch bird it is that is chirping.
 
-📅 **June 9th**
+📅 **June 9th**  
 Afternoon: What's the plan? Tidy up that little system initialiser fix commit. Then I'm happy to say that we have Windows support. Then it's just a bunch of web stuff.
 Evening: Tidied up that commit and pushed. Tidied up the ANSI blog post. And started on the automation for the website post releases.
 
-📅 **June 8th**
+📅 **June 8th**  
 Morning: Woah 3 days without streaming, moving, life stuff etc, but also maybe taking advantage of the fact that most of the hard work is done in Tattoy. So last thing I remeber is that I was getting Windows working and need also working on getting cross compiles done.
 * @alpoxo on Twitch tested Tattoy on MacOS with Ghostty and it works perfectly!!
 Evening: Got cross-compiled binaries working for Linux, Mac and Windows, all compiling to x86 and ARM. And managed to get my Windows VM setup well enough to see Tattoy working in Windows Terminal with Powershell. Inmate is still testing on Alacritty etc, but looking like they don't work at the moment.
 
 📅📅📅 No streams
 
-📅 **June 4th**
+📅 **June 4th**  
 Morning: Actually got a morning start at last. Got the shader to where I wanted to yesterday so just need to tidy that up and commit. Then I think I'll try to get Windows working, not looking forward to that though, so could also just get starte on the whole CI/release workflow stuff.
 Evening: Got the nice soft shadow penumbra-style shader working for the default shader, maaaaany thanks to Slammy_13. Then started installing Windows 11 in QEMU, which was not too bad in the end, I actually got to the point of `cargo run` but ran out of diskspace, so need to add a new disk to get Tattoy actually installing. Also added `release-plz` to the Tattoy repo, was really, really impressed with it, it automates everything, even automatically makes a release PR whenever it detects semantic versionable changes in `main`. Still need to setup a build job though that adds the compiled binaries to the Github release. OMG we're nearly there, nervous and excited.
 
-📅 **June 3rd**
+📅 **June 3rd**  
 Afternoon: Late start, moved house again, let's see what the internet is like here. Only got a couple of hours so let's see if I can get the default shader working nice.
 
-📅 **June 2nd**
+📅 **June 2nd**  
 Afternoon: Played with the shader after stream last night, I'm thinking now that the better idea is to make all 9 cells surrounding the cursor emit light, it might even be a better effect, and there's also more scope for reducing computation.
   * Mike's Youtube https://www.youtube.com/@mikevdev
 Evening: I think I'm going to give up on raytracing/marching, I just couldn't get the performance or low enough visual noise. Looking at other Shader Toys I think I should focus on simple mathematical light, I found these that I like:
@@ -56,29 +62,29 @@ Evening: I think I'm going to give up on raytracing/marching, I just couldn't ge
   * https://www.shadertoy.com/view/3s3cD2
   * https://www.shadertoy.com/view/3tX3zn  
 
-📅 **June 1st**
+📅 **June 1st**  
 Afternoon: Couple of little code things, but main thing I want to focus on today is improving the default shader, I want to explore making every cell a potential light blocker, I think it might be too much though. Found these 2D light Shader Toys that could be good for inspiration:
   https://www.shadertoy.com/view/3tsXzB
   https://www.shadertoy.com/view/4dfXWX
 
-📅 **May 31st**
+📅 **May 31st**  
 Afternoon: Got some good progress with the startup logo but still not quite sure how I want it to look exactly. I'm thinking I definitely want to use the user's terminal palette, maybe one colour per line? With a little bit of randomness and a fade out?
 
-📅 **May 30th**
+📅 **May 30th**  
 Afternoon: Another laaate start. Time to add the logo! I was actually thinking it'd be nice to use the colors from the user's palette?
 
-📅 **May 28th**
+📅 **May 28th**  
 Afternoon: Slow day, getting settled into the new city etc. Still playing with the UTF8 bug, I think it's actually happening in the Shadow Terminal when we add all the Wezterm changes to the Termwiz surface. Still haven't found clinching proof, may need to write a isolated reproducer to really see what's going on. It may even be a bug in Termwiz itself.
 Evening: Got it fixed! It was that both Wezterm and Termwiz were adding the blank cell after the wide character, so just had to ignore Wezterms' and it worked! We're on 72% progress now! So close to a realse, like it could be days now, this weekend??
 
-📅 **May 27th**
+📅 **May 27th**  
 No stream. Moved to Mendoza.
 
-📅 **May 26th**
+📅 **May 26th**  
 Afternoon: Let's see if we can do lots of little fixes today.
 Evening: Got loooooads done today. Even fixed the weird double width cursor issue. But there's still the issue of Nerd Fonts being clipped. I think that's because Termwiz isn't detecting the double width of them. Maybe it's okay to just make an issue and release like that?
 
-📅 **May 25th**
+📅 **May 25th**  
 Morning: Left things broken last night, hopefully I can get back into it okay. Everyday I think it's the day I'll finish the notifications, but no, so probably best just to go with it and do a good job. Still haven't even looked into wrapping the end-user error messages that get output to the CLI, can Rust wrap error messages? 
 Evening: I think I've finished the notifications. Just got stuck on writing a e2e test, for some reason the notification displays in the test if the path to a plugin is wrong, but it doesn't display if the special `bad_plugin.sh` script is run. The only thing I can think of is that there is some kind of contention when the plugin output parser spins on bad output 🤔
 
