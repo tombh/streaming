@@ -1,6 +1,17 @@
 # Journal
 ## 2025
 
+📅 **June 27th**  
+Afternoon: Let's see if we can put Shadow Terminal into its own repo. Then I'd like to try making a Python wrapper for it, I have no idea how to do that. Oh wait maybe I should try getting it to work with Browsh first?
+Marco (ProfessorLogout):
+  * did an interview with Nginx! https://www.youtube.com/watch?v=tZGOnPHZf4I
+  * https://blog.marco.ninja/index.xml
+  * https://mastodon.world/@mkamner
+Waiting for reply about including `cargo doc` warnings in LSP: https://rust-lang.zulipchat.com/#narrow/channel/122651-general/topic/Including.20.60cargo.20doc.60.20warnings.20in.20.60cargo.20clippy.60.20output/with/526129199
+Evening: Updated Tattoy's for of Wezterm from upstream and there's 4 new crates unpublished crates that I will need to publish myself under 'tattoy-*', which I'm not very keen on. Hopefully Wez plans to publish them anyway.
+
+📅 **June 26th** No stream  
+
 📅 **June 25th**  
 Afternoon: Didn't stream for a whole week so gotta remember how to do it. Let's see if I can get that OSC 4 stuff merged and released.
 Evening: Great catching up with the gang again ❤️Got a new release out with the OSC 4 palette parser and Umpriel confirmed that it works 🎉 Then started working on getting the Wezterm crate dependencies up on crates.io. Some non-ideal tweaks needed, but they're both published now. I should tidy them up and mention it on the Wezterm repo just to be polite. Then I can look at getting `shadow-terminal` published. Then of course I'll be able to play with `release-plz` again. And then I can try adding `shadow-terminal` tests to Browsh!
