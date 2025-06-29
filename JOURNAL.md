@@ -1,6 +1,12 @@
 # Journal
 ## 2025
 
+📅 **June 28th**  
+Morning (almost): Got a bunch of failed CI runs from the Wezterm fork so better sort that our. Thinking about it last night I think it's fine to just publish those Wezterm crates for now and let them know on the Wezterm Github Discussions. Getting a real craving to move onto the Viewsheds stuff!
+* laund__ suggested this for hotpatching in Rust: https://github.com/DioxusLabs/dioxus/blob/main/packages/subsecond/subsecond/src/lib.rs
+Evening: Busy day! 9 hour stream 😲 Migrated pygls to `uv`. Spent most of the day getting the Tattoy
+Wezterm dependencies massaged to be able to publish them on crates.io. A little worried that the changes (mostly in various `Cargo.toml`s) might cause tricky conflicts when updating from upstream. But let's see. I got `shadow-terminal` published fine, so that's the main thing.
+
 📅 **June 27th**  
 Afternoon: Let's see if we can put Shadow Terminal into its own repo. Then I'd like to try making a Python wrapper for it, I have no idea how to do that. Oh wait maybe I should try getting it to work with Browsh first?
 Marco (ProfessorLogout):
