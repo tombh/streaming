@@ -1,6 +1,17 @@
 # Journal
 ## 2025
 
+📅 **June 29th**  
+Afternoon: Found these interesting links last night regarding CLI app testing frameworks:
+  * https://github.com/bats-core/bats-core
+  * https://github.com/assert-rs/snapbox
+  * https://github.com/cucumber/aruba
+  * https://github.com/microsoft/tui-test
+And this looks useful for making C-compatible libraries from Rust:
+  * https://github.com/lu-zero/cargo-c
+So I've been thinking about what form Shadow Terminal takes (apart from simply being a Rust library), I think it can be an `.so`/`.dll` library, but how do you manage state in that? Like when the in-memory terminal is running in its own process, how do you send function calls to it? Then I was also that thinking that as well as, or maybe even instead of, we could have a CLI binary that just operates over STDIN/STDOUT. So you could start it in any language, as a subprocess, and then send that process either raw input or structured JSON and it would always output JSON. Let's explore.
+Evening: Got Shadow Terminal migrated to its own repo and got a basic CLI PoC working, pretty nice. Ended thinking about the file structure for the lib and binary.
+
 📅 **June 28th**  
 Morning (almost): Got a bunch of failed CI runs from the Wezterm fork so better sort that our. Thinking about it last night I think it's fine to just publish those Wezterm crates for now and let them know on the Wezterm Github Discussions. Getting a real craving to move onto the Viewsheds stuff!
 * laund__ suggested this for hotpatching in Rust: https://github.com/DioxusLabs/dioxus/blob/main/packages/subsecond/subsecond/src/lib.rs
