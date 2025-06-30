@@ -1,6 +1,16 @@
 # Journal
 ## 2025
 
+📅 **June 30th**  
+Afternoon: Still wondering about what the the Shadow Terminal CLI should do, I think the plain STDIN/OUT version is just for the convenience of verifying things work. Whilst the JSON over STDIN/OUT is actually probably more useful. But even then the CLI version is only ever going to use the `ActiveTerminal` not the `SteppableTerminal`, so its use may be limited anyway. Then getting on to the library.so thing, that's a whole other kettle of fish, like how do you expose a `tokio` channel over the FFI??
+Evening:
+  * Probably better to just create our own output struct, construct and then convert _that_ to JSON. Rather than messing about with massaging JSON values.
+  * Improve the format of the JSON output.
+  * For the CLI app it'd be nice to have; tests, documentation and examples.
+  * Check it still works with Tattoy.
+  * Push, release and `cargo binstall`.
+  * And then start working on `libshadowterminal.so`.
+
 📅 **June 29th**  
 Afternoon: Found these interesting links last night regarding CLI app testing frameworks:
   * https://github.com/bats-core/bats-core
