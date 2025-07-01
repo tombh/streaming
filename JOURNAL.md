@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **July 1st**  
+Afternoon: Updated my system and Alacritty has some weird artefacting so having to use Kitty today. Seems okay, just doesn't recognise my `CTRL-UP` in `tmux` to start selecting. Anyway let's see how it goes, just want to follow my checklist from last night.
+Found relevant projects like Shadow Terminal for testing:
+  * https://github.com/pexpect/pexpect
+  * https://github.com/rust-cli/rexpect
+Evening: Got the CLI version workin real nice. Almost merged it to main, but just want to fix the false positive error logs first. Then I can get on with thinking about a release. Maybe setting up `release-plz`?
+
 📅 **June 30th**  
 Afternoon: Still wondering about what the the Shadow Terminal CLI should do, I think the plain STDIN/OUT version is just for the convenience of verifying things work. Whilst the JSON over STDIN/OUT is actually probably more useful. But even then the CLI version is only ever going to use the `ActiveTerminal` not the `SteppableTerminal`, so its use may be limited anyway. Then getting on to the library.so thing, that's a whole other kettle of fish, like how do you expose a `tokio` channel over the FFI??
 Evening:
