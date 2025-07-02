@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **July 2nd**  
+Morning(ish): Would be nice if I could get to adding Shadow Terminal to Browsh today.
+Realised from working on Browsh that https://github.com/gdamore/tcell can also do terminal E2E tests.
+Evening: Got Shadow Terminal and Tattoy working with `release-plz` and all their various version updated too. So that's great. But then started looking at Browsh and got quite overwhelmed by how buggy it is and how much I've forgotten about how it works 😞 But did get a bit excited looking https://github.com/Vrtgs/thirtyfour which is a nice wrapper for Firefox Webdriver. So maybe I should rewrite the Browsh interfacer in Rust??
+
 📅 **July 1st**  
 Afternoon: Updated my system and Alacritty has some weird artefacting so having to use Kitty today. Seems okay, just doesn't recognise my `CTRL-UP` in `tmux` to start selecting. Anyway let's see how it goes, just want to follow my checklist from last night.
 Found relevant projects like Shadow Terminal for testing:
