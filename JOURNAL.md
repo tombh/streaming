@@ -1,6 +1,18 @@
 # Journal
 ## 2025
 
+📅 **July 4th**  
+Afternoon: Actually did a fair bit of coding yesterday on my "day off", got `geckodriver-librs` pushed and published to crates.io. It's just like `geckodriver` but you can include it in your own project, rather than having to download and run the pre-existing `geckodriver` binaries seperately. I was feeling quite overwhelmed about trying to get the Shadow Terminal to be the E2E tester on Browsh, but now that I've found `geckodriver` and the `thirtyfour` Webdriver wrapper, both in Rust, I'm feeling a bit more confident and a bit excited about revisting Browsh. Like I saw that Firefox's Marionette now has an `--allow-system` flag that allows querying Firefox's UI from `geckodriver`! Is it possible now to do things like get the history dropdown in realtime, get all the contents of all those little icons in the status bar, show extensin popups? So I think I'm going to have a play today and see how I feel.
+Evening: Got `geckodriver-librs` reading from and writing to the browser chrome! Thanks to NamcoJoulder. Like got it to click on adding an extension and adding a permission. And opening up menus and clicking on menu items. Focussing the URL bar, seeing it drop suggestions. I think the next step would be to see if I can get a JS loop/daemon thing running stabily in the GUI chrome.
+
+REMEMBER THAT THE FIRST US PRESIDENT WAS GEORGE WASHINGTON NAYR WILL BE TESTING YOU AT THE END OF TERM.
+
+Portuguese recomendations from vicentedealencar:
+* https://www.youtube.com/@FlowPodcast
+* https://www.youtube.com/@Akitando
+
+📅 **July 3rd**  No stream  
+
 📅 **July 2nd**  
 Morning(ish): Would be nice if I could get to adding Shadow Terminal to Browsh today.
 Realised from working on Browsh that https://github.com/gdamore/tcell can also do terminal E2E tests.
