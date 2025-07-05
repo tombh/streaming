@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **July 5th**  
+Morning: Was wondering if I actually need that `thirtyfour` crate, maybe I can just make my own HTTP requests to `geckodriver`? But I think the even just the session management is worth it, even if the only thin Browsh does is to inject JS into tabs. So first thing today is to see if I can inject JS into the browser chrome and have it message back to central server.
+
+* ProfessorLogout recommended this story: https://craphound.com/overclocked/Cory_Doctorow_-_Overclocked_-_When_Sysadmins_Ruled_the_Earth.html
+
+Evening: Found a project that uses a crazy SVG trick to take screenshots of DOM elements: https://github.com/zumerlab/snapdom/ It uses a feature of SVG where you can add actual HTML elements inside the SVG XML and the SVG renderer renders the HTML to and image!! It seems that it can render pretty much anything. I don't think it's a replacement for the webext API tab capture, but I think it'll work great in tabs where webextension aren't allowed. I'd love for it to be possible in the browser UI chrome. But I spent most of the day struggling to get snapdom's script escaped into the browse  content using Webdriver, it's complaining about newlines being escaped in backticks. It's quite annoying.
+
 📅 **July 4th**  
 Afternoon: Actually did a fair bit of coding yesterday on my "day off", got `geckodriver-librs` pushed and published to crates.io. It's just like `geckodriver` but you can include it in your own project, rather than having to download and run the pre-existing `geckodriver` binaries seperately. I was feeling quite overwhelmed about trying to get the Shadow Terminal to be the E2E tester on Browsh, but now that I've found `geckodriver` and the `thirtyfour` Webdriver wrapper, both in Rust, I'm feeling a bit more confident and a bit excited about revisting Browsh. Like I saw that Firefox's Marionette now has an `--allow-system` flag that allows querying Firefox's UI from `geckodriver`! Is it possible now to do things like get the history dropdown in realtime, get all the contents of all those little icons in the status bar, show extensin popups? So I think I'm going to have a play today and see how I feel.
 Evening: Got `geckodriver-librs` reading from and writing to the browser chrome! Thanks to NamcoJoulder. Like got it to click on adding an extension and adding a permission. And opening up menus and clicking on menu items. Focussing the URL bar, seeing it drop suggestions. I think the next step would be to see if I can get a JS loop/daemon thing running stabily in the GUI chrome.
