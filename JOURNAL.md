@@ -1,6 +1,18 @@
 # Journal
 ## 2025
 
+📅 **July 6th**  
+Learnt how to do a manual `release-plz` relase:
+* `s su - tombh`
+* Copy the `TATTOY_GITHUB` token in your secrets file
+* Switch to `main` branch
+* Run `release-plz release-pr --git-token ...`
+
+Evening:
+* Made a little PR for the `cargo-gpu` issue where there's a cryptic error when asking for consent outside of a PTY.
+* Spent probably a couple of hours looking into the Tattoy issue where the .deb wasn't working. Turns out that the website link to the .deb was just wrong 🤦
+* Had some progress getting snapdom screenshots of the browser UI, but some bits are missingm, like the menu, and the URL bar. Worth spending a little more time on.
+
 📅 **July 5th**  
 Morning: Was wondering if I actually need that `thirtyfour` crate, maybe I can just make my own HTTP requests to `geckodriver`? But I think the even just the session management is worth it, even if the only thin Browsh does is to inject JS into tabs. So first thing today is to see if I can inject JS into the browser chrome and have it message back to central server.
 
