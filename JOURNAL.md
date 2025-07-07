@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **July 7th**
+Afternoon: I was thinking about the whole JS-side part of Browsh, would it make sense to have a seperate project/repo for it? Would people find that useful, as JS lib and maybe an independent browser extension? I could call it something like "Mono Grid"?
+But anyway there's still the question of if I can get what I want from the browser chrome. First thing today is to see if I can get the URL bar, the little extension icons, the menu, etc. But maybe I can find the underlying issue why some of them are missing when trying to screenshot all their parents.
+Evening: Well it seems possible to screenshot pretty much everything I need, but I think a lot of hoop jumping will be required, so I'm not very keen. I did manage to find a screenshoting function in the browser chrome dependencies, but it errors saying that the browser context has been lossed. Maybe I can figure that out? Been lots of drilling today, so not feeling very postive. Would be really good to be able to capture the browser chrome in Browsh, but not quite sure how to do it yet.
+
 📅 **July 6th**  
 Learnt how to do a manual `release-plz` relase:
 * `s su - tombh`
