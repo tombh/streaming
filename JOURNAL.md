@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **July 9th**  
+Morning: Can we get animated cursors published today? Trouble is I can't get the screencapture on stream, I think I can only do it in a separate Hyprland session. Or what if I boot up a linux VM?
+Evening: Good progress just tidying up the animated cursor code. Pushed a WIP branch. And made a list of the remaining things to do.
+
 📅 **July 8th**  
 Afternoon: Want to take a break from exploring the Browsh rewrite, I posted my screenshotting problem in a bunch of places: https://github.com/browsh-org/browsh/issues/551 So whilst that gets thought about I want to see if I can get animated cursors working in Tattoy. Will follow Ghostty's lead for config default shaders etc.
 Evening: Very successful day getting shaders working 💪 Here are the things I want to tweak:
@@ -11,7 +15,7 @@ Evening: Very successful day getting shaders working 💪 Here are the things I 
   * Config for hiding/showing the cursor?
   * I think Tattoy should be able to render shaders (including the cursor) without replacing text with those UTF8 half blocks.
 
-📅 **July 7th**  k
+📅 **July 7th**  
 Afternoon: I was thinking about the whole JS-side part of Browsh, would it make sense to have a seperate project/repo for it? Would people find that useful, as JS lib and maybe an independent browser extension? I could call it something like "Mono Grid"?
 But anyway there's still the question of if I can get what I want from the browser chrome. First thing today is to see if I can get the URL bar, the little extension icons, the menu, etc. But maybe I can find the underlying issue why some of them are missing when trying to screenshot all their parents.
 Evening: Well it seems possible to screenshot pretty much everything I need, but I think a lot of hoop jumping will be required, so I'm not very keen. I did manage to find a screenshoting function in the browser chrome dependencies, but it errors saying that the browser context has been lossed. Maybe I can figure that out? Been lots of drilling today, so not feeling very postive. Would be really good to be able to capture the browser chrome in Browsh, but not quite sure how to do it yet.
