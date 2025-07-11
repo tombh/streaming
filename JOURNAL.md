@@ -1,6 +1,12 @@
 # Journal
 ## 2025
 
+📅 **July 11th**   
+Morning(ish): Was wondering about how I refactor the code between the _shader_ and _animated_cursor_ tattoy. I think they're actually now exactly the same, so maybe they can be separated entirely via the arguments that are passed to their `new()`s? Increasing the image buffer size for the _animated_cursor_ cursor is going to be interesting. Still not sure how exactly to integrate GPU animation with UTF8 animation. But first I should reply to some kind responses to the Browsh questions I asked the other day.
+Evening: Fixed a long-standing build bug in Browsh, felt really quite bad when I looked into all the issues and PRs and how it only took maybe 30 mins to fix. But it's done now and felt good to be actually giving Browsh some attention. Then did lots of refactoring of the GPU code to. The main thing was getting scaling working (to help improve anti-aliasing) but I've had to leave it because there's some annoying memory alignment bug. I'm not sure if it even helps with the anti-aliasing but I'll have to suspend judgement on that until I get it all working.
+
+📅 **July 10th**  No stream
+
 📅 **July 9th**  
 Morning: Can we get animated cursors published today? Trouble is I can't get the screencapture on stream, I think I can only do it in a separate Hyprland session. Or what if I boot up a linux VM?
 Evening: Good progress just tidying up the animated cursor code. Pushed a WIP branch. And made a list of the remaining things to do.
