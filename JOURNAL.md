@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **July 14th**   
+Afternoon: Might be able to finish cursors today? First gotta fix that broken test. OMG had a GREAT video chat with new_duck on stream. And they recommended I submit the "get glyph position" idea/feature to https://github.com/w3c/webdriver-bidi They seemeed fairly confident that it won't at least be rejectect out of hand. I'm actually quite excited. The idea is that it gets addded to the spec first, and then that'll motivate browsers (plural!) to actually implement it. The glyph position at first wouldn't necessarily contain the glyph's final visibility, that could come later.
+Evening: Tried the idea to only render th differences between the TTY pixels before and after uploading and downloading from the GPU. I think it works the Nvim cursor line bug, but not sure about the other bug where spaces seem to blend their backgrounds differently. But now I'm also wondering if whatever did yesterday actually prevented individual pixels from being composited, they all just look like UTF8 full blocks 🥺
+
 📅 **July 13th**   
 Afternoon: Step by step we're getting there with the animated cursors, I almost dogfooded it today but then I realised it'd be hard to have both a dogfooded cursor and the development cursor at the same time. I had a tiny thought that I might actually explore taking the Carbonyl approach with Browsh, therefore patching Firefox (rather than Chromium of course), I just have no idea of the difficulty so maybe just worth exploring as an idea amongst others. Anyway gotta make a Pygls PR for a release then have a look at the cursor colour thing from yesterday.
 Evening: Looads of fine-tuning of the animated cursor, I think I've finally got it to a place that I'd be happy to publish. Lots of things I don't want to forget about though:
