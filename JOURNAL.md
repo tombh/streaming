@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **July 16th**   
+Afternoon: Actually did some Tattoy stuff in the middle of the night! I couldn't sleep. Managed to get a major performance improvement by not using `Change`s when adding pixels to the termwiz surface, but instead just directly mutating the cell attributes in place. That'll also speed up shaders and plugins too. And also figured out the regressed black pixels bug: it was the edge case of a lower half block having the default GPU colour as opposed to an actual `Default`/`None` colour. So there's just some code tidy up to do. But I think I could add some tests too, even without real GPU e2e tests, although I think I should still explore those too.
+* creado1's instagram with cool royal enfield pics https://www.instagram.com/im_sudiproy
+Evening: Finally got the code to where I want it. Lots of things just fell in to place, various simplifications, deletions, insights, etc. The main thing I still want to do is at least start on making some basic GPU tests, it's so easy to trigger whackamole regressions. And then after that it's just a matter of updating the website, I think this even deserves a blogpost.
+
 📅 **July 15th**   
 Afternoon: Right animated cursors:
 * Don't forget that the pixel comparison code is also running for the normal shaders, but maybe that's good??
