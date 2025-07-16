@@ -1,9 +1,17 @@
 # Journal
 ## 2025
 
+📅 **July 15th**   
+Afternoon: Right animated cursors:
+* Don't forget that the pixel comparison code is also running for the normal shaders, but maybe that's good??
+* Get single pixels working again.
+* Tidy up code.
+* I think I really need to add shader tests.
+Evening: And today I had a colab with mikevdev! So 2 cool video chats on stream in 2 days. Then got on and fairly quickly fixed that subtle issue where the blending for the cursor trail was slightly different for empty cells and text cells. I just need to carefully make that they both blending their foregrounds and backgrounds in exactly the same way. So everything was great at last. Except ... I'd broken the shaders with how empty cells were being stored. We do actually want the default colour to be represented as an `Option` because we need a `None` colour value to know that someting is completely transparent. But in fixing that I then broke the cursor again cos that change I just mentioned causes the little black pixels to appear on the trail again. But I do feel like I've tidied a lot of things up. So hopefully this is really nearly it! All this makes me want shader tests.
+
 📅 **July 14th**   
 Afternoon: Might be able to finish cursors today? First gotta fix that broken test. OMG had a GREAT video chat with new_duck on stream. And they recommended I submit the "get glyph position" idea/feature to https://github.com/w3c/webdriver-bidi They seemeed fairly confident that it won't at least be rejectect out of hand. I'm actually quite excited. The idea is that it gets addded to the spec first, and then that'll motivate browsers (plural!) to actually implement it. The glyph position at first wouldn't necessarily contain the glyph's final visibility, that could come later.
-Evening: Tried the idea to only render th differences between the TTY pixels before and after uploading and downloading from the GPU. I think it works the Nvim cursor line bug, but not sure about the other bug where spaces seem to blend their backgrounds differently. But now I'm also wondering if whatever did yesterday actually prevented individual pixels from being composited, they all just look like UTF8 full blocks 🥺
+Evening: Tried the idea to only render th differences between the TTY pixels before and after uploading and downloading from the GPU. I think it fixes the Nvim cursor line bug, but not sure about the other bug where spaces seem to blend their backgrounds differently. But now I'm also wondering if whatever did yesterday actually prevented individual pixels from being composited, they all just look like UTF8 full blocks 🥺
 
 📅 **July 13th**   
 Afternoon: Step by step we're getting there with the animated cursors, I almost dogfooded it today but then I realised it'd be hard to have both a dogfooded cursor and the development cursor at the same time. I had a tiny thought that I might actually explore taking the Carbonyl approach with Browsh, therefore patching Firefox (rather than Chromium of course), I just have no idea of the difficulty so maybe just worth exploring as an idea amongst others. Anyway gotta make a Pygls PR for a release then have a look at the cursor colour thing from yesterday.
