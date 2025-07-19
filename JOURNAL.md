@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **July 18th**   
+Afternoon: I made some screen captures of the animated cursor offline. Let's see if I can get them tidied up and onto the website.
+Evening: Got all the screenshots done, updated the website (not published yet), wrote a little blog post and updated the docs. So we're ready to publish. Just want to finish some shader tests first. Made a start on that but fore some reason the TTY pixels aren't uploaded in the test environment. I'm too tired and hungry to look more into right now.
+
+📅 **July 18th** No stream   
+📅 **July 17th** No stream   
+
 📅 **July 16th**   
 Afternoon: Actually did some Tattoy stuff in the middle of the night! I couldn't sleep. Managed to get a major performance improvement by not using `Change`s when adding pixels to the termwiz surface, but instead just directly mutating the cell attributes in place. That'll also speed up shaders and plugins too. And also figured out the regressed black pixels bug: it was the edge case of a lower half block having the default GPU colour as opposed to an actual `Default`/`None` colour. So there's just some code tidy up to do. But I think I could add some tests too, even without real GPU e2e tests, although I think I should still explore those too.
 * creado1's instagram with cool royal enfield pics https://www.instagram.com/im_sudiproy
