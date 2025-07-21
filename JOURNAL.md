@@ -1,11 +1,16 @@
 # Journal
 ## 2025
 
-📅 **July 18th**   
+📅 **July 21st**     
+Morning: Was thinking about splitting out the e2e tests into seperate files, would be good to help organise them better and make them easier to understand. But first thing I want to do is just get the tests I broke yesterday fixed and see what the floating point values are for the shader tests on Github CI, they might need some rounding to make sure they pass on both real and software GPUs.
+Evening: Finally got animated cursors launched! Thanks to creado1 we found a couple of last minute bugs. Also got some basic GPU tests working, very basic but a good start. It's launched. I'm excited, pleased, a bit nervous of the feedback. What's next??
+
+
+📅 **July 20th**   
 Afternoon: Saw last night that the animated cursor code idles at 60% 😬. Saw better see if I can fix that first. Then get on with the tests.
 Evening: Got that performance improvement done, by hashing the cursor render and stopping rendering once the final render stops changing. Then started working on the shaders tests from yesterday, so tricky getting everything working, it always feels like being blind writing e2e tests. Anyway got the shader test working locally at least, but at the cost breaking some other tests. Now the minimap for example sometimes fails because its tokio task doesn't always spawn in time. I just don't know why this is.
 
-📅 **July 18th**   
+📅 **July 19th**   
 Afternoon: I made some screen captures of the animated cursor offline. Let's see if I can get them tidied up and onto the website.
 Evening: Got all the screenshots done, updated the website (not published yet), wrote a little blog post and updated the docs. So we're ready to publish. Just want to finish some shader tests first. Made a start on that but fore some reason the TTY pixels aren't uploaded in the test environment. I'm too tired and hungry to look more into right now.
 
