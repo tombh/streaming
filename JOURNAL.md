@@ -1,10 +1,13 @@
 # Journal
 ## 2025
 
-📅 **July 21st**     
-Morning: Was thinking about splitting out the e2e tests into seperate files, would be good to help organise them better and make them easier to understand. But first thing I want to do is just get the tests I broke yesterday fixed and see what the floating point values are for the shader tests on Github CI, they might need some rounding to make sure they pass on both real and software GPUs.
-Evening: Finally got animated cursors launched! Thanks to creado1 we found a couple of last minute bugs. Also got some basic GPU tests working, very basic but a good start. It's launched. I'm excited, pleased, a bit nervous of the feedback. What's next??
+📅 **July 22nd**   
+Afternoon: Late start, was playing with my Ferris Sweep. Not using it on stream yet cos I'm sooo slow with it still. So animated cursors have had a good reception, no major issues. So I'll make a start on that Webdriver protocol proposal for Browsh.
+Evening: Posted that issue, new_duck replied straight away with a link showing how CDP is doing something similar but not exactly the same. Then started proting Total Viewsheds to Rust, and wow, I actually get one of the files to port and output data matching the tests. Dear Tom From 8 Years Ago, thank you my friend, for writing those tests and all that detailed documentation, it really gave me confidence in the ported code and motivation to carry on. I think this is going to be successful and worthwhile.
 
+📅 **July 21st**   
+Morning: Was thinking about splitting out the e2e tests into seperate files, would be good to help organise them better and make them easier to understand. But first thing I want to do is just get the tests I broke yesterday fixed and see what the floating point values are for the shader tests on Github CI, they might need some rounding to make sure they pass on both real and software GPUs.
+Evening: Finally got animated cursors launched! Thanks to creado1 we found a couple of last minute bugs. Also got some basic GPU tests working, very basic but a good start. It's launched. I'm excited, pleased, a bit nervous of the feedback. What's next?
 
 📅 **July 20th**   
 Afternoon: Saw last night that the animated cursor code idles at 60% 😬. Saw better see if I can fix that first. Then get on with the tests.
