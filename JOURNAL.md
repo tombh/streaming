@@ -1,6 +1,10 @@
 # Journal
 ## 2025
 
+📅 **July 23rd**
+Afternoon: First day trying to use my new Ferris Sweep keyboard full time. It's hard. Just these few sentences have taken me a minute! One step at a time. Before stream I message Rapheal, the creator of the Rio Terminal. And I left a message on the #wayland IRC channel asking for advice about creating a Wayland-like protocol for the terminal. For today I'm just going to slowly try to work on rewriting Total Viewsheds in Rust.
+Evening: Managed to get by with my keyboard, even though it's still really frustrating. Added the CPP tests the Rust file I ported yesterday, but there's one test (of 6) that doesn't pass and I spent a few hours pouring over each line to try to find a typo or something, but nothing. Them I started looking to see if I could just rewrite the code myself in more readable way. But I'm not sure I understand exactly what the code does. But if I can make the tests pass then that's all  that counts right?
+
 📅 **July 22nd**   
 Afternoon: Late start, was playing with my Ferris Sweep. Not using it on stream yet cos I'm sooo slow with it still. So animated cursors have had a good reception, no major issues. So I'll make a start on that Webdriver protocol proposal for Browsh.
 Evening: Posted that issue, new_duck replied straight away with a link showing how CDP is doing something similar but not exactly the same. Then started proting Total Viewsheds to Rust, and wow, I actually get one of the files to port and output data matching the tests. Dear Tom From 8 Years Ago, thank you my friend, for writing those tests and all that detailed documentation, it really gave me confidence in the ported code and motivation to carry on. I think this is going to be successful and worthwhile.
