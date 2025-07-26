@@ -1,6 +1,19 @@
 # Journal
 ## 2025
 
+📅 **July 25th**
+Afternoon: Back after a couple of days off. Did some keyboard practice and some work on viewsheds, decided to just rewrite the Axes code myself, I think it's actually much simpler like this. Just got stuck on some trigonemtry for now. Also, yesterday somebody posted the Animated Cursors article on Hacker News and it got to the front page, with even more points than my first launch post! Realised though the Homebrew package hasn't been updating on releases, so need to fix that first today. Maybe I'll have a quick look at the cursor lag issue, it might be easy to sync PTY rendering with cursor rendering, which doesn't address any performance but it might be a quick win, and we can put it behind a config settings too. But mostly I'm excited to get on with viewsheds today.
+Tattoy TODOs:
+  * Add version to log startup line ✔️
+  * Look into why the frame rate setting isn't working ✔️
+  * Set base log level to warning when using `TATTOY_LOG` ✔️
+  * Config option to only render animated cursor when it moves a certain distance
+  * Config to sync PTY and cursor rendering.
+Evening: I did look into those last 2 points on the list but it's harder than I hoped. Preventing the cursor from animating when it only moves a short distance isn't 100% reliable, I think it's to do with not being able to rely on the shader frame updates avoiding the backlog. What if instead the check for cusor movemnt was made in the renderer thread? And the because the unreliability of that it gave me cold feet for being able to reliably know when a cursor animation starts. Also I still can't think of a way to anchore a PTY change with a cursor animation??
+
+📅 **July 24th** No stream   
+📅 **July 25th** No stream   
+
 📅 **July 23rd**
 Afternoon: First day trying to use my new Ferris Sweep keyboard full time. It's hard. Just these few sentences have taken me a minute! One step at a time. Before stream I message Rapheal, the creator of the Rio Terminal. And I left a message on the #wayland IRC channel asking for advice about creating a Wayland-like protocol for the terminal. For today I'm just going to slowly try to work on rewriting Total Viewsheds in Rust.
 Evening: Managed to get by with my keyboard, even though it's still really frustrating. Added the CPP tests the Rust file I ported yesterday, but there's one test (of 6) that doesn't pass and I spent a few hours pouring over each line to try to find a typo or something, but nothing. Them I started looking to see if I could just rewrite the code myself in more readable way. But I'm not sure I understand exactly what the code does. But if I can make the tests pass then that's all  that counts right?
