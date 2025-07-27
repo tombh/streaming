@@ -1,11 +1,11 @@
 # Journal
 ## 2025
 
-📅 **July 26th**
+📅 **July 27th**
 Afternoon: Was excited to see that somebody is trying to get Tattoy into Nix Pkgs! Still haven't up with an idea for syncing the animated curosrs with the host cursor. I think it might just be case of having Tattoy take the cursor from the host and render it itself? Mostly been thinking about viewsheds, nice to be working on something completely different. I think I'll start today with a post on r/geography seeing if anyone knows the source and evidence of Mt. Dankova in Kyrgyzstan to Hindu Tagh in China being the longest line of sight on the planet.
 Evening: Wrote those posts on r/geography and r/gis, they're getting good upvotes, but no new insights yet. Which is kind of good because it could that my plan is quite novel. Also finished porting `axes.rs` with the tests passing. Ran some quick benchmarks and it seems totatly fine, just lots of RAM usage. A grid of width 15,000 computes all its axes in like 2 minutes or something. I remembered that I had a `viewview` projet that should have details about where to find DEM files. So next steps are to get some sample DEMs and see if we can start populating some band of sights.
 
-📅 **July 25th**
+📅 **July 26th**
 Afternoon: Back after a couple of days off. Did some keyboard practice and some work on viewsheds, decided to just rewrite the Axes code myself, I think it's actually much simpler like this. Just got stuck on some trigonemtry for now. Also, yesterday somebody posted the Animated Cursors article on Hacker News and it got to the front page, with even more points than my first launch post! Realised though the Homebrew package hasn't been updating on releases, so need to fix that first today. Maybe I'll have a quick look at the cursor lag issue, it might be easy to sync PTY rendering with cursor rendering, which doesn't address any performance but it might be a quick win, and we can put it behind a config settings too. But mostly I'm excited to get on with viewsheds today.
 Tattoy TODOs:
   * Add version to log startup line ✔️
@@ -15,8 +15,8 @@ Tattoy TODOs:
   * Config to sync PTY and cursor rendering.
 Evening: I did look into those last 2 points on the list but it's harder than I hoped. Preventing the cursor from animating when it only moves a short distance isn't 100% reliable, I think it's to do with not being able to rely on the shader frame updates avoiding the backlog. What if instead the check for cusor movemnt was made in the renderer thread? And the because the unreliability of that it gave me cold feet for being able to reliably know when a cursor animation starts. Also I still can't think of a way to anchore a PTY change with a cursor animation??
 
-📅 **July 24th** No stream   
 📅 **July 25th** No stream   
+📅 **July 24th** No stream   
 
 📅 **July 23rd**
 Afternoon: First day trying to use my new Ferris Sweep keyboard full time. It's hard. Just these few sentences have taken me a minute! One step at a time. Before stream I message Rapheal, the creator of the Rio Terminal. And I left a message on the #wayland IRC channel asking for advice about creating a Wayland-like protocol for the terminal. For today I'm just going to slowly try to work on rewriting Total Viewsheds in Rust.
