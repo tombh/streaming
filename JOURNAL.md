@@ -1,11 +1,18 @@
 # Journal
 ## 2025
 
-📅 **July 27th**
+📅 **July 28th**   
+Afternoon: I was thinking about how to implement multiplexing for Tattoy, and of course I was thinking of it being the first application to use my Tayland protocol. But then thinking more I realised that Tattoy itself should use Tayland. Exactly how, I'm not sure yet. Anyway food for thought. And thiking about axes in Total Viewsheds, I don't think they actually need to be calculated for the entire DEM? Can't just be calculated for the Band Of Sight? Let's see if I can port over `band_of_sight.rs` today. First I gotta reply to some nice new comments on the r/gis and r/geography threads. Then see if I can progress a bit on the Tattoy Nix flake.
+Evening: Didn't get any viewsheds stuff done today. Spent most of the time fixing a e2e tests issue on Nix. I think, and I can't really believe this, but it seems that something different happens in the PTY provess of the Nix session: it doesn't parse the OSC paste codes. Which honestly sounds like the better thing to do, but I'm just surprised that the PTY would have anything at all to do with ANSI codes. Anyway also got a Tattoy release out and saw that the Homebrew and AUR pacakge issues had been fixed. So productive day all in all.
+
+* https://www.youtube.com/@SabbaticalTommy
+* Don't forget to let cblake know that I saw their PR on the contrast experiments repo.
+
+📅 **July 27th**   
 Afternoon: Was excited to see that somebody is trying to get Tattoy into Nix Pkgs! Still haven't up with an idea for syncing the animated curosrs with the host cursor. I think it might just be case of having Tattoy take the cursor from the host and render it itself? Mostly been thinking about viewsheds, nice to be working on something completely different. I think I'll start today with a post on r/geography seeing if anyone knows the source and evidence of Mt. Dankova in Kyrgyzstan to Hindu Tagh in China being the longest line of sight on the planet.
 Evening: Wrote those posts on r/geography and r/gis, they're getting good upvotes, but no new insights yet. Which is kind of good because it could that my plan is quite novel. Also finished porting `axes.rs` with the tests passing. Ran some quick benchmarks and it seems totatly fine, just lots of RAM usage. A grid of width 15,000 computes all its axes in like 2 minutes or something. I remembered that I had a `viewview` projet that should have details about where to find DEM files. So next steps are to get some sample DEMs and see if we can start populating some band of sights.
 
-📅 **July 26th**
+📅 **July 26th**   
 Afternoon: Back after a couple of days off. Did some keyboard practice and some work on viewsheds, decided to just rewrite the Axes code myself, I think it's actually much simpler like this. Just got stuck on some trigonemtry for now. Also, yesterday somebody posted the Animated Cursors article on Hacker News and it got to the front page, with even more points than my first launch post! Realised though the Homebrew package hasn't been updating on releases, so need to fix that first today. Maybe I'll have a quick look at the cursor lag issue, it might be easy to sync PTY rendering with cursor rendering, which doesn't address any performance but it might be a quick win, and we can put it behind a config settings too. But mostly I'm excited to get on with viewsheds today.
 Tattoy TODOs:
   * Add version to log startup line ✔️
@@ -18,7 +25,7 @@ Evening: I did look into those last 2 points on the list but it's harder than I 
 📅 **July 25th** No stream   
 📅 **July 24th** No stream   
 
-📅 **July 23rd**
+📅 **July 23rd**   
 Afternoon: First day trying to use my new Ferris Sweep keyboard full time. It's hard. Just these few sentences have taken me a minute! One step at a time. Before stream I message Rapheal, the creator of the Rio Terminal. And I left a message on the #wayland IRC channel asking for advice about creating a Wayland-like protocol for the terminal. For today I'm just going to slowly try to work on rewriting Total Viewsheds in Rust.
 Evening: Managed to get by with my keyboard, even though it's still really frustrating. Added the CPP tests the Rust file I ported yesterday, but there's one test (of 6) that doesn't pass and I spent a few hours pouring over each line to try to find a typo or something, but nothing. Them I started looking to see if I could just rewrite the code myself in more readable way. But I'm not sure I understand exactly what the code does. But if I can make the tests pass then that's all  that counts right?
 
