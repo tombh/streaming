@@ -1,6 +1,9 @@
 # Journal
 ## 2025
 
+📅 **July 29th**   
+Afternoon: Might be worth making an issue on Wayfire about the missing mouse cursor. And don't forget to ask on the Nix Flake PR about automating the build/tests on CI. Then just keep on with viewsheds I think.Made clippy happy about `band_of_sight.rs`, but running the tests I've picked the wrong types in a lot of places, signed versus unsigned etc. Lots of good chatting with chat today ❤️.
+
 📅 **July 28th**   
 Afternoon: I was thinking about how to implement multiplexing for Tattoy, and of course I was thinking of it being the first application to use my Tayland protocol. But then thinking more I realised that Tattoy itself should use Tayland. Exactly how, I'm not sure yet. Anyway food for thought. And thiking about axes in Total Viewsheds, I don't think they actually need to be calculated for the entire DEM? Can't just be calculated for the Band Of Sight? Let's see if I can port over `band_of_sight.rs` today. First I gotta reply to some nice new comments on the r/gis and r/geography threads. Then see if I can progress a bit on the Tattoy Nix flake.
 Evening: Didn't get any viewsheds stuff done today. Spent most of the time fixing a e2e tests issue on Nix. I think, and I can't really believe this, but it seems that something different happens in the PTY provess of the Nix session: it doesn't parse the OSC paste codes. Which honestly sounds like the better thing to do, but I'm just surprised that the PTY would have anything at all to do with ANSI codes. Anyway also got a Tattoy release out and saw that the Homebrew and AUR pacakge issues had been fixed. So productive day all in all.
