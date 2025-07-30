@@ -1,6 +1,14 @@
 # Journal
 ## 2025
 
+📅 **July 30th**   
+Afternoon: Did a bit of viewsheds last night and 2 of the 4 band of sight tests are failing. So going to try to get them fixed.
+Evening: Got the band of sight bug fixed!! It was such a relief. It was that the `sight_ordered` array was actually mapping DEM IDs to indexes, so the opposite of the `sector_ordered` vector that just reorders the DEM IDs themselves. So just finished off the day doing code tidy up.
+
+* www.youtube.com/@miniminuteman773/videos
+* https://www.youtube.com/@LindsayNikole
+* https://www.youtube.com/@7DaysofScience/videos
+
 📅 **July 29th**   
 Afternoon: Might be worth making an issue on Wayfire about the missing mouse cursor. And don't forget to ask on the Nix Flake PR about automating the build/tests on CI. Then just keep on with viewsheds I think.Made clippy happy about `band_of_sight.rs`, but running the tests I've picked the wrong types in a lot of places, signed versus unsigned etc. Lots of good chatting with chat today ❤️.
 
