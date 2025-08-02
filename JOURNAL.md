@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **August 1st**     
+Afternoon: Did some work on viewsheds when I was off. Managed to get the kernel ported to Rust and the 2 kernel tests looking very close to the results in the original tests. I wonder if I can just assume that the differences in the code from C++ to Rust is the cause of the difference? Also I need to have a good look to see whether `f32` breaks down at large distances, I think it may start to have problems with lines of sight over a few hundred kilometres. So hopefully today we can see the first acual crunch of a DEM??
+Evening: Tidied everything up and was nearly ready to commit, but then remebered that I wanted to port the individual viewshed tests. Got bogged down in how to share the moved `dem` between `Compute` and `OutputASCII`. Just can't think of anything right now, so best to just stop. Still, feels like a productive day.
+
+📅 **August 1st** No stream      
+📅 **July 31st** No stream      
+
 📅 **July 30th**   
 Afternoon: Did a bit of viewsheds last night and 2 of the 4 band of sight tests are failing. So going to try to get them fixed.
 Evening: Got the band of sight bug fixed!! It was such a relief. It was that the `sight_ordered` array was actually mapping DEM IDs to indexes, so the opposite of the `sector_ordered` vector that just reorders the DEM IDs themselves. So just finished off the day doing code tidy up.
