@@ -1,7 +1,11 @@
 # Journal
 ## 2025
 
-📅 **August 1st**     
+📅 **August 3rd**     
+Afternoon: So after some food and rest last night I immediately realised that all I needed to fix last night's obstacle was `&mut`. Easy. So I think I'm ready to commit now. Then what's next? I think basically getting all the CLI arguments working, `.hgt` file loading, `wgpu`/`rust-gpu` working and then `.png` total viewshed heatmaps working.
+Evening: Got all the past few days' work committed and started fleshing out the CLI args, added `.hgt` file loading. Then did an actually compute on a DEM file from the UK but hit this bug: at 1° (the second angle), the deltas get too big and underflow the `dem_id`. AWESOME videochat with Ryan, explained the algoritm, talked about areas for parallelising and optimisation. Ryan even thinks there might be some matrix maths that can be used for the angle calculations.
+
+📅 **August 2nd**     
 Afternoon: Did some work on viewsheds when I was off. Managed to get the kernel ported to Rust and the 2 kernel tests looking very close to the results in the original tests. I wonder if I can just assume that the differences in the code from C++ to Rust is the cause of the difference? Also I need to have a good look to see whether `f32` breaks down at large distances, I think it may start to have problems with lines of sight over a few hundred kilometres. So hopefully today we can see the first acual crunch of a DEM??
 Evening: Tidied everything up and was nearly ready to commit, but then remebered that I wanted to port the individual viewshed tests. Got bogged down in how to share the moved `dem` between `Compute` and `OutputASCII`. Just can't think of anything right now, so best to just stop. Still, feels like a productive day.
 
