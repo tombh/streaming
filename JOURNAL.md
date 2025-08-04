@@ -3,6 +3,9 @@
 
 📅 **August 4th**     
 Afternoon: Tinkering with the underflow bug from yesterday, I'm pretty sure it's to do with the band of sight being too narrow, which is the same as it just not being full enough to stop a line slipping through a few rows/cols. So hopefully I can get that fixed. The I'd like to prioritise compiling the kernel with `rust-gpu`, that should be a good basis for Ryan to play with `rust-cuda`.
+* Togglebit's discord
+
+Evening: Fixed the bug, but I'm not 100% sure I understand it thought, my intuition is that it should be worst at 45°. But it actually goes from being fine at 0° and suddenly being at it's worst at 1°! Either way, it's fixed. But who knows where my lack of insight here will show up again later?? It makes me really want to produce some full well-known viewsheds and compare them to what other established viewshed applications make.
 
 📅 **August 3rd**     
 Afternoon: So after some food and rest last night I immediately realised that all I needed to fix last night's obstacle was `&mut`. Easy. So I think I'm ready to commit now. Then what's next? I think basically getting all the CLI arguments working, `.hgt` file loading, `wgpu`/`rust-gpu` working and then `.png` total viewshed heatmaps working.
