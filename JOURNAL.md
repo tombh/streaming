@@ -1,6 +1,16 @@
 # Journal
 ## 2025
 
+📅 **August 17th**     
+Morning: First day streaming after nearly 2 weeks! How I do stream? How do computer? Well I'm in Brazil now, have a great cabin in the woods with faast internet. Was ill for a while and even doing a bit of contract work so haven't had much time to do any viewsheds. The main thing I want to do is get the huuuge Mount Everest DEM working and finish off the changes to use distance deltas. Did I mention that in my journal before? So basically we can use the same distances for every band in a sector, which has roughly a √2 reduction in RAM usage.
+* Creado recommends:
+  * vilayat khan, indian classical music
+  * https://www.youtube.com/watch?v=DkgNWHeo5ZI
+
+Evening: Got the distances-per-band change in, reduces the size by 3500!! Didn't get a chance to try it out as the `geotiff` crate can't handle the huge Mount Everest DEM. Note to self, run the computation caches overnight or something.
+
+📅 **August 4th-16th** No streams         
+
 📅 **August 4th**     
 Afternoon: Tinkering with the underflow bug from yesterday, I'm pretty sure it's to do with the band of sight being too narrow, which is the same as it just not being full enough to stop a line slipping through a few rows/cols. So hopefully I can get that fixed. The I'd like to prioritise compiling the kernel with `rust-gpu`, that should be a good basis for Ryan to play with `rust-cuda`.
 * Togglebit's discord
