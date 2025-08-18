@@ -1,6 +1,15 @@
 # Journal
 ## 2025
 
+📅 **August 18th**     
+Afternoon: Looked into the `.bt` DEM format last night, it's a simple format that I used in the old C++ version of total viewsheds. I imagined that in the 8 years that have passed since I last worked on it there'd be something better, well I mean there is GeoTiff, but the `geotiff` Rust crate is not well written and errors trying to load the Everest file. So I feel settled on `.bt` now. Also today I want to fix the GPU batch size finder to actually be balanced. And I want to explore simplifying the cached calculations, I think I'm OOMing on the sort steps for the Everest file?
+* Uploaded the Everest DEM to: https://x0.at/njLa.zip
+* Dharma Dom's Insta: https://www.instagram.com/domrocks__/
+
+Evening: Managed to get everything into a pretty good place for crunching Everest. Got the `.bt` v1.3 format fully supported. Got the dispatch size finder actually finding balanced dispateches. Sadly it seems my laptop is pushed to its limit crunching the Everest DEM. I think it's mostly just memory. But I have got some sectors to run, in about 2 minutes each I think? Very interested to see what Ryan makes of it.
+
+Remeber to tell Ryan to delete cache and use `--scale 100`.
+
 📅 **August 17th**     
 Morning: First day streaming after nearly 2 weeks! How I do stream? How do computer? Well I'm in Brazil now, have a great cabin in the woods with faast internet. Was ill for a while and even doing a bit of contract work so haven't had much time to do any viewsheds. The main thing I want to do is get the huuuge Mount Everest DEM working and finish off the changes to use distance deltas. Did I mention that in my journal before? So basically we can use the same distances for every band in a sector, which has roughly a √2 reduction in RAM usage.
 * Creado recommends:
