@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **August 19th**     
+Afternoon: Probably just a short stream. Looks like Ryan is able to run Everest then. So I think I just need to get with resconstructing viewsheds so we can actually verify the correctness of our results.
+
+Evening: Ryan's been running the new code and got it down ~8 seconds per sector (we need ~1s per tile to crunch the whole world in 2 days). He's also got some CUDA profiling and we'll be doing some pairing on Saturday. I managed to get some "working" code to reconstruct a viewshed, but it currently looks like a mess. One big question is how to union all the ring polygons so that we remove all overlapping intersections. Hopefully something already exists in `geo` to do this, I just haven't found it yet. Or just my polygon constructor code just isn't right. I should start off tomorrow with some unit tests for the funcion.
+
 📅 **August 18th**     
 Afternoon: Looked into the `.bt` DEM format last night, it's a simple format that I used in the old C++ version of total viewsheds. I imagined that in the 8 years that have passed since I last worked on it there'd be something better, well I mean there is GeoTiff, but the `geotiff` Rust crate is not well written and errors trying to load the Everest file. So I feel settled on `.bt` now. Also today I want to fix the GPU batch size finder to actually be balanced. And I want to explore simplifying the cached calculations, I think I'm OOMing on the sort steps for the Everest file?
 * Uploaded the Everest DEM to: https://x0.at/njLa.zip
