@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **August 20th**     
+Afternoon: Well let's see if we can get these viewsheds displaying.
+
+Evening: Got a sinking feeling today when I realised today that the outer spokes of the reconstructed viewsheds have huge gaps in them. And so the worst case for say Everest would be to increase the number of sectors by 1000! I can't believe I overlooked this. There must be something in the original paper about this?? Another solution could be to just make fatter bands of sight. So things to think about. But at least I have made some progress with reconstructing viewsheds. There's just this weird bug where the rings sector coordinates aren't appearing square on the GEOJSON viewer.
+
 📅 **August 19th**     
 Afternoon: Probably just a short stream. Looks like Ryan is able to run Everest then. So I think I just need to get with resconstructing viewsheds so we can actually verify the correctness of our results.
 
