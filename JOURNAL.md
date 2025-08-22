@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **August 22nd**     
+Afternoon: Managed to get the maths side of viewshed reconstruction done on my day off yesterday. And so then started to see if I could reconstruct a viewshed from my "small" Bristol tile. But the RAM/disk usage is a bit prohibitive, 17GB of ring sector data, just for the Bristol tile!! I think that means that Everest sized tiles will produce about 17TB 😬. So the first thing to do today is to do the reconstruction from saved data (after a full GPU crunch) sector-by-sector. Then after that I need to start looking into how to project all the geo points back into coordinates relative to those defined by the original DEM tile.
+
+Evening: Got my first actual viewsheds showing! So just cleaning up all the code now. But gotten a bit confused about the orientation of the y-axis for the trig calculations, should y be flipped or not??
+
+📅 **August 21st** No stream          
+
 📅 **August 20th**     
 Afternoon: Well let's see if we can get these viewsheds displaying.
 
