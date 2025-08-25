@@ -1,6 +1,19 @@
 # Journal
 ## 2025
 
+📅 **August 25th**   
+Afternoon: Got a bit of stuff done off stream, like adding `fjall` a key-value store for the ring data. Would be great if I can get viewshed reconstruction completely done today, that would mean displaying viewsheds in their correct geolocation on a map.
+* Newcomers to programming at an advantage learning Rust: https://youtu.be/meEXag1XCFw?si=z7lx4D36GUf7ANUi
+
+Evening: Seem to have gotten most of the reprojection code working, just the small issue of it displaying off the african cost rather than Bristol, but hopefully that's just a matter of double checking all the projection defintion strings.
+
+📅 **August 24th** No stream.    
+
+📅 **August 23rd**     
+Afternoon: Me and Ryan are going to do a bit of pair programming on viewsheds today.
+
+Evening: Great session, geeking out, got deep into GPU stuff.
+
 📅 **August 22nd**     
 Afternoon: Managed to get the maths side of viewshed reconstruction done on my day off yesterday. And so then started to see if I could reconstruct a viewshed from my "small" Bristol tile. But the RAM/disk usage is a bit prohibitive, 17GB of ring sector data, just for the Bristol tile!! I think that means that Everest sized tiles will produce about 17TB 😬. So the first thing to do today is to do the reconstruction from saved data (after a full GPU crunch) sector-by-sector. Then after that I need to start looking into how to project all the geo points back into coordinates relative to those defined by the original DEM tile.
 
