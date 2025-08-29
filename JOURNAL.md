@@ -1,6 +1,12 @@
 # Journal
 ## 2025
 
+📅 **August 29th**     
+Afternoon: Offline I managed to get viewshed construction into a really good place. Just a little issue where there's some skew, there's a couple of islands in the Bristol Channel that show up in viewsheds from Cardiff, but the little visibility boxes for the islands are off by about 200m. So first thing is to try to generate the same viewshed with `gdal_viewshed`, that will show us if the problem is in the original DEM data or not. Then just want to get on with all the tidying up that needs doing for this big viewshed reconstruction PR.
+Eveninb: Didn't get anywhere with the skewed viewsheds. But I did realise/remember that metric projections cannot be used to calculate true distances, which feels very relevant to the offsets I'm seeing. I just can't figure out where the distance calculations are coming in?? Is it because I add the ring sector coordinates to 0,0 rather than the coordinates of the PoV point?
+
+📅 **August 26-28**  No streams.  
+
 📅 **August 25th**   
 Afternoon: Got a bit of stuff done off stream, like adding `fjall` a key-value store for the ring data. Would be great if I can get viewshed reconstruction completely done today, that would mean displaying viewsheds in their correct geolocation on a map.
 * Newcomers to programming at an advantage learning Rust: https://youtu.be/meEXag1XCFw?si=z7lx4D36GUf7ANUi
