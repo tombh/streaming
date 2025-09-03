@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **September 3rd**    
+Afternoon: Haven't been streaming much at all recently. Still been doing a bit of viewshed stuff though. I think I've got the viewshed reconstruction commit functionally ready. Just need to clean it up. I fixed that skew that I mentioned in the last stream (August 29th), it was to do with using the top-left coordinates of the DEM for the AEQD anchor when reconstruting viewsheds, but using the centre of the DEM for interpolating all the elevation points to a 100m grid. But then once that was fixed it revealed the bug that Ryan had mentioned before, that the band deltas containted a lot of zeroes. Not only did I see that, but I also found that longer band deltas weren't even starting at their real beginnings, so most bands started off with distance deltas well above zero, obviously leading to quite incorrect viewsheds. I'm still not quite sure how to pragmatically verify our viewsheds, there are so many factors involved, height of the observer, construction of bands, curvature of the earth, refraction etc. But at least for now I think we've got a decent basis to start exploring from.
+
+Evening: Converted most coordinates into new types to try to prevent say a lat/lon coordinate being used when a AEQD coordinate is expected. Then started fixing the viewshed tests, but the reprojection step makes the results unintuitive so seeing if there is a way to project back to DEM-relative coords, but got stuck.
+
+📅 **August 30th - September 2nd** No streams.     
+
 📅 **August 29th**     
 Afternoon: Offline I managed to get viewshed construction into a really good place. Just a little issue where there's some skew, there's a couple of islands in the Bristol Channel that show up in viewsheds from Cardiff, but the little visibility boxes for the islands are off by about 200m. So first thing is to try to generate the same viewshed with `gdal_viewshed`, that will show us if the problem is in the original DEM data or not. Then just want to get on with all the tidying up that needs doing for this big viewshed reconstruction PR.
 Eveninb: Didn't get anywhere with the skewed viewsheds. But I did realise/remember that metric projections cannot be used to calculate true distances, which feels very relevant to the offsets I'm seeing. I just can't figure out where the distance calculations are coming in?? Is it because I add the ring sector coordinates to 0,0 rather than the coordinates of the PoV point?
