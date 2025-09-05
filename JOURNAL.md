@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **September 5th**     
+Afternoon: I think I managed to get that text issue sorted from last stream, just some subtle coordinate/projection stuff. So I can I finally get this commit committed today?
+
+Evening: Nearly got all the tests passing. Just the `final_viewshed` one is failing. We already have 3 coordinate conversion functions, and I think I need one more, but just for this last test. `dem_coord_to_latlon()`. Also, even then, there are some notable differences in the extent coordinates for the final viewshed, so best to double check that that is actually expected.
+
+📅 **September 4th** No stream        
+
 📅 **September 3rd**    
 Afternoon: Haven't been streaming much at all recently. Still been doing a bit of viewshed stuff though. I think I've got the viewshed reconstruction commit functionally ready. Just need to clean it up. I fixed that skew that I mentioned in the last stream (August 29th), it was to do with using the top-left coordinates of the DEM for the AEQD anchor when reconstruting viewsheds, but using the centre of the DEM for interpolating all the elevation points to a 100m grid. But then once that was fixed it revealed the bug that Ryan had mentioned before, that the band deltas containted a lot of zeroes. Not only did I see that, but I also found that longer band deltas weren't even starting at their real beginnings, so most bands started off with distance deltas well above zero, obviously leading to quite incorrect viewsheds. I'm still not quite sure how to pragmatically verify our viewsheds, there are so many factors involved, height of the observer, construction of bands, curvature of the earth, refraction etc. But at least for now I think we've got a decent basis to start exploring from.
 
