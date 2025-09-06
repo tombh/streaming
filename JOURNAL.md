@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 6th**     
+Afternoon: 2 days streaming in a row, been a while since I did that. It's been tough being stuck on this same bit of code for so long. But I think this is why I do my own projects, so that I have the time to really be with the parts that challenge me?
+
+Evening: I'm glad I persisted with getting an intutive DEM projection of the final_viewshed test viewshed, because once I did, I found an off-by-one bug elsewhere. And that seems to have change my benchmark Cardiff viewshed yet again. So there's just some minor lints to fix before fiiiinally getting this commit committed.
+
 📅 **September 5th**     
 Afternoon: I think I managed to get that text issue sorted from last stream, just some subtle coordinate/projection stuff. So I can I finally get this commit committed today?
 
@@ -17,6 +22,7 @@ Evening: Converted most coordinates into new types to try to prevent say a lat/l
 
 📅 **August 29th**     
 Afternoon: Offline I managed to get viewshed construction into a really good place. Just a little issue where there's some skew, there's a couple of islands in the Bristol Channel that show up in viewsheds from Cardiff, but the little visibility boxes for the islands are off by about 200m. So first thing is to try to generate the same viewshed with `gdal_viewshed`, that will show us if the problem is in the original DEM data or not. Then just want to get on with all the tidying up that needs doing for this big viewshed reconstruction PR.
+
 Eveninb: Didn't get anywhere with the skewed viewsheds. But I did realise/remember that metric projections cannot be used to calculate true distances, which feels very relevant to the offsets I'm seeing. I just can't figure out where the distance calculations are coming in?? Is it because I add the ring sector coordinates to 0,0 rather than the coordinates of the PoV point?
 
 📅 **August 26-28**  No streams.  
