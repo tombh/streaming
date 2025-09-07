@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 7th**     
+Afternoon: Got all the lints for the commit fixed, so just need to read over it. Should I merge it? And put the list of TODOs from the PR in its own issue? Which TODO should I worl on next? I'm most intrigued by building the little webapp UI for it.
+
+Evening: Got it committed and pushed! Then started working getting cargo feature flags working for the shader, but infuriatingly it always loads the "with-rings" kernel, feel like I'm going mad.
+
 📅 **September 6th**     
 Afternoon: 2 days streaming in a row, been a while since I did that. It's been tough being stuck on this same bit of code for so long. But I think this is why I do my own projects, so that I have the time to really be with the parts that challenge me?
 
