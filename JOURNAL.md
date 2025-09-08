@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 8th**     
+Afternoon: Discovered that `cargo` unifies all the features requested by the various dependees of a dependency. So I don't think there's any easy way to use feature flags for both CPU and GPU code. So I'll refactor it to use old school runtime conditionals, I don't suppose it can make that much difference to the performance?
+
+Evening: Decided to just go with bitmask flags that both the GPU and CPU use. And then wrote a basic end to end test that can also function as a benchmark for validating kernels. The started thinking about making a tile server, `.mbtiles` are the way to go apparently. It'd be nice if we had are own viewview.com or something where we slowly collected all our crunched data.
+
 📅 **September 7th**     
 Afternoon: Got all the lints for the commit fixed, so just need to read over it. Should I merge it? And put the list of TODOs from the PR in its own issue? Which TODO should I worl on next? I'm most intrigued by building the little webapp UI for it.
 
