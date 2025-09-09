@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **September 9th**     
+Afternoon: Did a fair bit of research last night about how to serve our heatmaps on a public website. Basically there are 2 approaches: PMTiles and a tile server. PMTiles support HTTP range requests so are essentially self-serving static tile servers. They can easily be stored on S3. But they can't be easily updated, we'd ideally just want one for the whole world. Which might be possible once we're done, but whilst we're updating piecemeal. Then the other option is to use an actual tile server like `martin` or `TiTiler` that can dynamically convert raw tile data like GeoTiffs to z/x/y queryable pyramid tiles. This is more CPU intensive but it does mean that we can easily just add new heatmaps as and when they're made.
+
+* Me and Ryan figured out that we can use a third less data for the sample rotate elevations, we drew some cool diagrams: https://excalidraw.com/#json=GT8txU1MkBJYdn7uKH6mO,XA4V8Zxzlc5xIgYliJGxJg
+
+Evening: Tried getting `martin` working with some sample GeoTiffs but was hard just to get a format that `marting` accepted. And even then I couldn't see the tiles on any tile viewer. So a bit dissapointing so today. But had a great catch up about the algorithm today with @nayr, we realised that the sampled rotation is a _rectangle_ one third the size of the DEM, so lots more space savings!
+
 📅 **September 8th**     
 Afternoon: Discovered that `cargo` unifies all the features requested by the various dependees of a dependency. So I don't think there's any easy way to use feature flags for both CPU and GPU code. So I'll refactor it to use old school runtime conditionals, I don't suppose it can make that much difference to the performance?
 
