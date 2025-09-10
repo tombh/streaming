@@ -1,6 +1,22 @@
 # Journal
 ## 2025
 
+📅 **September 10th**     
+Afternoon: I think it's just going to be better to go with the `titiler` rather than `martin`, it seems more mature. What I want is:
+  * Lots of COGs, perhaps overlapping, in a directory, probably in S3.
+  * To be able to just add new COGs and the server auto detects them without a restart.
+  * A single tile endpoint for _all_ COGs of a category, eg: `tvs-heatmaps/z/x/y`.
+
+Evening: Still struggling with TiTiler, quite dissapointed with the documentation to be honest, feel like I'm fumbling in the dark. But at least everything points towards being able to achieve that list I wrote earlier. Also another long chat with Ryan, his new sample rotated kernel is working! And does the entirety of Everest in 5 minutes, amazing. Very interestingly we realised that it only produces a circular region of valid viewsheds.
+
+Just had some thoughts about the whole sample rotation stuff:
+  * In order to get the whole _square_ of TVS heatmap the "chocolate box" would need to change size for every angle so that its width is always containing the centreal TVS square and that its height is alway within the outer DEM square. But changing its size might not be practical. And besides, the circle is fine.
+  * It doesn't matter that we don't calculate the outer "ears/triangles" of the TVS square, just as long as the parts we _do_ calculate reach the defined max line of sight. Which Ryan is already doing.
+  * The only TVS points that could trigger a "dolphin" are _outside_ of the original TVS square, so it's not just that we want to use `i16::MIN` for the "dolphin" data, it's that ideally we don't even calculate those points.
+  * https://excalidraw.com/#json=c2qi6j0v8-r07NuCKU8aZ,4KA7HVcHkrGMPE8k_ptHdg
+  
+Ryan! Your rotation fixes that bug where band deltas would be filled with lots of zeroes. So that's another argument leading towards your kernel being more correct than mine.
+
 📅 **September 9th**     
 Afternoon: Did a fair bit of research last night about how to serve our heatmaps on a public website. Basically there are 2 approaches: PMTiles and a tile server. PMTiles support HTTP range requests so are essentially self-serving static tile servers. They can easily be stored on S3. But they can't be easily updated, we'd ideally just want one for the whole world. Which might be possible once we're done, but whilst we're updating piecemeal. Then the other option is to use an actual tile server like `martin` or `TiTiler` that can dynamically convert raw tile data like GeoTiffs to z/x/y queryable pyramid tiles. This is more CPU intensive but it does mean that we can easily just add new heatmaps as and when they're made.
 
