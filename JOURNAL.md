@@ -1,6 +1,15 @@
 # Journal
 ## 2025
 
+📅 **September 14th**       
+Afternoon: Been thinking a lot about tile servers. I was looking into TiTiler but it's Python, and I realise I'm not very excited about the language (am I even excited by anything that isn't Rust??). TiTiler's mosaicing example isn't working at the moment: https://github.com/developmentseed/titiler/discussions/1217 I've been chatting a lot on a Rust tile server Github discussion: https://github.com/maplibre/martin/discussions/2148 I realised that I'd been holding the mistaken belief that all tile servers are also mosaicing tile servers. So I don't think I actually need Martin. TiTiler does support mosaicing, but I might just be able to build something with its mosaicing dependency: https://github.com/cogeotiff/rio-tiler
+
+But I've also had this idea that maybe if I can somehow put all of the viewshed heatmaps on a known geographic grid then we don't even need a tile server. We can just use the frontend map viewport to calculate what COGs/PMTiles are needed. Or if not that I can write a very lightweight server that converts a z/x/y coordinate into the COG/PMTile it points at. So still haven't quite decided what to do, but getting closer.
+
+Evening: Made a good start at describing the algorithm I need to tile the world's landmass with tiles sizes adjusted to be optimal for the hightest elevation point.
+
+📅 **September 11/12/13th** No streams          
+
 📅 **September 10th**     
 Afternoon: I think it's just going to be better to go with the `titiler` rather than `martin`, it seems more mature. What I want is:
   * Lots of COGs, perhaps overlapping, in a directory, probably in S3.
