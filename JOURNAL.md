@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 15th**       
+Afternoon: Mulling over the optimal tiling problem, want to make a start on it today.
+
+Evening: Unzipped ALL my SRTM3 files into a single directory. Then made a good start on the max height subtiler things, so that we have an efficient way to query max heights across the planet.
+
 📅 **September 14th**       
 Afternoon: Been thinking a lot about tile servers. I was looking into TiTiler but it's Python, and I realise I'm not very excited about the language (am I even excited by anything that isn't Rust??). TiTiler's mosaicing example isn't working at the moment: https://github.com/developmentseed/titiler/discussions/1217 I've been chatting a lot on a Rust tile server Github discussion: https://github.com/maplibre/martin/discussions/2148 I realised that I'd been holding the mistaken belief that all tile servers are also mosaicing tile servers. So I don't think I actually need Martin. TiTiler does support mosaicing, but I might just be able to build something with its mosaicing dependency: https://github.com/cogeotiff/rio-tiler
 
