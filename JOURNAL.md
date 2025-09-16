@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 16th**      
+Morning: Had this image in my head that it'd be great to visualise the global tile finder in realtime. We need to see the final tiling anyway, so why not show it live too. It could look well really geeky and computery like something from a film.
+
+Evening: Managed to get started on the "packer" code, got stuck on a AEQD projection error. But feels good, everything's in place to start exploring this little packing problem.
+
 📅 **September 15th**       
 Afternoon: Mulling over the optimal tiling problem, want to make a start on it today.
 
