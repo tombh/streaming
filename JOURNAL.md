@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **September 18th**      
+Afternoon: It looks like I have a basic method for packing tiles over the world, I haven't done anything to help find optimal tiles, but at least I think it should be able to find _a_ solution. Today I'd like to make a little web app to visualise its output.
+
+Evening: Good progress on the packer. Got a packing of Europe displaying on a map! Then tried to improve the algo by onl allowing non-overlapping tiles, and yeah it definitely overlaps less, but there's clearly some overlapping still happening. I could concede that some overlapping happens at edges beacuse of the conversion between metric and lon/lat, but no, it's more than that, hopefully it's just a bug in my code.
+
+📅 **September 17th** No stream     
+
 📅 **September 16th**      
 Morning: Had this image in my head that it'd be great to visualise the global tile finder in realtime. We need to see the final tiling anyway, so why not show it live too. It could look well really geeky and computery like something from a film.
 
