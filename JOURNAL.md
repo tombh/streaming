@@ -1,6 +1,14 @@
 # Journal
 ## 2025
 
+📅 **September 19th**      
+Morning: Found the issue with the overlaps from yesterday: `nearest_neighbour()` only returns the first nearest neighbour! So have a map of actual non-overlapping tiles now! Just need to do something about all the untiled points in-between. Thinking about it I reckon it's good enough just to step-by-step increase all the nearby tiles until the point is covered. It's the most efficient, but it's good enough I think. As long as it doesn't slow down the packing search.
+
+* Creado recommended this video: https://youtu.be/synJZAtH58E?si=NcGTWj4qxX0URWdX
+* Marco recommends this book series: Expeditionary Force
+
+Evening: Got underalapping working nice. Just need to do the nested tiles bit and do the extension of corners to half sub-grid width. Also awesome geek-out with Professor Logout. Learnt that forward-only-migrations are our Lord and Saviour. It really is possible to migrate any database schema or external service without downtime.
+
 📅 **September 18th**      
 Afternoon: It looks like I have a basic method for packing tiles over the world, I haven't done anything to help find optimal tiles, but at least I think it should be able to find _a_ solution. Today I'd like to make a little web app to visualise its output.
 
