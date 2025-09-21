@@ -1,6 +1,13 @@
 # Journal
 ## 2025
 
+📅 **September 21st**        
+Afternoon: Did a bit of debugging off-stream yesterday and discovered that AABBs are rotated in AEQD rotations! So I think I just got to do the slower approach for finding all the points in a tile: use the bounding box of the tile and then just loop through each point to see if it `is_within()`.
+
+Evening: There were 3 cases where I needed to refactor to the `is_within()` method, it took me a while to find the third one, I mean I didn't even realise at first that that was the cause of the bug. So there's loads more overlapping now. But ... when I went to add the final touch, ie extending the final tiles by half the subtile width (in degrees) it didn't actually fix the remainging gaps and instead introduced one more bug, tiles that are waaay too big. I'm guessing that's because of over-zealousness in the underlapping function.
+
+📅 **September 20th** No stream         
+
 📅 **September 19th**      
 Morning: Found the issue with the overlaps from yesterday: `nearest_neighbour()` only returns the first nearest neighbour! So have a map of actual non-overlapping tiles now! Just need to do something about all the untiled points in-between. Thinking about it I reckon it's good enough just to step-by-step increase all the nearby tiles until the point is covered. It's the most efficient, but it's good enough I think. As long as it doesn't slow down the packing search.
 
