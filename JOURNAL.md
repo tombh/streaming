@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 22nd**        
+Morning: Maybe I got the final half subtile extension wrong yesterday? I hope so cos it's getting a bit hard debugging all these non-overlapping tiles 🥺
+
+Evening: Got enough done to run the first global attempt! There's one unfortunate hack which is where I just increase the size of all the tiles by a fudge amount, and still even then I found a gap near Stockholm. I think it all comes down to the fact that `is_within()` is not accurate at the edges of the tile. It does seem much more accurate when projected to lonlat, but I think that would add way too much extra CPU cycles.
+
 📅 **September 21st**        
 Afternoon: Did a bit of debugging off-stream yesterday and discovered that AABBs are rotated in AEQD rotations! So I think I just got to do the slower approach for finding all the points in a tile: use the bounding box of the tile and then just loop through each point to see if it `is_within()`.
 
