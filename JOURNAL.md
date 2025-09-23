@@ -1,6 +1,15 @@
 # Journal
 ## 2025
 
+📅 **September 23rd**        
+Afternoon: I was thinking about how to communicate the `packer` code in terms of the longest line of sight claim. I think the 2 most important requirements from that perspective are just that all tiles overlap, and that each tile is large enough to contain the theoretical longest line of sight defined by its highest point. The first requirement is easy to demonstrate just by looking at the map. The second not quite as easy. What if the global geojson also included the lonlat and height of each tile's highest point?
+
+The main things to do from yesterday's global run:
+* Handle those tiles that seem to be outside the lonlat bounds and so appear to wrap around the world.
+* Think of a good way to walk the computation windows over the world. Currently I'm just loading up the 100,000 nearest points from the centre of every 1°x1° tile. The obvious downside to this is just that it causes a lot of overlapping (duplicated work) and in more elevated areas it may actually cause certain tiles to not get created?
+
+Evening: I actually just spent most of the day fixing a little oversight where I forgot that the underlapper points that trigger resizes of nearby tiles don't actually recalculate the nearby tile's contained points to see if there's a point that causes the tile to increase even further. And ended up getting stuck on the removal of nested tiles that are _clearly_ inside much larger tiles.
+
 📅 **September 22nd**        
 Morning: Maybe I got the final half subtile extension wrong yesterday? I hope so cos it's getting a bit hard debugging all these non-overlapping tiles 🥺
 
