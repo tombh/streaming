@@ -1,11 +1,21 @@
 # Journal
 ## 2025
 
+📅 **September 28th**        
+Morning: Managed to figure out how to stop the wrapping of tiles across the anti-meridian, just needed to put "+over" in the projection definition. I want to see if I can get the last 2 tasks done from yesterday's list. Oh! And where is Iceland's tile??
+
+Evening: Got that better implementation of the fudging hack that removes gaps. Spent most of the stream making the better-bigger-neighbour post-process step. Some thoughts on that:
+  * I can see that tiles are being increased and newly nested tiles being removed. But sometimes tiles are being increased but nothing inside seems to get removed!
+  * Also run the check-for-newer-elevations function on resized tiles!
+  * The current implementation is quite slow. Not impossibly slow, but worth spending some time on.
+  * I wonder if I should make sure that every `self.stack` is unique? Because I feel like maybe the overlapping points get their own similar but slightly different tiles.
+
 📅 **September 27th**        
 Afternoon: Got some stuff on the packer on my off days. Main thing was that I tidied up everything to make a commit, so the first commit of the packer. Then I finally got to the bottom of the bugs in the nested tiles remover, it's working welll now, just gets a bit slow when there's a few thousand tiles, but I think I fix that. Also got the windowing working so that it steps around the world in 9000km steps, although there's a bug where it drifts South, should be easy enough to fix. So remaining things are:
-  * [ ] Speed up nested tile remover.
+  * [ ] Speed up nested tile remover. Though I must say, I think the whole thing only takes like 2 hours or something.
   * [x] Make the window stepper not drift South.
-  * [ ] Handle tiles that stretch across the meridian (ie over 180°).
+  * [x] Handle tiles that stretch across the meridian (ie over 180°).
+  * [x] When fudging the final tile sizes, check to see if the new size also has a new highest elevation.
   * [ ] Add another step that finds tiles with a >50% overlap, iterates over all its neighbouring tiles, then tries to see if increasing the size of a neighbouring tile such that it adds the same or less global surface area whilst encompassing the area of the >50% tile.
 
 Evening: Feeling good about running the packer for the whole world now. Just those remaining tasks from the afternoon. I'm looking into whether `proj4rs` has native support to disavle lon/lat wrapping.
