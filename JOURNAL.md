@@ -1,6 +1,11 @@
 # Journal
 ## 2025
 
+📅 **September 29th**        
+Afternoon: I'm more intrigued about the idea from yesterday that each window should have a completely unique stack. I think that could get rid of a lot of the inefficient tiles that the better-bigger-neighbour idea is trying to do.
+
+Evening: Realised that there is feedback loop where growing tiles to fit over nearby smaller tiles, causes the grown tile to cover more points which itself can trigger the grown tile to be extended even more. So then you have to run all these inefficient tile checks again. How do you know when to stop? Anyway the main pass for tiling the world is very much done. I'm just working on this final cleanup to get better-bigger-neighbour tiles working properly. I think there's an issue with calculating surface areas, which I use to get a tile's total overlapping area which in turn is the heuristic I use to decide whether it's worth looking for a better-bigger-neighbour.
+
 📅 **September 28th**        
 Morning: Managed to figure out how to stop the wrapping of tiles across the anti-meridian, just needed to put "+over" in the projection definition. I want to see if I can get the last 2 tasks done from yesterday's list. Oh! And where is Iceland's tile??
 
