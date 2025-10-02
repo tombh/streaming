@@ -1,6 +1,17 @@
 # Journal
 ## 2025
 
+📅 **October 2nd**       
+Afternoon: Did a fairly significant refactor of the packer on my days off:
+  1. Enforced the coordinate CRS in the `rstar::RTree`s so that the type system notices incompatible coordinate types.
+  2. Stopped using AEQD for the windowed calculations, just use lon/lat, and a bit of AEQD just to construct tile polygons.
+Now I really do feel happy with the packer. So much so that I'm thinking of taking a moment to write a little blog post about it. I'll write it on my website tombh.co.uk but I'll deploy the actual tiling visualisation on ViewView's Github repo.
+
+Evening: Got the `viewview` repo tidied and pushed to Github. Also got it deploying the live GeoJSON of the tiles to: https://tombh.co.uk/viewview/tile_packing.html Then spent tooo long trying to get Jekyll to run!!!!! Wow. Just want to write a blog post 🥺
+
+📅 **October 1st** No stream       
+📅 **September 30th** No stream       
+
 📅 **September 29th**        
 Afternoon: I'm more intrigued about the idea from yesterday that each window should have a completely unique stack. I think that could get rid of a lot of the inefficient tiles that the better-bigger-neighbour idea is trying to do.
 
