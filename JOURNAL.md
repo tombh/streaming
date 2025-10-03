@@ -1,6 +1,16 @@
 # Journal
 ## 2025
 
+📅 **October 3rd**       
+Afternoon: Finall got Jekyll to run in a container last night. The 2 big gotchas were:
+* making sure the files to be mounted are owned by the user running the container
+* installing the gems with the `Gemlock.lock` to make sure versions match
+So today, just get on with the blog post.
+
+* InfiniteCoder's Youtube: https://www.youtube.com/@InfiniteCoder02
+
+Evening: Finished the blog post 🎉 Read it through and it seems good to me. Maybe get a proof read before announcing it.
+
 📅 **October 2nd**       
 Afternoon: Did a fairly significant refactor of the packer on my days off:
   1. Enforced the coordinate CRS in the `rstar::RTree`s so that the type system notices incompatible coordinate types.
