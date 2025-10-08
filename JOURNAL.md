@@ -1,6 +1,17 @@
 # Journal
 ## 2025
 
+📅 **October 3rd**      
+Afternoon: Been doing a bit of viewshed stuff offline. The blog post got to the front page of Hacker News https://news.ycombinator.com/item?id=45485227 and Lobste.rs https://lobste.rs/s/unhv2p/packing_world_for_longest_lines_sight So been replying to comments there. And a few bugs and ideas have come from that. I've got a new longest line of sight heatmap working https://github.com/tombh/total-viewsheds/pull/10#issuecomment-3382305826 But it seems there's a bug with the Earth curvature code. Also been digging into the bug where the shader segfaults on NVIDIA, looks like I have a Vulkan validation error to follow up on now https://github.com/Rust-GPU/rust-gpu/discussions/427#discussioncomment-14628078 Basically I'm aiming to get a nice little setup going on a remote VM where I can just let it crunch various tiles and it slowly spits out GeoTiffs that we can display on a world map.
+Evening: Found an embarassing bug, I wasn't multiplying the distances by the scale of the DEM! That was the thing that was causing the viewsheds to not terminate with the curvature of the Earth.
+
+TODOs:
+* [ ] Still want to normalise the vector data for PNGs to give a better white balance.
+* [ ] Multiply distances by scale before distances are cached.
+* [ ] Write a test for the longest line of sight output.
+
+📅 **October 4th-7th** No streams      
+
 📅 **October 3rd**       
 Afternoon: Finall got Jekyll to run in a container last night. The 2 big gotchas were:
 * making sure the files to be mounted are owned by the user running the container
