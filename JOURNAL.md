@@ -1,7 +1,21 @@
 # Journal
 ## 2025
 
-📅 **October 3rd**      
+📅 **October 25th**     
+Afternoon: First time back streaming after 2 weeks. Mostly was completely offline, so not much programming. But have made some good progress on the web UI for the heatmaps. I've got dynamically coloured heatmaps rendering in Maplibre GL. It was challenging because you have to intercept the tile rendering and manually render the tile contents in a GPU shader. Also it was hard just to even generate the necessary single band of f32 PMTiles. All the existing tools that automatically generate `.pmtiles` only support normal images (JPG, PNG, etc). But I managed to find a Python snippet that I could hack to get single band raw byte data PMTiles. I feel like it's nearly there, certainly within sight. Here's what's left:
+* [ ] The bigger tiles are clearly offset, or skewed or something. Hoping it's just a bad `gdal` setting somewhere.
+* [ ] Stop tile flash of loading content. Use parent Mercator tile (if any) whilst the current tile is loading.
+* [ ] Cleanup for unseen tiles not seen in more than X mins.
+* [ ] Research best way to merge output tiles into `.pmtile`s.
+* [ ] Can the whole world fit in a single `.pmtile`? If not how to decide what regions a `.pmtile` covers and how to decide which to display?
+
+Evening: Spent a while trying to a `.pmtile` for the raw `.bt` file before it's crunched for viewsheds. But of course in the end it's not easy because I don't actually record the tile's extent, I just record it's centre. And now I'm lost that on the UK sample, I created it with a width of 366610.1875m, but the pixel width is 10998. The scale is 100m. And just can't see how you get one number from the other?? Hmm, need a break. But good to be back to streaming!
+
+Stefan recommends this guy's philosophy https://www.youtube.com/watch?v=KUq0GrIvICQ 2m59s for philosophy part.
+
+📅 **October 9th-24th** No streams     
+
+📅 **October 8th**      
 Afternoon: Been doing a bit of viewshed stuff offline. The blog post got to the front page of Hacker News https://news.ycombinator.com/item?id=45485227 and Lobste.rs https://lobste.rs/s/unhv2p/packing_world_for_longest_lines_sight So been replying to comments there. And a few bugs and ideas have come from that. I've got a new longest line of sight heatmap working https://github.com/tombh/total-viewsheds/pull/10#issuecomment-3382305826 But it seems there's a bug with the Earth curvature code. Also been digging into the bug where the shader segfaults on NVIDIA, looks like I have a Vulkan validation error to follow up on now https://github.com/Rust-GPU/rust-gpu/discussions/427#discussioncomment-14628078 Basically I'm aiming to get a nice little setup going on a remote VM where I can just let it crunch various tiles and it slowly spits out GeoTiffs that we can display on a world map.
 Evening: Found an embarassing bug, I wasn't multiplying the distances by the scale of the DEM! That was the thing that was causing the viewsheds to not terminate with the curvature of the Earth.
 
@@ -9,6 +23,8 @@ TODOs:
 * [ ] Still want to normalise the vector data for PNGs to give a better white balance.
 * [ ] Multiply distances by scale before distances are cached.
 * [ ] Write a test for the longest line of sight output.
+
+https://overpass-turbo.eu/?Q=%5Bout%3Ajson%5D%3B%0Away%5Bbuilding%5D%28if%3Anumber%28t%5B%22height%22%5D%29%3E20%29%28%7B%7Bbbox%7D%7D%29%3B%0Aout%20body%3B&C=51.451119%3B-3.133763%3B13&R=
 
 📅 **October 4th-7th** No streams      
 
